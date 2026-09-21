@@ -1,0 +1,17 @@
+import { readFile,mkdir,writeFile } from 'node:fs/promises';
+import { gzipSync } from 'node:zlib';
+import { createHash } from 'node:crypto';
+import { keccak256 } from 'viem';
+import { pack, split, MAX_COMPRESSED, type RomMeta } from '../shared/rom.ts';
+const wasm=await readFile('game/doom.wasm'),wad=await readFile('game/doomexe.wad');
+const provenance=JSON.parse(await readFile('game/provenance.json','utf8'));
+const sha=(b:Uint8Array)=>createHash('sha256').update(b).digest('hex');
+if(sha(wasm)!==provenance.engine.sha256||sha(wad)!==provenance.wad.sha256) throw new Error('Assets differ from recorded provenance. Review licensing and update provenance deliberately.');
+const raw=pack(wasm,wad),compressed=gzipSync(raw,{level:9});
+if(compressed.length>MAX_COMPRESSED) throw new Error('ROM exceeds V1 storage cap');
+const meta:RomMeta={version:1,compressedHash:keccak256(compressed),rawHash:keccak256(raw),compressedSize:compressed.length,rawSize:raw.length};
+await mkdir('web/public/rom',{recursive:true});
+await writeFile('web/public/rom/rom.bin',compressed);
+await writeFile('web/public/rom/manifest.json',JSON.stringify(meta,null,2));
+await writeFile('web/public/rom/provenance.json',JSON.stringify(provenance,null,2));
+console.log(JSON.stringify({...meta,chunks:split(compressed).length,codeDepositGasLowerBound:200*(compressed.length+split(compressed).length)},null,2));

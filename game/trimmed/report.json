@@ -1,0 +1,7474 @@
+{
+  "originalWadBytes": 18045237,
+  "trimmedWadBytes": 3518666,
+  "originalCompressedBytes": 6651025,
+  "trimmedCompressedBytes": 1802348,
+  "savedCompressedBytes": 4848677,
+  "savedPercent": 72.90119943918418,
+  "originalChunks": 271,
+  "trimmedChunks": 74,
+  "removedLumps": 1865,
+  "music": "Freedoom E1M1 level music; other tracks silent",
+  "removed": [
+    {
+      "name": "DMXGUS",
+      "bytes": 5472
+    },
+    {
+      "name": "DSSAWUP",
+      "bytes": 17508
+    },
+    {
+      "name": "DSSAWIDL",
+      "bytes": 20294
+    },
+    {
+      "name": "DSSAWFUL",
+      "bytes": 10186
+    },
+    {
+      "name": "DSSAWHIT",
+      "bytes": 4911
+    },
+    {
+      "name": "DSRLAUNC",
+      "bytes": 19659
+    },
+    {
+      "name": "DSBRSSIT",
+      "bytes": 110488
+    },
+    {
+      "name": "DSBRSDTH",
+      "bytes": 19400
+    },
+    {
+      "name": "DSPLASMA",
+      "bytes": 28576
+    },
+    {
+      "name": "DSBFG",
+      "bytes": 38307
+    },
+    {
+      "name": "DSCACSIT",
+      "bytes": 26679
+    },
+    {
+      "name": "DSCYBSIT",
+      "bytes": 51848
+    },
+    {
+      "name": "DSSPISIT",
+      "bytes": 39843
+    },
+    {
+      "name": "DSSKLATK",
+      "bytes": 11174
+    },
+    {
+      "name": "DSCACDTH",
+      "bytes": 26321
+    },
+    {
+      "name": "DSSKLDTH",
+      "bytes": 8538
+    },
+    {
+      "name": "DSCYBDTH",
+      "bytes": 55731
+    },
+    {
+      "name": "DSSPIDTH",
+      "bytes": 34805
+    },
+    {
+      "name": "DSHOOF",
+      "bytes": 14000
+    },
+    {
+      "name": "DSMETAL",
+      "bytes": 8079
+    },
+    {
+      "name": "DPPISTOL",
+      "bytes": 18
+    },
+    {
+      "name": "DPSHOTGN",
+      "bytes": 42
+    },
+    {
+      "name": "DPSGCOCK",
+      "bytes": 63
+    },
+    {
+      "name": "DPSAWUP",
+      "bytes": 88
+    },
+    {
+      "name": "DPSAWIDL",
+      "bytes": 5
+    },
+    {
+      "name": "DPSAWFUL",
+      "bytes": 28
+    },
+    {
+      "name": "DPSAWHIT",
+      "bytes": 28
+    },
+    {
+      "name": "DPRLAUNC",
+      "bytes": 63
+    },
+    {
+      "name": "DPRXPLOD",
+      "bytes": 172
+    },
+    {
+      "name": "DPFIRSHT",
+      "bytes": 35
+    },
+    {
+      "name": "DPFIRXPL",
+      "bytes": 17
+    },
+    {
+      "name": "DPPSTART",
+      "bytes": 41
+    },
+    {
+      "name": "DPPSTOP",
+      "bytes": 17
+    },
+    {
+      "name": "DPDOROPN",
+      "bytes": 73
+    },
+    {
+      "name": "DPDORCLS",
+      "bytes": 71
+    },
+    {
+      "name": "DPSTNMOV",
+      "bytes": 8
+    },
+    {
+      "name": "DPSWTCHN",
+      "bytes": 28
+    },
+    {
+      "name": "DPSWTCHX",
+      "bytes": 29
+    },
+    {
+      "name": "DPPLPAIN",
+      "bytes": 30
+    },
+    {
+      "name": "DPDMPAIN",
+      "bytes": 41
+    },
+    {
+      "name": "DPPOPAIN",
+      "bytes": 38
+    },
+    {
+      "name": "DPSLOP",
+      "bytes": 109
+    },
+    {
+      "name": "DPITEMUP",
+      "bytes": 87
+    },
+    {
+      "name": "DPWPNUP",
+      "bytes": 44
+    },
+    {
+      "name": "DPOOF",
+      "bytes": 19
+    },
+    {
+      "name": "DPTELEPT",
+      "bytes": 102
+    },
+    {
+      "name": "DPPOSIT1",
+      "bytes": 111
+    },
+    {
+      "name": "DPPOSIT2",
+      "bytes": 111
+    },
+    {
+      "name": "DPPOSIT3",
+      "bytes": 111
+    },
+    {
+      "name": "DPBGSIT1",
+      "bytes": 111
+    },
+    {
+      "name": "DPBGSIT2",
+      "bytes": 111
+    },
+    {
+      "name": "DPSGTSIT",
+      "bytes": 111
+    },
+    {
+      "name": "DPBRSSIT",
+      "bytes": 108
+    },
+    {
+      "name": "DPSGTATK",
+      "bytes": 74
+    },
+    {
+      "name": "DPCLAW",
+      "bytes": 46
+    },
+    {
+      "name": "DPPLDETH",
+      "bytes": 149
+    },
+    {
+      "name": "DPPDIEHI",
+      "bytes": 78
+    },
+    {
+      "name": "DPPODTH1",
+      "bytes": 89
+    },
+    {
+      "name": "DPPODTH2",
+      "bytes": 89
+    },
+    {
+      "name": "DPPODTH3",
+      "bytes": 89
+    },
+    {
+      "name": "DPBGDTH1",
+      "bytes": 89
+    },
+    {
+      "name": "DPBGDTH2",
+      "bytes": 89
+    },
+    {
+      "name": "DPSGTDTH",
+      "bytes": 89
+    },
+    {
+      "name": "DPBRSDTH",
+      "bytes": 112
+    },
+    {
+      "name": "DPPOSACT",
+      "bytes": 30
+    },
+    {
+      "name": "DPBGACT",
+      "bytes": 99
+    },
+    {
+      "name": "DPDMACT",
+      "bytes": 27
+    },
+    {
+      "name": "DPNOWAY",
+      "bytes": 41
+    },
+    {
+      "name": "DPBAREXP",
+      "bytes": 83
+    },
+    {
+      "name": "DPPUNCH",
+      "bytes": 37
+    },
+    {
+      "name": "DPTINK",
+      "bytes": 52
+    },
+    {
+      "name": "DPBDOPN",
+      "bytes": 41
+    },
+    {
+      "name": "DPBDCLS",
+      "bytes": 46
+    },
+    {
+      "name": "DPITMBK",
+      "bytes": 85
+    },
+    {
+      "name": "DPGETPOW",
+      "bytes": 137
+    },
+    {
+      "name": "DPPLASMA",
+      "bytes": 42
+    },
+    {
+      "name": "DPBFG",
+      "bytes": 188
+    },
+    {
+      "name": "DPCACSIT",
+      "bytes": 112
+    },
+    {
+      "name": "DPCYBSIT",
+      "bytes": 149
+    },
+    {
+      "name": "DPSPISIT",
+      "bytes": 148
+    },
+    {
+      "name": "DPSKLATK",
+      "bytes": 80
+    },
+    {
+      "name": "DPCACDTH",
+      "bytes": 89
+    },
+    {
+      "name": "DPSKLDTH",
+      "bytes": 17
+    },
+    {
+      "name": "DPCYBDTH",
+      "bytes": 137
+    },
+    {
+      "name": "DPSPIDTH",
+      "bytes": 113
+    },
+    {
+      "name": "DPHOOF",
+      "bytes": 80
+    },
+    {
+      "name": "DPMETAL",
+      "bytes": 19
+    },
+    {
+      "name": "BOSSA1",
+      "bytes": 2940
+    },
+    {
+      "name": "BOSSA2",
+      "bytes": 2674
+    },
+    {
+      "name": "BOSSA3",
+      "bytes": 2719
+    },
+    {
+      "name": "BOSSA4",
+      "bytes": 2515
+    },
+    {
+      "name": "BOSSA5",
+      "bytes": 2808
+    },
+    {
+      "name": "BOSSA6",
+      "bytes": 2500
+    },
+    {
+      "name": "BOSSA7",
+      "bytes": 2817
+    },
+    {
+      "name": "BOSSA8",
+      "bytes": 2569
+    },
+    {
+      "name": "BOSSB1",
+      "bytes": 3292
+    },
+    {
+      "name": "BOSSB2",
+      "bytes": 2525
+    },
+    {
+      "name": "BOSSB3",
+      "bytes": 2274
+    },
+    {
+      "name": "BOSSB4",
+      "bytes": 2434
+    },
+    {
+      "name": "BOSSB5",
+      "bytes": 3053
+    },
+    {
+      "name": "BOSSB6",
+      "bytes": 2474
+    },
+    {
+      "name": "BOSSB7",
+      "bytes": 2274
+    },
+    {
+      "name": "BOSSB8",
+      "bytes": 2500
+    },
+    {
+      "name": "BOSSC1",
+      "bytes": 3035
+    },
+    {
+      "name": "BOSSC2",
+      "bytes": 2642
+    },
+    {
+      "name": "BOSSC3",
+      "bytes": 2786
+    },
+    {
+      "name": "BOSSC4",
+      "bytes": 2432
+    },
+    {
+      "name": "BOSSC5",
+      "bytes": 2742
+    },
+    {
+      "name": "BOSSC6",
+      "bytes": 2503
+    },
+    {
+      "name": "BOSSC7",
+      "bytes": 2655
+    },
+    {
+      "name": "BOSSC8",
+      "bytes": 2743
+    },
+    {
+      "name": "BOSSD1",
+      "bytes": 3285
+    },
+    {
+      "name": "BOSSD2",
+      "bytes": 2506
+    },
+    {
+      "name": "BOSSD3",
+      "bytes": 2348
+    },
+    {
+      "name": "BOSSD4",
+      "bytes": 2519
+    },
+    {
+      "name": "BOSSD5",
+      "bytes": 3038
+    },
+    {
+      "name": "BOSSD6",
+      "bytes": 2392
+    },
+    {
+      "name": "BOSSD7",
+      "bytes": 2203
+    },
+    {
+      "name": "BOSSD8",
+      "bytes": 2490
+    },
+    {
+      "name": "BOSSE1",
+      "bytes": 3143
+    },
+    {
+      "name": "BOSSE2",
+      "bytes": 2787
+    },
+    {
+      "name": "BOSSE3",
+      "bytes": 3035
+    },
+    {
+      "name": "BOSSE4",
+      "bytes": 2911
+    },
+    {
+      "name": "BOSSE5",
+      "bytes": 2820
+    },
+    {
+      "name": "BOSSE6",
+      "bytes": 2167
+    },
+    {
+      "name": "BOSSE7",
+      "bytes": 2723
+    },
+    {
+      "name": "BOSSE8",
+      "bytes": 3312
+    },
+    {
+      "name": "BOSSF1",
+      "bytes": 3124
+    },
+    {
+      "name": "BOSSF2",
+      "bytes": 2787
+    },
+    {
+      "name": "BOSSF3",
+      "bytes": 3035
+    },
+    {
+      "name": "BOSSF4",
+      "bytes": 2911
+    },
+    {
+      "name": "BOSSF5",
+      "bytes": 2820
+    },
+    {
+      "name": "BOSSF6",
+      "bytes": 2167
+    },
+    {
+      "name": "BOSSF7",
+      "bytes": 2723
+    },
+    {
+      "name": "BOSSF8",
+      "bytes": 3312
+    },
+    {
+      "name": "BOSSG1",
+      "bytes": 3026
+    },
+    {
+      "name": "BOSSG2",
+      "bytes": 2787
+    },
+    {
+      "name": "BOSSG3",
+      "bytes": 3035
+    },
+    {
+      "name": "BOSSG4",
+      "bytes": 2911
+    },
+    {
+      "name": "BOSSG5",
+      "bytes": 2820
+    },
+    {
+      "name": "BOSSG6",
+      "bytes": 2167
+    },
+    {
+      "name": "BOSSG7",
+      "bytes": 2723
+    },
+    {
+      "name": "BOSSG8",
+      "bytes": 3312
+    },
+    {
+      "name": "BOSSH1",
+      "bytes": 3340
+    },
+    {
+      "name": "BOSSH2",
+      "bytes": 3064
+    },
+    {
+      "name": "BOSSH3",
+      "bytes": 2577
+    },
+    {
+      "name": "BOSSH4",
+      "bytes": 2263
+    },
+    {
+      "name": "BOSSH5",
+      "bytes": 2705
+    },
+    {
+      "name": "BOSSH6",
+      "bytes": 2711
+    },
+    {
+      "name": "BOSSH7",
+      "bytes": 2693
+    },
+    {
+      "name": "BOSSH8",
+      "bytes": 2631
+    },
+    {
+      "name": "BOSSI0",
+      "bytes": 3490
+    },
+    {
+      "name": "BOSSJ0",
+      "bytes": 4127
+    },
+    {
+      "name": "BOSSK0",
+      "bytes": 4183
+    },
+    {
+      "name": "BOSSL0",
+      "bytes": 3847
+    },
+    {
+      "name": "BOSSM0",
+      "bytes": 3179
+    },
+    {
+      "name": "BOSSN0",
+      "bytes": 2803
+    },
+    {
+      "name": "BOSSO0",
+      "bytes": 2208
+    },
+    {
+      "name": "SPOSA1",
+      "bytes": 1375
+    },
+    {
+      "name": "SPOSA2A8",
+      "bytes": 1294
+    },
+    {
+      "name": "SPOSA3A7",
+      "bytes": 1256
+    },
+    {
+      "name": "SPOSA4A6",
+      "bytes": 1322
+    },
+    {
+      "name": "SPOSA5",
+      "bytes": 1170
+    },
+    {
+      "name": "SPOSB1",
+      "bytes": 1366
+    },
+    {
+      "name": "SPOSB2B8",
+      "bytes": 1177
+    },
+    {
+      "name": "SPOSB3B7",
+      "bytes": 1209
+    },
+    {
+      "name": "SPOSB4B6",
+      "bytes": 1356
+    },
+    {
+      "name": "SPOSB5",
+      "bytes": 1279
+    },
+    {
+      "name": "SPOSC1",
+      "bytes": 1294
+    },
+    {
+      "name": "SPOSC2C8",
+      "bytes": 1232
+    },
+    {
+      "name": "SPOSC3C7",
+      "bytes": 1308
+    },
+    {
+      "name": "SPOSC4C6",
+      "bytes": 1267
+    },
+    {
+      "name": "SPOSC5",
+      "bytes": 1289
+    },
+    {
+      "name": "SPOSD1",
+      "bytes": 1333
+    },
+    {
+      "name": "SPOSD2D8",
+      "bytes": 1208
+    },
+    {
+      "name": "SPOSD3D7",
+      "bytes": 1106
+    },
+    {
+      "name": "SPOSD4D6",
+      "bytes": 1187
+    },
+    {
+      "name": "SPOSD5",
+      "bytes": 1385
+    },
+    {
+      "name": "SPOSE1",
+      "bytes": 1073
+    },
+    {
+      "name": "SPOSE2E8",
+      "bytes": 1178
+    },
+    {
+      "name": "SPOSE3E7",
+      "bytes": 1526
+    },
+    {
+      "name": "SPOSE4E6",
+      "bytes": 1325
+    },
+    {
+      "name": "SPOSE5",
+      "bytes": 1063
+    },
+    {
+      "name": "SPOSF1",
+      "bytes": 1118
+    },
+    {
+      "name": "SPOSF2F8",
+      "bytes": 1412
+    },
+    {
+      "name": "SPOSF3F7",
+      "bytes": 1665
+    },
+    {
+      "name": "SPOSF4F6",
+      "bytes": 1459
+    },
+    {
+      "name": "SPOSF5",
+      "bytes": 1046
+    },
+    {
+      "name": "SPOSG1",
+      "bytes": 1393
+    },
+    {
+      "name": "SPOSG2G8",
+      "bytes": 1284
+    },
+    {
+      "name": "SPOSG3G7",
+      "bytes": 1484
+    },
+    {
+      "name": "SPOSG4G6",
+      "bytes": 1336
+    },
+    {
+      "name": "SPOSG5",
+      "bytes": 1315
+    },
+    {
+      "name": "SPOSH0",
+      "bytes": 1564
+    },
+    {
+      "name": "SPOSI0",
+      "bytes": 1560
+    },
+    {
+      "name": "SPOSJ0",
+      "bytes": 1471
+    },
+    {
+      "name": "SPOSK0",
+      "bytes": 1369
+    },
+    {
+      "name": "SPOSL0",
+      "bytes": 1114
+    },
+    {
+      "name": "SPOSM0",
+      "bytes": 1755
+    },
+    {
+      "name": "SPOSN0",
+      "bytes": 1877
+    },
+    {
+      "name": "SPOSO0",
+      "bytes": 2181
+    },
+    {
+      "name": "SPOSP0",
+      "bytes": 2067
+    },
+    {
+      "name": "SPOSQ0",
+      "bytes": 2103
+    },
+    {
+      "name": "SPOSR0",
+      "bytes": 1881
+    },
+    {
+      "name": "SPOSS0",
+      "bytes": 1498
+    },
+    {
+      "name": "SPOST0",
+      "bytes": 1357
+    },
+    {
+      "name": "SPOSU0",
+      "bytes": 1361
+    },
+    {
+      "name": "CYBRA1",
+      "bytes": 4513
+    },
+    {
+      "name": "CYBRA2A8",
+      "bytes": 5190
+    },
+    {
+      "name": "CYBRA3A7",
+      "bytes": 5157
+    },
+    {
+      "name": "CYBRA4A6",
+      "bytes": 4608
+    },
+    {
+      "name": "CYBRA5",
+      "bytes": 4763
+    },
+    {
+      "name": "CYBRB1",
+      "bytes": 4764
+    },
+    {
+      "name": "CYBRB2B8",
+      "bytes": 4691
+    },
+    {
+      "name": "CYBRB3B7",
+      "bytes": 5201
+    },
+    {
+      "name": "CYBRB4B6",
+      "bytes": 5094
+    },
+    {
+      "name": "CYBRB5",
+      "bytes": 5002
+    },
+    {
+      "name": "CYBRC1",
+      "bytes": 4683
+    },
+    {
+      "name": "CYBRC2C8",
+      "bytes": 4905
+    },
+    {
+      "name": "CYBRC3C7",
+      "bytes": 4437
+    },
+    {
+      "name": "CYBRC4C6",
+      "bytes": 4776
+    },
+    {
+      "name": "CYBRC5",
+      "bytes": 4600
+    },
+    {
+      "name": "CYBRD1",
+      "bytes": 4792
+    },
+    {
+      "name": "CYBRD2D8",
+      "bytes": 5056
+    },
+    {
+      "name": "CYBRD3D7",
+      "bytes": 5144
+    },
+    {
+      "name": "CYBRD4D6",
+      "bytes": 4392
+    },
+    {
+      "name": "CYBRD5",
+      "bytes": 4634
+    },
+    {
+      "name": "CYBRE1",
+      "bytes": 4930
+    },
+    {
+      "name": "CYBRE2E8",
+      "bytes": 4808
+    },
+    {
+      "name": "CYBRE3E7",
+      "bytes": 4769
+    },
+    {
+      "name": "CYBRE4E6",
+      "bytes": 4583
+    },
+    {
+      "name": "CYBRE5",
+      "bytes": 5070
+    },
+    {
+      "name": "CYBRF1",
+      "bytes": 4881
+    },
+    {
+      "name": "CYBRF2F8",
+      "bytes": 4870
+    },
+    {
+      "name": "CYBRF3F7",
+      "bytes": 4762
+    },
+    {
+      "name": "CYBRF4F6",
+      "bytes": 4767
+    },
+    {
+      "name": "CYBRF5",
+      "bytes": 4899
+    },
+    {
+      "name": "CYBRG1",
+      "bytes": 4881
+    },
+    {
+      "name": "CYBRG2G8",
+      "bytes": 4830
+    },
+    {
+      "name": "CYBRG3G7",
+      "bytes": 4596
+    },
+    {
+      "name": "CYBRG4G6",
+      "bytes": 4655
+    },
+    {
+      "name": "CYBRG5",
+      "bytes": 4899
+    },
+    {
+      "name": "CYBRH0",
+      "bytes": 4886
+    },
+    {
+      "name": "CYBRI0",
+      "bytes": 5211
+    },
+    {
+      "name": "CYBRJ0",
+      "bytes": 5902
+    },
+    {
+      "name": "CYBRK0",
+      "bytes": 6830
+    },
+    {
+      "name": "CYBRL0",
+      "bytes": 6214
+    },
+    {
+      "name": "CYBRM0",
+      "bytes": 6734
+    },
+    {
+      "name": "CYBRN0",
+      "bytes": 6473
+    },
+    {
+      "name": "CYBRO0",
+      "bytes": 6058
+    },
+    {
+      "name": "CYBRP0",
+      "bytes": 4452
+    },
+    {
+      "name": "HEADA1",
+      "bytes": 3705
+    },
+    {
+      "name": "HEADA2A8",
+      "bytes": 3590
+    },
+    {
+      "name": "HEADA3A7",
+      "bytes": 3789
+    },
+    {
+      "name": "HEADA4A6",
+      "bytes": 3604
+    },
+    {
+      "name": "HEADA5",
+      "bytes": 3655
+    },
+    {
+      "name": "HEADB1",
+      "bytes": 3595
+    },
+    {
+      "name": "HEADB2B8",
+      "bytes": 3591
+    },
+    {
+      "name": "HEADB3B7",
+      "bytes": 3938
+    },
+    {
+      "name": "HEADB4B6",
+      "bytes": 3640
+    },
+    {
+      "name": "HEADB5",
+      "bytes": 3801
+    },
+    {
+      "name": "HEADC1",
+      "bytes": 3767
+    },
+    {
+      "name": "HEADC2C8",
+      "bytes": 3531
+    },
+    {
+      "name": "HEADC3C7",
+      "bytes": 3708
+    },
+    {
+      "name": "HEADC4C6",
+      "bytes": 3542
+    },
+    {
+      "name": "HEADC5",
+      "bytes": 3767
+    },
+    {
+      "name": "HEADD1",
+      "bytes": 3768
+    },
+    {
+      "name": "HEADD2D8",
+      "bytes": 3513
+    },
+    {
+      "name": "HEADD3D7",
+      "bytes": 3712
+    },
+    {
+      "name": "HEADD4D6",
+      "bytes": 3639
+    },
+    {
+      "name": "HEADD5",
+      "bytes": 3850
+    },
+    {
+      "name": "HEADE1",
+      "bytes": 3681
+    },
+    {
+      "name": "HEADE2E8",
+      "bytes": 3613
+    },
+    {
+      "name": "HEADE3E7",
+      "bytes": 3802
+    },
+    {
+      "name": "HEADE4E6",
+      "bytes": 3590
+    },
+    {
+      "name": "HEADE5",
+      "bytes": 3629
+    },
+    {
+      "name": "HEADF1",
+      "bytes": 3617
+    },
+    {
+      "name": "HEADF2F8",
+      "bytes": 3574
+    },
+    {
+      "name": "HEADF3F7",
+      "bytes": 3926
+    },
+    {
+      "name": "HEADF4F6",
+      "bytes": 3647
+    },
+    {
+      "name": "HEADF5",
+      "bytes": 3785
+    },
+    {
+      "name": "HEADG0",
+      "bytes": 3622
+    },
+    {
+      "name": "HEADH0",
+      "bytes": 4391
+    },
+    {
+      "name": "HEADI0",
+      "bytes": 4849
+    },
+    {
+      "name": "HEADJ0",
+      "bytes": 4723
+    },
+    {
+      "name": "HEADK0",
+      "bytes": 3902
+    },
+    {
+      "name": "HEADL0",
+      "bytes": 2603
+    },
+    {
+      "name": "SKULA1",
+      "bytes": 1145
+    },
+    {
+      "name": "SKULA8A2",
+      "bytes": 1122
+    },
+    {
+      "name": "SKULA7A3",
+      "bytes": 1065
+    },
+    {
+      "name": "SKULA6A4",
+      "bytes": 1144
+    },
+    {
+      "name": "SKULA5",
+      "bytes": 1145
+    },
+    {
+      "name": "SKULB1",
+      "bytes": 1151
+    },
+    {
+      "name": "SKULB8B2",
+      "bytes": 1121
+    },
+    {
+      "name": "SKULB7B3",
+      "bytes": 1070
+    },
+    {
+      "name": "SKULB6B4",
+      "bytes": 1143
+    },
+    {
+      "name": "SKULB5",
+      "bytes": 1151
+    },
+    {
+      "name": "SKULC1",
+      "bytes": 1229
+    },
+    {
+      "name": "SKULC8C2",
+      "bytes": 1213
+    },
+    {
+      "name": "SKULC7C3",
+      "bytes": 1157
+    },
+    {
+      "name": "SKULC6C4",
+      "bytes": 1282
+    },
+    {
+      "name": "SKULC5",
+      "bytes": 1204
+    },
+    {
+      "name": "SKULD1",
+      "bytes": 1230
+    },
+    {
+      "name": "SKULD8D2",
+      "bytes": 1238
+    },
+    {
+      "name": "SKULD7D3",
+      "bytes": 1167
+    },
+    {
+      "name": "SKULD6D4",
+      "bytes": 1271
+    },
+    {
+      "name": "SKULD5",
+      "bytes": 1216
+    },
+    {
+      "name": "SKULE1",
+      "bytes": 1181
+    },
+    {
+      "name": "SKULE8E2",
+      "bytes": 1176
+    },
+    {
+      "name": "SKULE7E3",
+      "bytes": 1132
+    },
+    {
+      "name": "SKULE6E4",
+      "bytes": 1233
+    },
+    {
+      "name": "SKULE5",
+      "bytes": 1147
+    },
+    {
+      "name": "SKULF0",
+      "bytes": 1530
+    },
+    {
+      "name": "SKULG0",
+      "bytes": 1314
+    },
+    {
+      "name": "SKULH0",
+      "bytes": 1581
+    },
+    {
+      "name": "SKULI0",
+      "bytes": 1420
+    },
+    {
+      "name": "SKULJ0",
+      "bytes": 1185
+    },
+    {
+      "name": "SKULK0",
+      "bytes": 1328
+    },
+    {
+      "name": "SPIDA1",
+      "bytes": 9649
+    },
+    {
+      "name": "SPIDA2",
+      "bytes": 10768
+    },
+    {
+      "name": "SPIDA3",
+      "bytes": 9046
+    },
+    {
+      "name": "SPIDA4",
+      "bytes": 10779
+    },
+    {
+      "name": "SPIDA5",
+      "bytes": 9696
+    },
+    {
+      "name": "SPIDA6",
+      "bytes": 10826
+    },
+    {
+      "name": "SPIDA7",
+      "bytes": 9131
+    },
+    {
+      "name": "SPIDA8",
+      "bytes": 11099
+    },
+    {
+      "name": "SPIDB1",
+      "bytes": 10139
+    },
+    {
+      "name": "SPIDB2",
+      "bytes": 10850
+    },
+    {
+      "name": "SPIDB3",
+      "bytes": 8768
+    },
+    {
+      "name": "SPIDB4",
+      "bytes": 10831
+    },
+    {
+      "name": "SPIDB5",
+      "bytes": 10171
+    },
+    {
+      "name": "SPIDB6",
+      "bytes": 10663
+    },
+    {
+      "name": "SPIDB7",
+      "bytes": 8809
+    },
+    {
+      "name": "SPIDB8",
+      "bytes": 11097
+    },
+    {
+      "name": "SPIDC1",
+      "bytes": 9959
+    },
+    {
+      "name": "SPIDC2",
+      "bytes": 10931
+    },
+    {
+      "name": "SPIDC3",
+      "bytes": 8925
+    },
+    {
+      "name": "SPIDC4",
+      "bytes": 10987
+    },
+    {
+      "name": "SPIDC5",
+      "bytes": 10182
+    },
+    {
+      "name": "SPIDC6",
+      "bytes": 10894
+    },
+    {
+      "name": "SPIDC7",
+      "bytes": 8909
+    },
+    {
+      "name": "SPIDC8",
+      "bytes": 11033
+    },
+    {
+      "name": "SPIDD1",
+      "bytes": 9651
+    },
+    {
+      "name": "SPIDD2",
+      "bytes": 10967
+    },
+    {
+      "name": "SPIDD3",
+      "bytes": 9031
+    },
+    {
+      "name": "SPIDD4",
+      "bytes": 10854
+    },
+    {
+      "name": "SPIDD5",
+      "bytes": 9694
+    },
+    {
+      "name": "SPIDD6",
+      "bytes": 10749
+    },
+    {
+      "name": "SPIDD7",
+      "bytes": 8919
+    },
+    {
+      "name": "SPIDD8",
+      "bytes": 10878
+    },
+    {
+      "name": "SPIDE1",
+      "bytes": 10094
+    },
+    {
+      "name": "SPIDE2",
+      "bytes": 11027
+    },
+    {
+      "name": "SPIDE3",
+      "bytes": 8820
+    },
+    {
+      "name": "SPIDE4",
+      "bytes": 10698
+    },
+    {
+      "name": "SPIDE5",
+      "bytes": 10134
+    },
+    {
+      "name": "SPIDE6",
+      "bytes": 10781
+    },
+    {
+      "name": "SPIDE7",
+      "bytes": 8763
+    },
+    {
+      "name": "SPIDE8",
+      "bytes": 10991
+    },
+    {
+      "name": "SPIDF1",
+      "bytes": 9952
+    },
+    {
+      "name": "SPIDF2",
+      "bytes": 10949
+    },
+    {
+      "name": "SPIDF3",
+      "bytes": 8883
+    },
+    {
+      "name": "SPIDF4",
+      "bytes": 10885
+    },
+    {
+      "name": "SPIDF5",
+      "bytes": 10143
+    },
+    {
+      "name": "SPIDF6",
+      "bytes": 10909
+    },
+    {
+      "name": "SPIDF7",
+      "bytes": 8911
+    },
+    {
+      "name": "SPIDF8",
+      "bytes": 11131
+    },
+    {
+      "name": "SPIDG1",
+      "bytes": 9745
+    },
+    {
+      "name": "SPIDG2",
+      "bytes": 11281
+    },
+    {
+      "name": "SPIDG3",
+      "bytes": 8933
+    },
+    {
+      "name": "SPIDG4",
+      "bytes": 11075
+    },
+    {
+      "name": "SPIDG5",
+      "bytes": 9757
+    },
+    {
+      "name": "SPIDG6",
+      "bytes": 11001
+    },
+    {
+      "name": "SPIDG7",
+      "bytes": 8914
+    },
+    {
+      "name": "SPIDG8",
+      "bytes": 11275
+    },
+    {
+      "name": "SPIDH1",
+      "bytes": 9745
+    },
+    {
+      "name": "SPIDH2",
+      "bytes": 11398
+    },
+    {
+      "name": "SPIDH3",
+      "bytes": 9032
+    },
+    {
+      "name": "SPIDH4",
+      "bytes": 11191
+    },
+    {
+      "name": "SPIDH5",
+      "bytes": 9887
+    },
+    {
+      "name": "SPIDH6",
+      "bytes": 11091
+    },
+    {
+      "name": "SPIDH7",
+      "bytes": 9019
+    },
+    {
+      "name": "SPIDH8",
+      "bytes": 11399
+    },
+    {
+      "name": "SPIDI1",
+      "bytes": 10150
+    },
+    {
+      "name": "SPIDI2",
+      "bytes": 11023
+    },
+    {
+      "name": "SPIDI3",
+      "bytes": 8761
+    },
+    {
+      "name": "SPIDI4",
+      "bytes": 10733
+    },
+    {
+      "name": "SPIDI5",
+      "bytes": 10512
+    },
+    {
+      "name": "SPIDI6",
+      "bytes": 10842
+    },
+    {
+      "name": "SPIDI7",
+      "bytes": 8764
+    },
+    {
+      "name": "SPIDI8",
+      "bytes": 10961
+    },
+    {
+      "name": "SPIDJ1",
+      "bytes": 10105
+    },
+    {
+      "name": "SPIDJ2",
+      "bytes": 11113
+    },
+    {
+      "name": "SPIDJ3",
+      "bytes": 8930
+    },
+    {
+      "name": "SPIDJ4",
+      "bytes": 10798
+    },
+    {
+      "name": "SPIDJ5",
+      "bytes": 10779
+    },
+    {
+      "name": "SPIDJ6",
+      "bytes": 10974
+    },
+    {
+      "name": "SPIDJ7",
+      "bytes": 8907
+    },
+    {
+      "name": "SPIDJ8",
+      "bytes": 10981
+    },
+    {
+      "name": "SPIDK0",
+      "bytes": 10531
+    },
+    {
+      "name": "SPIDL0",
+      "bytes": 12056
+    },
+    {
+      "name": "SPIDM0",
+      "bytes": 16712
+    },
+    {
+      "name": "SPIDN0",
+      "bytes": 14221
+    },
+    {
+      "name": "SPIDO0",
+      "bytes": 16663
+    },
+    {
+      "name": "SPIDP0",
+      "bytes": 17952
+    },
+    {
+      "name": "SPIDQ0",
+      "bytes": 9625
+    },
+    {
+      "name": "SPIDR0",
+      "bytes": 8479
+    },
+    {
+      "name": "SPIDS0",
+      "bytes": 2981
+    },
+    {
+      "name": "APBXA0",
+      "bytes": 636
+    },
+    {
+      "name": "APBXB0",
+      "bytes": 868
+    },
+    {
+      "name": "APBXC0",
+      "bytes": 1077
+    },
+    {
+      "name": "APBXD0",
+      "bytes": 1079
+    },
+    {
+      "name": "APBXE0",
+      "bytes": 824
+    },
+    {
+      "name": "APLSA0",
+      "bytes": 439
+    },
+    {
+      "name": "APLSB0",
+      "bytes": 393
+    },
+    {
+      "name": "BOSFA0",
+      "bytes": 2197
+    },
+    {
+      "name": "BOSFB0",
+      "bytes": 2210
+    },
+    {
+      "name": "BOSFC0",
+      "bytes": 1980
+    },
+    {
+      "name": "BOSFD0",
+      "bytes": 2213
+    },
+    {
+      "name": "MANFA1",
+      "bytes": 1137
+    },
+    {
+      "name": "MANFA5",
+      "bytes": 943
+    },
+    {
+      "name": "MANFA6A4",
+      "bytes": 1621
+    },
+    {
+      "name": "MANFA7A3",
+      "bytes": 1881
+    },
+    {
+      "name": "MANFA8A2",
+      "bytes": 1605
+    },
+    {
+      "name": "MANFB1",
+      "bytes": 1137
+    },
+    {
+      "name": "MANFB5",
+      "bytes": 841
+    },
+    {
+      "name": "MANFB6B4",
+      "bytes": 1399
+    },
+    {
+      "name": "MANFB7B3",
+      "bytes": 1751
+    },
+    {
+      "name": "MANFB8B2",
+      "bytes": 1418
+    },
+    {
+      "name": "ARM2A0",
+      "bytes": 916
+    },
+    {
+      "name": "ARM2B0",
+      "bytes": 916
+    },
+    {
+      "name": "BAL7A1A5",
+      "bytes": 493
+    },
+    {
+      "name": "BAL7A2A8",
+      "bytes": 799
+    },
+    {
+      "name": "BAL7A3A7",
+      "bytes": 1038
+    },
+    {
+      "name": "BAL7A4A6",
+      "bytes": 779
+    },
+    {
+      "name": "BAL7B1B5",
+      "bytes": 481
+    },
+    {
+      "name": "BAL7B2B8",
+      "bytes": 784
+    },
+    {
+      "name": "BAL7B3B7",
+      "bytes": 1031
+    },
+    {
+      "name": "BAL7B4B6",
+      "bytes": 789
+    },
+    {
+      "name": "BAL7C0",
+      "bytes": 1052
+    },
+    {
+      "name": "BAL7D0",
+      "bytes": 1298
+    },
+    {
+      "name": "BAL7E0",
+      "bytes": 1109
+    },
+    {
+      "name": "BAR1A0",
+      "bytes": 911
+    },
+    {
+      "name": "BAR1B0",
+      "bytes": 911
+    },
+    {
+      "name": "BEXPA0",
+      "bytes": 911
+    },
+    {
+      "name": "BEXPB0",
+      "bytes": 968
+    },
+    {
+      "name": "BEXPC0",
+      "bytes": 1584
+    },
+    {
+      "name": "BEXPD0",
+      "bytes": 2984
+    },
+    {
+      "name": "BEXPE0",
+      "bytes": 3056
+    },
+    {
+      "name": "BKEYA0",
+      "bytes": 362
+    },
+    {
+      "name": "BKEYB0",
+      "bytes": 362
+    },
+    {
+      "name": "BON1A0",
+      "bytes": 238
+    },
+    {
+      "name": "BON1B0",
+      "bytes": 238
+    },
+    {
+      "name": "BON1C0",
+      "bytes": 238
+    },
+    {
+      "name": "BON1D0",
+      "bytes": 238
+    },
+    {
+      "name": "BON2A0",
+      "bytes": 340
+    },
+    {
+      "name": "BON2B0",
+      "bytes": 340
+    },
+    {
+      "name": "BON2C0",
+      "bytes": 340
+    },
+    {
+      "name": "BON2D0",
+      "bytes": 340
+    },
+    {
+      "name": "BPAKA0",
+      "bytes": 886
+    },
+    {
+      "name": "BROKA0",
+      "bytes": 1482
+    },
+    {
+      "name": "CANDA0",
+      "bytes": 374
+    },
+    {
+      "name": "CBRAA0",
+      "bytes": 1594
+    },
+    {
+      "name": "COLUA0",
+      "bytes": 834
+    },
+    {
+      "name": "CSAWA0",
+      "bytes": 1028
+    },
+    {
+      "name": "ELECA0",
+      "bytes": 2791
+    },
+    {
+      "name": "IFOGA0",
+      "bytes": 2130
+    },
+    {
+      "name": "IFOGB0",
+      "bytes": 2095
+    },
+    {
+      "name": "IFOGC0",
+      "bytes": 1713
+    },
+    {
+      "name": "IFOGD0",
+      "bytes": 1200
+    },
+    {
+      "name": "IFOGE0",
+      "bytes": 843
+    },
+    {
+      "name": "LAUNA0",
+      "bytes": 1246
+    },
+    {
+      "name": "MISGA0",
+      "bytes": 5105
+    },
+    {
+      "name": "MISGB0",
+      "bytes": 5022
+    },
+    {
+      "name": "MISFA0",
+      "bytes": 2107
+    },
+    {
+      "name": "MISFB0",
+      "bytes": 2749
+    },
+    {
+      "name": "MISFC0",
+      "bytes": 2455
+    },
+    {
+      "name": "MISFD0",
+      "bytes": 1984
+    },
+    {
+      "name": "MISLA1",
+      "bytes": 292
+    },
+    {
+      "name": "MISLA5",
+      "bytes": 292
+    },
+    {
+      "name": "MISLA6A4",
+      "bytes": 438
+    },
+    {
+      "name": "MISLA7A3",
+      "bytes": 642
+    },
+    {
+      "name": "MISLA8A2",
+      "bytes": 420
+    },
+    {
+      "name": "MISLB0",
+      "bytes": 3801
+    },
+    {
+      "name": "MISLC0",
+      "bytes": 4915
+    },
+    {
+      "name": "MISLD0",
+      "bytes": 5327
+    },
+    {
+      "name": "PINSA0",
+      "bytes": 962
+    },
+    {
+      "name": "PINSB0",
+      "bytes": 962
+    },
+    {
+      "name": "PINSC0",
+      "bytes": 962
+    },
+    {
+      "name": "PINSD0",
+      "bytes": 962
+    },
+    {
+      "name": "PISTA0",
+      "bytes": 392
+    },
+    {
+      "name": "PLYCA1",
+      "bytes": 1109
+    },
+    {
+      "name": "PLYCA2A8",
+      "bytes": 1155
+    },
+    {
+      "name": "PLYCA3A7",
+      "bytes": 1146
+    },
+    {
+      "name": "PLYCA4A6",
+      "bytes": 1150
+    },
+    {
+      "name": "PLYCA5",
+      "bytes": 886
+    },
+    {
+      "name": "PLYCB1",
+      "bytes": 1104
+    },
+    {
+      "name": "PLYCB2B8",
+      "bytes": 960
+    },
+    {
+      "name": "PLYCB3B7",
+      "bytes": 1015
+    },
+    {
+      "name": "PLYCB4B6",
+      "bytes": 1083
+    },
+    {
+      "name": "PLYCB5",
+      "bytes": 944
+    },
+    {
+      "name": "PLYCC1",
+      "bytes": 1148
+    },
+    {
+      "name": "PLYCC2C8",
+      "bytes": 1001
+    },
+    {
+      "name": "PLYCC3C7",
+      "bytes": 872
+    },
+    {
+      "name": "PLYCC4C6",
+      "bytes": 997
+    },
+    {
+      "name": "PLYCC5",
+      "bytes": 1027
+    },
+    {
+      "name": "PLYCD1",
+      "bytes": 1065
+    },
+    {
+      "name": "PLYCD2D8",
+      "bytes": 1012
+    },
+    {
+      "name": "PLYCD3D7",
+      "bytes": 998
+    },
+    {
+      "name": "PLYCD4D6",
+      "bytes": 1091
+    },
+    {
+      "name": "PLYCD5",
+      "bytes": 951
+    },
+    {
+      "name": "PLYCE1",
+      "bytes": 1155
+    },
+    {
+      "name": "PLYCE2E8",
+      "bytes": 1277
+    },
+    {
+      "name": "PLYCE3E7",
+      "bytes": 1381
+    },
+    {
+      "name": "PLYCE4E6",
+      "bytes": 1282
+    },
+    {
+      "name": "PLYCE5",
+      "bytes": 947
+    },
+    {
+      "name": "PLYCF1",
+      "bytes": 1155
+    },
+    {
+      "name": "PLYCF2F8",
+      "bytes": 1396
+    },
+    {
+      "name": "PLYCF3F7",
+      "bytes": 1504
+    },
+    {
+      "name": "PLYCF4F6",
+      "bytes": 1375
+    },
+    {
+      "name": "PLYCF5",
+      "bytes": 948
+    },
+    {
+      "name": "PLYCG1",
+      "bytes": 1079
+    },
+    {
+      "name": "PLYCG2G8",
+      "bytes": 1203
+    },
+    {
+      "name": "PLYCG3G7",
+      "bytes": 1324
+    },
+    {
+      "name": "PLYCG4G6",
+      "bytes": 1158
+    },
+    {
+      "name": "PLYCG5",
+      "bytes": 930
+    },
+    {
+      "name": "PLYCH0",
+      "bytes": 1287
+    },
+    {
+      "name": "PLYCI0",
+      "bytes": 1262
+    },
+    {
+      "name": "PLYCJ0",
+      "bytes": 1036
+    },
+    {
+      "name": "PLYCK0",
+      "bytes": 840
+    },
+    {
+      "name": "PLYCL0",
+      "bytes": 884
+    },
+    {
+      "name": "PLYCM0",
+      "bytes": 864
+    },
+    {
+      "name": "PLYCN0",
+      "bytes": 930
+    },
+    {
+      "name": "PLYCO0",
+      "bytes": 1136
+    },
+    {
+      "name": "PLYCP0",
+      "bytes": 1364
+    },
+    {
+      "name": "PLYCQ0",
+      "bytes": 1832
+    },
+    {
+      "name": "PLYCR0",
+      "bytes": 2053
+    },
+    {
+      "name": "PLYCS0",
+      "bytes": 2152
+    },
+    {
+      "name": "PLYCT0",
+      "bytes": 2142
+    },
+    {
+      "name": "PLYCU0",
+      "bytes": 1768
+    },
+    {
+      "name": "PLYCV0",
+      "bytes": 1294
+    },
+    {
+      "name": "PLYCW0",
+      "bytes": 1044
+    },
+    {
+      "name": "PMAPA0",
+      "bytes": 991
+    },
+    {
+      "name": "PMAPB0",
+      "bytes": 991
+    },
+    {
+      "name": "PMAPC0",
+      "bytes": 991
+    },
+    {
+      "name": "PMAPD0",
+      "bytes": 991
+    },
+    {
+      "name": "POL5A0",
+      "bytes": 859
+    },
+    {
+      "name": "PVISA0",
+      "bytes": 568
+    },
+    {
+      "name": "PVISB0",
+      "bytes": 568
+    },
+    {
+      "name": "RKEYA0",
+      "bytes": 362
+    },
+    {
+      "name": "RKEYB0",
+      "bytes": 362
+    },
+    {
+      "name": "ROCKA0",
+      "bytes": 314
+    },
+    {
+      "name": "SAWGA0",
+      "bytes": 8014
+    },
+    {
+      "name": "SAWGB0",
+      "bytes": 8193
+    },
+    {
+      "name": "SAWGC0",
+      "bytes": 13718
+    },
+    {
+      "name": "SAWGD0",
+      "bytes": 14064
+    },
+    {
+      "name": "SOULA0",
+      "bytes": 722
+    },
+    {
+      "name": "SOULB0",
+      "bytes": 722
+    },
+    {
+      "name": "SOULC0",
+      "bytes": 722
+    },
+    {
+      "name": "SOULD0",
+      "bytes": 722
+    },
+    {
+      "name": "STIMA0",
+      "bytes": 353
+    },
+    {
+      "name": "SUITA0",
+      "bytes": 1195
+    },
+    {
+      "name": "TFOGA0",
+      "bytes": 2431
+    },
+    {
+      "name": "TFOGB0",
+      "bytes": 2447
+    },
+    {
+      "name": "TFOGC0",
+      "bytes": 2048
+    },
+    {
+      "name": "TFOGD0",
+      "bytes": 1804
+    },
+    {
+      "name": "TFOGE0",
+      "bytes": 1543
+    },
+    {
+      "name": "TFOGF0",
+      "bytes": 1190
+    },
+    {
+      "name": "TFOGG0",
+      "bytes": 1052
+    },
+    {
+      "name": "TFOGH0",
+      "bytes": 716
+    },
+    {
+      "name": "TFOGI0",
+      "bytes": 429
+    },
+    {
+      "name": "TFOGJ0",
+      "bytes": 293
+    },
+    {
+      "name": "YKEYA0",
+      "bytes": 362
+    },
+    {
+      "name": "YKEYB0",
+      "bytes": 362
+    },
+    {
+      "name": "SMITA0",
+      "bytes": 2651
+    },
+    {
+      "name": "TRE1A0",
+      "bytes": 2184
+    },
+    {
+      "name": "TRE2A0",
+      "bytes": 5750
+    },
+    {
+      "name": "BAL2A0",
+      "bytes": 319
+    },
+    {
+      "name": "BAL2B0",
+      "bytes": 333
+    },
+    {
+      "name": "BAL2C0",
+      "bytes": 978
+    },
+    {
+      "name": "BAL2D0",
+      "bytes": 1740
+    },
+    {
+      "name": "BAL2E0",
+      "bytes": 2457
+    },
+    {
+      "name": "BFS1A0",
+      "bytes": 2494
+    },
+    {
+      "name": "BFS1B0",
+      "bytes": 2494
+    },
+    {
+      "name": "BFUGA0",
+      "bytes": 1581
+    },
+    {
+      "name": "BFGGA0",
+      "bytes": 9310
+    },
+    {
+      "name": "BFGGB0",
+      "bytes": 9310
+    },
+    {
+      "name": "BFGGC0",
+      "bytes": 9921
+    },
+    {
+      "name": "BFGFA0",
+      "bytes": 10621
+    },
+    {
+      "name": "BFGFB0",
+      "bytes": 11276
+    },
+    {
+      "name": "BFE1A0",
+      "bytes": 5546
+    },
+    {
+      "name": "BFE1B0",
+      "bytes": 8318
+    },
+    {
+      "name": "BFE1C0",
+      "bytes": 10916
+    },
+    {
+      "name": "BFE1D0",
+      "bytes": 5964
+    },
+    {
+      "name": "BFE1E0",
+      "bytes": 394
+    },
+    {
+      "name": "BFE1F0",
+      "bytes": 96
+    },
+    {
+      "name": "BFE2A0",
+      "bytes": 3097
+    },
+    {
+      "name": "BFE2B0",
+      "bytes": 1956
+    },
+    {
+      "name": "BFE2C0",
+      "bytes": 394
+    },
+    {
+      "name": "BFE2D0",
+      "bytes": 96
+    },
+    {
+      "name": "BSKUA0",
+      "bytes": 325
+    },
+    {
+      "name": "BSKUB0",
+      "bytes": 336
+    },
+    {
+      "name": "CELLA0",
+      "bytes": 371
+    },
+    {
+      "name": "CELPA0",
+      "bytes": 868
+    },
+    {
+      "name": "CEYEA0",
+      "bytes": 1439
+    },
+    {
+      "name": "CEYEB0",
+      "bytes": 1440
+    },
+    {
+      "name": "CEYEC0",
+      "bytes": 1438
+    },
+    {
+      "name": "COL1A0",
+      "bytes": 2061
+    },
+    {
+      "name": "COL2A0",
+      "bytes": 1576
+    },
+    {
+      "name": "COL3A0",
+      "bytes": 2056
+    },
+    {
+      "name": "COL4A0",
+      "bytes": 1675
+    },
+    {
+      "name": "COL5A0",
+      "bytes": 1671
+    },
+    {
+      "name": "COL5B0",
+      "bytes": 1671
+    },
+    {
+      "name": "COL6A0",
+      "bytes": 1835
+    },
+    {
+      "name": "FCANA0",
+      "bytes": 1441
+    },
+    {
+      "name": "FCANB0",
+      "bytes": 1401
+    },
+    {
+      "name": "FCANC0",
+      "bytes": 1436
+    },
+    {
+      "name": "FSKUA0",
+      "bytes": 1264
+    },
+    {
+      "name": "FSKUB0",
+      "bytes": 1294
+    },
+    {
+      "name": "FSKUC0",
+      "bytes": 1308
+    },
+    {
+      "name": "GOR1A0",
+      "bytes": 1041
+    },
+    {
+      "name": "GOR1B0",
+      "bytes": 1031
+    },
+    {
+      "name": "GOR1C0",
+      "bytes": 1002
+    },
+    {
+      "name": "GOR2A0",
+      "bytes": 1230
+    },
+    {
+      "name": "GOR3A0",
+      "bytes": 763
+    },
+    {
+      "name": "GOR4A0",
+      "bytes": 1261
+    },
+    {
+      "name": "GOR5A0",
+      "bytes": 1706
+    },
+    {
+      "name": "PINVA0",
+      "bytes": 722
+    },
+    {
+      "name": "PINVB0",
+      "bytes": 722
+    },
+    {
+      "name": "PINVC0",
+      "bytes": 722
+    },
+    {
+      "name": "PINVD0",
+      "bytes": 722
+    },
+    {
+      "name": "PLASA0",
+      "bytes": 988
+    },
+    {
+      "name": "PLSEA0",
+      "bytes": 639
+    },
+    {
+      "name": "PLSEB0",
+      "bytes": 868
+    },
+    {
+      "name": "PLSEC0",
+      "bytes": 1077
+    },
+    {
+      "name": "PLSED0",
+      "bytes": 1079
+    },
+    {
+      "name": "PLSEE0",
+      "bytes": 824
+    },
+    {
+      "name": "PLSFA0",
+      "bytes": 7571
+    },
+    {
+      "name": "PLSFB0",
+      "bytes": 7725
+    },
+    {
+      "name": "PLSGA0",
+      "bytes": 8249
+    },
+    {
+      "name": "PLSGB0",
+      "bytes": 6360
+    },
+    {
+      "name": "PLSSA0",
+      "bytes": 415
+    },
+    {
+      "name": "PLSSB0",
+      "bytes": 423
+    },
+    {
+      "name": "POL1A0",
+      "bytes": 1110
+    },
+    {
+      "name": "POL2A0",
+      "bytes": 1041
+    },
+    {
+      "name": "POL3A0",
+      "bytes": 1264
+    },
+    {
+      "name": "POL3B0",
+      "bytes": 1264
+    },
+    {
+      "name": "POL4A0",
+      "bytes": 842
+    },
+    {
+      "name": "POL6A0",
+      "bytes": 1400
+    },
+    {
+      "name": "POL6B0",
+      "bytes": 1424
+    },
+    {
+      "name": "PSTRA0",
+      "bytes": 825
+    },
+    {
+      "name": "RSKUA0",
+      "bytes": 321
+    },
+    {
+      "name": "RSKUB0",
+      "bytes": 330
+    },
+    {
+      "name": "SMBTA0",
+      "bytes": 1193
+    },
+    {
+      "name": "SMBTB0",
+      "bytes": 1159
+    },
+    {
+      "name": "SMBTC0",
+      "bytes": 1181
+    },
+    {
+      "name": "SMBTD0",
+      "bytes": 1160
+    },
+    {
+      "name": "SMGTA0",
+      "bytes": 1160
+    },
+    {
+      "name": "SMGTB0",
+      "bytes": 1142
+    },
+    {
+      "name": "SMGTC0",
+      "bytes": 1113
+    },
+    {
+      "name": "SMGTD0",
+      "bytes": 1118
+    },
+    {
+      "name": "SMRTA0",
+      "bytes": 1177
+    },
+    {
+      "name": "SMRTB0",
+      "bytes": 1160
+    },
+    {
+      "name": "SMRTC0",
+      "bytes": 1178
+    },
+    {
+      "name": "SMRTD0",
+      "bytes": 1182
+    },
+    {
+      "name": "SMT2A0",
+      "bytes": 1159
+    },
+    {
+      "name": "TBLUA0",
+      "bytes": 1289
+    },
+    {
+      "name": "TBLUB0",
+      "bytes": 1255
+    },
+    {
+      "name": "TBLUC0",
+      "bytes": 1277
+    },
+    {
+      "name": "TBLUD0",
+      "bytes": 1256
+    },
+    {
+      "name": "TGRNA0",
+      "bytes": 1255
+    },
+    {
+      "name": "TGRNB0",
+      "bytes": 1225
+    },
+    {
+      "name": "TGRNC0",
+      "bytes": 1208
+    },
+    {
+      "name": "TGRND0",
+      "bytes": 1213
+    },
+    {
+      "name": "TREDA0",
+      "bytes": 1273
+    },
+    {
+      "name": "TREDB0",
+      "bytes": 1256
+    },
+    {
+      "name": "TREDC0",
+      "bytes": 1274
+    },
+    {
+      "name": "TREDD0",
+      "bytes": 1278
+    },
+    {
+      "name": "YSKUA0",
+      "bytes": 318
+    },
+    {
+      "name": "YSKUB0",
+      "bytes": 321
+    },
+    {
+      "name": "AG128_1",
+      "bytes": 8776
+    },
+    {
+      "name": "AG128_2",
+      "bytes": 8776
+    },
+    {
+      "name": "AGB128_1",
+      "bytes": 1104
+    },
+    {
+      "name": "ALTAQUA",
+      "bytes": 17544
+    },
+    {
+      "name": "AMOD1",
+      "bytes": 8776
+    },
+    {
+      "name": "AQBRIK01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQBRIK02",
+      "bytes": 4680
+    },
+    {
+      "name": "AQBRIK03",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCOMP01",
+      "bytes": 35080
+    },
+    {
+      "name": "AQCONC01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC02",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC03",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC04",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC05",
+      "bytes": 8776
+    },
+    {
+      "name": "AQCONC06",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC07",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC08",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC09",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC10",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC11",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC12",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC13",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC14",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC15",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC16",
+      "bytes": 17544
+    },
+    {
+      "name": "AQCONC17",
+      "bytes": 4680
+    },
+    {
+      "name": "AQCONC18",
+      "bytes": 4680
+    },
+    {
+      "name": "AQDIRT01",
+      "bytes": 8776
+    },
+    {
+      "name": "AQDIRT02",
+      "bytes": 4680
+    },
+    {
+      "name": "AQDIRT03",
+      "bytes": 2040
+    },
+    {
+      "name": "AQDOOR01",
+      "bytes": 17544
+    },
+    {
+      "name": "AQDOOR02",
+      "bytes": 17544
+    },
+    {
+      "name": "AQLITE01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE02",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE03",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE04",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE05",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE06",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE07",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE08",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE09",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE10",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE11",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE12",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE13",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE14",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE15",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE16",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE17",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE18",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE19",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE20",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE21",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE22",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE23",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE24",
+      "bytes": 4680
+    },
+    {
+      "name": "AQLITE25",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL02",
+      "bytes": 8568
+    },
+    {
+      "name": "AQMETL03",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL04",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL05",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL06",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL07",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL08",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL09",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL10",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL11",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL12",
+      "bytes": 8776
+    },
+    {
+      "name": "AQMETL13",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL14",
+      "bytes": 17544
+    },
+    {
+      "name": "AQMETL15",
+      "bytes": 5512
+    },
+    {
+      "name": "AQMETL16",
+      "bytes": 1297
+    },
+    {
+      "name": "AQMETL17",
+      "bytes": 1570
+    },
+    {
+      "name": "AQMETL18",
+      "bytes": 1102
+    },
+    {
+      "name": "AQMETL19",
+      "bytes": 1102
+    },
+    {
+      "name": "AQMETL20",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL21",
+      "bytes": 2216
+    },
+    {
+      "name": "AQMETL22",
+      "bytes": 2600
+    },
+    {
+      "name": "AQMETL23",
+      "bytes": 2536
+    },
+    {
+      "name": "AQMETL24",
+      "bytes": 2536
+    },
+    {
+      "name": "AQMETL25",
+      "bytes": 2216
+    },
+    {
+      "name": "AQMETL26",
+      "bytes": 5512
+    },
+    {
+      "name": "AQMETL27",
+      "bytes": 2216
+    },
+    {
+      "name": "AQMETL28",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL29",
+      "bytes": 5144
+    },
+    {
+      "name": "AQMETL30",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL31",
+      "bytes": 5144
+    },
+    {
+      "name": "AQMETL32",
+      "bytes": 4680
+    },
+    {
+      "name": "AQMETL33",
+      "bytes": 4680
+    },
+    {
+      "name": "AQPANL01",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPANL02",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPANL03",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPANL04",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPANL05",
+      "bytes": 9352
+    },
+    {
+      "name": "AQPANL06",
+      "bytes": 9352
+    },
+    {
+      "name": "AQPANL07",
+      "bytes": 9352
+    },
+    {
+      "name": "AQPANL08",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPANL09",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPANL10",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE01",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE02",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE03",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE04",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE05",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE06",
+      "bytes": 8776
+    },
+    {
+      "name": "AQPIPE07",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE08",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE09",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE10",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE11",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE12",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE13",
+      "bytes": 17544
+    },
+    {
+      "name": "AQPIPE14",
+      "bytes": 17544
+    },
+    {
+      "name": "AQRUST01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQRUST02",
+      "bytes": 8776
+    },
+    {
+      "name": "AQRUST03",
+      "bytes": 8776
+    },
+    {
+      "name": "AQRUST04",
+      "bytes": 8776
+    },
+    {
+      "name": "AQRUST05",
+      "bytes": 17544
+    },
+    {
+      "name": "AQRUST06",
+      "bytes": 17544
+    },
+    {
+      "name": "AQRUST07",
+      "bytes": 17544
+    },
+    {
+      "name": "AQRUST08",
+      "bytes": 17544
+    },
+    {
+      "name": "AQRUST09",
+      "bytes": 8776
+    },
+    {
+      "name": "AQRUST10",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSECT01",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT02",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSECT03",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSECT04",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT05",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT06",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSECT07",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSECT08",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT09",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT10",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT11",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT12",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT13",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT14",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT15",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSECT16",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSUPP01",
+      "bytes": 4392
+    },
+    {
+      "name": "AQSUPP02",
+      "bytes": 17544
+    },
+    {
+      "name": "AQSUPP03",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSUPP04",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP05",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP06",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP07",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP08",
+      "bytes": 4392
+    },
+    {
+      "name": "AQSUPP09",
+      "bytes": 8776
+    },
+    {
+      "name": "AQSUPP10",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP11",
+      "bytes": 2200
+    },
+    {
+      "name": "AQSUPP12",
+      "bytes": 4680
+    },
+    {
+      "name": "AQSUPP13",
+      "bytes": 1104
+    },
+    {
+      "name": "AQTILE01",
+      "bytes": 4680
+    },
+    {
+      "name": "AQTILE02",
+      "bytes": 4680
+    },
+    {
+      "name": "AQTILE03",
+      "bytes": 4680
+    },
+    {
+      "name": "AQTRIM01",
+      "bytes": 3208
+    },
+    {
+      "name": "AQTRIM02",
+      "bytes": 3208
+    },
+    {
+      "name": "AQTRIM03",
+      "bytes": 2184
+    },
+    {
+      "name": "AQTRIM04",
+      "bytes": 3208
+    },
+    {
+      "name": "AQTRIM05",
+      "bytes": 2184
+    },
+    {
+      "name": "AQTRIM06",
+      "bytes": 9352
+    },
+    {
+      "name": "AQTRIM07",
+      "bytes": 9352
+    },
+    {
+      "name": "AQTRIM08",
+      "bytes": 1608
+    },
+    {
+      "name": "AROCK2",
+      "bytes": 17544
+    },
+    {
+      "name": "AROCK3",
+      "bytes": 17544
+    },
+    {
+      "name": "AROCK4",
+      "bytes": 17544
+    },
+    {
+      "name": "AROCK5",
+      "bytes": 17544
+    },
+    {
+      "name": "ASPHALT",
+      "bytes": 35080
+    },
+    {
+      "name": "BASE",
+      "bytes": 17544
+    },
+    {
+      "name": "BASE2",
+      "bytes": 17544
+    },
+    {
+      "name": "BASE3",
+      "bytes": 17544
+    },
+    {
+      "name": "BCRAT16",
+      "bytes": 408
+    },
+    {
+      "name": "BCRAT32",
+      "bytes": 1320
+    },
+    {
+      "name": "BCRATEL1",
+      "bytes": 2344
+    },
+    {
+      "name": "BCRATEM1",
+      "bytes": 592
+    },
+    {
+      "name": "BCRATER1",
+      "bytes": 2344
+    },
+    {
+      "name": "BFALL1",
+      "bytes": 8776
+    },
+    {
+      "name": "BFALL2",
+      "bytes": 8776
+    },
+    {
+      "name": "BFALL3",
+      "bytes": 8776
+    },
+    {
+      "name": "BFALL4",
+      "bytes": 8776
+    },
+    {
+      "name": "BIGMURAL",
+      "bytes": 35080
+    },
+    {
+      "name": "BIGWALL",
+      "bytes": 17544
+    },
+    {
+      "name": "BLITA0",
+      "bytes": 144
+    },
+    {
+      "name": "BLITB0",
+      "bytes": 144
+    },
+    {
+      "name": "BLITC0",
+      "bytes": 144
+    },
+    {
+      "name": "BLOD128A",
+      "bytes": 4975
+    },
+    {
+      "name": "BLOD128B",
+      "bytes": 4990
+    },
+    {
+      "name": "BLOD64A",
+      "bytes": 2386
+    },
+    {
+      "name": "BLOD64B",
+      "bytes": 3864
+    },
+    {
+      "name": "BLUTNT",
+      "bytes": 1102
+    },
+    {
+      "name": "BODIES",
+      "bytes": 8776
+    },
+    {
+      "name": "BODY_1",
+      "bytes": 17544
+    },
+    {
+      "name": "BODY_2",
+      "bytes": 17544
+    },
+    {
+      "name": "BRBRICK",
+      "bytes": 17544
+    },
+    {
+      "name": "BRBRICK2",
+      "bytes": 17544
+    },
+    {
+      "name": "BRBRICK8",
+      "bytes": 17544
+    },
+    {
+      "name": "BRBRIK28",
+      "bytes": 17544
+    },
+    {
+      "name": "BRICK",
+      "bytes": 17544
+    },
+    {
+      "name": "BRICK1",
+      "bytes": 17544
+    },
+    {
+      "name": "BRICK2",
+      "bytes": 17544
+    },
+    {
+      "name": "BRNOPEN",
+      "bytes": 6393
+    },
+    {
+      "name": "BROCK2",
+      "bytes": 17544
+    },
+    {
+      "name": "BROCK28",
+      "bytes": 17544
+    },
+    {
+      "name": "BROWN1",
+      "bytes": 17544
+    },
+    {
+      "name": "BROWN2",
+      "bytes": 17544
+    },
+    {
+      "name": "BROWN3",
+      "bytes": 17544
+    },
+    {
+      "name": "BROWN4",
+      "bytes": 17544
+    },
+    {
+      "name": "BROWN5",
+      "bytes": 17544
+    },
+    {
+      "name": "BTNTCRAT",
+      "bytes": 296
+    },
+    {
+      "name": "BUL64A",
+      "bytes": 2512
+    },
+    {
+      "name": "BUL64B",
+      "bytes": 3215
+    },
+    {
+      "name": "BUL64C",
+      "bytes": 3545
+    },
+    {
+      "name": "BUL64D",
+      "bytes": 4027
+    },
+    {
+      "name": "CAMO1",
+      "bytes": 17544
+    },
+    {
+      "name": "CAMO4",
+      "bytes": 17544
+    },
+    {
+      "name": "CAMO5",
+      "bytes": 17544
+    },
+    {
+      "name": "CARLLF1",
+      "bytes": 17544
+    },
+    {
+      "name": "CARLLF2",
+      "bytes": 17544
+    },
+    {
+      "name": "CARLRT1",
+      "bytes": 17544
+    },
+    {
+      "name": "CARLRT2",
+      "bytes": 17544
+    },
+    {
+      "name": "CAVERN1",
+      "bytes": 17544
+    },
+    {
+      "name": "CAVERN4",
+      "bytes": 17544
+    },
+    {
+      "name": "CAVERN5",
+      "bytes": 6393
+    },
+    {
+      "name": "CAVERN6",
+      "bytes": 17544
+    },
+    {
+      "name": "CAVERN7",
+      "bytes": 17544
+    },
+    {
+      "name": "CEILVINE",
+      "bytes": 6200
+    },
+    {
+      "name": "CGRATE1",
+      "bytes": 15461
+    },
+    {
+      "name": "CLWDVS3",
+      "bytes": 1064
+    },
+    {
+      "name": "COMP01_1",
+      "bytes": 3648
+    },
+    {
+      "name": "COMP01_5",
+      "bytes": 3648
+    },
+    {
+      "name": "COMP01_6",
+      "bytes": 3648
+    },
+    {
+      "name": "COMP02_1",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_2",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_3",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_4",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_5",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_6",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_7",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP02_8",
+      "bytes": 4168
+    },
+    {
+      "name": "COMP03_5",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP03_6",
+      "bytes": 2344
+    },
+    {
+      "name": "COMP03_7",
+      "bytes": 2344
+    },
+    {
+      "name": "COMP03_8",
+      "bytes": 2344
+    },
+    {
+      "name": "COMP04_1",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP04_2",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP04_6",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP04_7",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP04_8",
+      "bytes": 4680
+    },
+    {
+      "name": "COMP1B_4",
+      "bytes": 3648
+    },
+    {
+      "name": "COMP1C_6",
+      "bytes": 3648
+    },
+    {
+      "name": "CONCRETE",
+      "bytes": 17544
+    },
+    {
+      "name": "CRLWDH6",
+      "bytes": 8776
+    },
+    {
+      "name": "CRLWDH6B",
+      "bytes": 8776
+    },
+    {
+      "name": "CRLWDL12",
+      "bytes": 9352
+    },
+    {
+      "name": "CRLWDL6",
+      "bytes": 4680
+    },
+    {
+      "name": "CRLWDL6B",
+      "bytes": 4680
+    },
+    {
+      "name": "CRLWDL6C",
+      "bytes": 4680
+    },
+    {
+      "name": "CRLWDL6D",
+      "bytes": 4680
+    },
+    {
+      "name": "CRLWDL6E",
+      "bytes": 4680
+    },
+    {
+      "name": "CRLWDS6",
+      "bytes": 2632
+    },
+    {
+      "name": "CRLWDT3",
+      "bytes": 808
+    },
+    {
+      "name": "CRWDH6",
+      "bytes": 8776
+    },
+    {
+      "name": "CRWDH6B",
+      "bytes": 8776
+    },
+    {
+      "name": "CRWDL12",
+      "bytes": 9352
+    },
+    {
+      "name": "CRWDL6",
+      "bytes": 4680
+    },
+    {
+      "name": "CRWDL6B",
+      "bytes": 4680
+    },
+    {
+      "name": "CRWDL6C",
+      "bytes": 4680
+    },
+    {
+      "name": "CRWDL6D",
+      "bytes": 4680
+    },
+    {
+      "name": "CRWDS6",
+      "bytes": 2632
+    },
+    {
+      "name": "CRWDT3",
+      "bytes": 808
+    },
+    {
+      "name": "CRWDVS3",
+      "bytes": 1064
+    },
+    {
+      "name": "CYL1_1",
+      "bytes": 9566
+    },
+    {
+      "name": "DARKROCK",
+      "bytes": 35080
+    },
+    {
+      "name": "DEXAL",
+      "bytes": 17544
+    },
+    {
+      "name": "DIRBRI1",
+      "bytes": 17544
+    },
+    {
+      "name": "DIRBRI18",
+      "bytes": 17544
+    },
+    {
+      "name": "DIRBRI2",
+      "bytes": 17544
+    },
+    {
+      "name": "DIRBRI28",
+      "bytes": 17544
+    },
+    {
+      "name": "DISASTER",
+      "bytes": 4030
+    },
+    {
+      "name": "DLEVSIGN",
+      "bytes": 10376
+    },
+    {
+      "name": "DOBIGTVA",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBIGTVC",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBIGTVD",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBLIP1A",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBLIP3A",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBLIP4A",
+      "bytes": 9872
+    },
+    {
+      "name": "DOBWIRE",
+      "bytes": 4901
+    },
+    {
+      "name": "DOBWIRE2",
+      "bytes": 4571
+    },
+    {
+      "name": "DOEDAY",
+      "bytes": 35080
+    },
+    {
+      "name": "DOEHELL",
+      "bytes": 35080
+    },
+    {
+      "name": "DOENITE",
+      "bytes": 35080
+    },
+    {
+      "name": "DOGLDIR",
+      "bytes": 17544
+    },
+    {
+      "name": "DOGLPANL",
+      "bytes": 8320
+    },
+    {
+      "name": "DOGRID",
+      "bytes": 13614
+    },
+    {
+      "name": "DOGRMSC",
+      "bytes": 17544
+    },
+    {
+      "name": "DOGRNMEN",
+      "bytes": 17544
+    },
+    {
+      "name": "DOKGRIR",
+      "bytes": 17544
+    },
+    {
+      "name": "DOKODO1B",
+      "bytes": 8776
+    },
+    {
+      "name": "DOKODO2B",
+      "bytes": 8776
+    },
+    {
+      "name": "DONDAY",
+      "bytes": 35080
+    },
+    {
+      "name": "DONHELL",
+      "bytes": 35080
+    },
+    {
+      "name": "DONNITE",
+      "bytes": 35080
+    },
+    {
+      "name": "DOOR11_1",
+      "bytes": 14528
+    },
+    {
+      "name": "DOOR12_1",
+      "bytes": 10868
+    },
+    {
+      "name": "DOOR15_1",
+      "bytes": 8776
+    },
+    {
+      "name": "DOOR15_2",
+      "bytes": 8776
+    },
+    {
+      "name": "DOOR15_3",
+      "bytes": 8776
+    },
+    {
+      "name": "DOOR15_4",
+      "bytes": 8776
+    },
+    {
+      "name": "DOOR16_1",
+      "bytes": 8776
+    },
+    {
+      "name": "DOOR2_1",
+      "bytes": 10088
+    },
+    {
+      "name": "DOOR2_3",
+      "bytes": 2632
+    },
+    {
+      "name": "DOOR2_4",
+      "bytes": 17544
+    },
+    {
+      "name": "DOOR2_5",
+      "bytes": 5192
+    },
+    {
+      "name": "DOOR2_5L",
+      "bytes": 5192
+    },
+    {
+      "name": "DOOR3_4",
+      "bytes": 1952
+    },
+    {
+      "name": "DOOR3_5",
+      "bytes": 1952
+    },
+    {
+      "name": "DOOR3_6",
+      "bytes": 5192
+    },
+    {
+      "name": "DOOR9_1",
+      "bytes": 17544
+    },
+    {
+      "name": "DOOR9_2",
+      "bytes": 17544
+    },
+    {
+      "name": "DOORTRAK",
+      "bytes": 1104
+    },
+    {
+      "name": "DOPUNK4",
+      "bytes": 17544
+    },
+    {
+      "name": "DORED",
+      "bytes": 17544
+    },
+    {
+      "name": "DOSDAY",
+      "bytes": 35080
+    },
+    {
+      "name": "DOSHA1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSHB1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSHC1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSHD1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSHE1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSHELL",
+      "bytes": 35080
+    },
+    {
+      "name": "DOSHF1",
+      "bytes": 18640
+    },
+    {
+      "name": "DOSLVR11",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSLVR13",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSLVR14",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSLVR21",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSLVR23",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSLVR24",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSNITE",
+      "bytes": 35080
+    },
+    {
+      "name": "DOSPI1B",
+      "bytes": 6106
+    },
+    {
+      "name": "DOSPI2B",
+      "bytes": 6110
+    },
+    {
+      "name": "DOSPI3B",
+      "bytes": 6105
+    },
+    {
+      "name": "DOSPI4B",
+      "bytes": 6106
+    },
+    {
+      "name": "DOSW1",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSW1C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSW3",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSW3C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSW4",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSW4C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX1",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX1C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX3",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX3C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX4",
+      "bytes": 9872
+    },
+    {
+      "name": "DOSWX4C",
+      "bytes": 9872
+    },
+    {
+      "name": "DOTNTDR",
+      "bytes": 17544
+    },
+    {
+      "name": "DOTV1B",
+      "bytes": 9872
+    },
+    {
+      "name": "DOTV3B",
+      "bytes": 9872
+    },
+    {
+      "name": "DOTV4B",
+      "bytes": 9872
+    },
+    {
+      "name": "DOWDAY",
+      "bytes": 35080
+    },
+    {
+      "name": "DOWEBL",
+      "bytes": 2431
+    },
+    {
+      "name": "DOWEBR",
+      "bytes": 2431
+    },
+    {
+      "name": "DOWHELL",
+      "bytes": 35080
+    },
+    {
+      "name": "DOWINDOW",
+      "bytes": 5621
+    },
+    {
+      "name": "DOWNITE",
+      "bytes": 35080
+    },
+    {
+      "name": "DRFRONT",
+      "bytes": 12105
+    },
+    {
+      "name": "DRSIDE1",
+      "bytes": 4392
+    },
+    {
+      "name": "DRSIDE2",
+      "bytes": 4392
+    },
+    {
+      "name": "DRTOPFR",
+      "bytes": 9480
+    },
+    {
+      "name": "DRTOPSID",
+      "bytes": 2376
+    },
+    {
+      "name": "DUCT1",
+      "bytes": 951
+    },
+    {
+      "name": "EGGREENI",
+      "bytes": 1104
+    },
+    {
+      "name": "EGREDI",
+      "bytes": 1104
+    },
+    {
+      "name": "ESPI11_1",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI11_2",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI11_4",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI11_5",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI12_1",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI12_2",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI12_4",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI12_5",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI15_1",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI15_3",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI15_4",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI15_6",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI16_1",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI16_2",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI16_4",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI16_6",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_1",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_2",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_3",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_4",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_5",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI17_6",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI18_5",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI18_7",
+      "bytes": 4392
+    },
+    {
+      "name": "ESPI19_1",
+      "bytes": 8776
+    },
+    {
+      "name": "ESPI19_2",
+      "bytes": 8776
+    },
+    {
+      "name": "ESPI19_3",
+      "bytes": 8776
+    },
+    {
+      "name": "ESPI19_4",
+      "bytes": 8776
+    },
+    {
+      "name": "EXIT1",
+      "bytes": 808
+    },
+    {
+      "name": "EXIT_GRN",
+      "bytes": 808
+    },
+    {
+      "name": "EXIT_RED",
+      "bytes": 808
+    },
+    {
+      "name": "FENCE4",
+      "bytes": 6316
+    },
+    {
+      "name": "FENCE5",
+      "bytes": 2252
+    },
+    {
+      "name": "FIREBLU1",
+      "bytes": 17544
+    },
+    {
+      "name": "FIREBLU2",
+      "bytes": 17544
+    },
+    {
+      "name": "FLAMP",
+      "bytes": 1710
+    },
+    {
+      "name": "GCRATEL1",
+      "bytes": 2344
+    },
+    {
+      "name": "GCRATEM1",
+      "bytes": 592
+    },
+    {
+      "name": "GCRATER1",
+      "bytes": 2344
+    },
+    {
+      "name": "GRATE",
+      "bytes": 15688
+    },
+    {
+      "name": "GRAYRED",
+      "bytes": 8776
+    },
+    {
+      "name": "GRAYWARN",
+      "bytes": 8776
+    },
+    {
+      "name": "GRAYWIDE",
+      "bytes": 17544
+    },
+    {
+      "name": "GRNLIT1",
+      "bytes": 4392
+    },
+    {
+      "name": "GRNOPEN",
+      "bytes": 3980
+    },
+    {
+      "name": "HELL5_1",
+      "bytes": 17544
+    },
+    {
+      "name": "HELL5_2",
+      "bytes": 17544
+    },
+    {
+      "name": "HELL6_1",
+      "bytes": 4392
+    },
+    {
+      "name": "HELL6_2",
+      "bytes": 8776
+    },
+    {
+      "name": "HELL8_1",
+      "bytes": 8776
+    },
+    {
+      "name": "HELL8_2",
+      "bytes": 8776
+    },
+    {
+      "name": "HELL8_3",
+      "bytes": 4392
+    },
+    {
+      "name": "HELL8_4",
+      "bytes": 8776
+    },
+    {
+      "name": "LADDER16",
+      "bytes": 1608
+    },
+    {
+      "name": "LFALL1",
+      "bytes": 8776
+    },
+    {
+      "name": "LFALL2",
+      "bytes": 8776
+    },
+    {
+      "name": "LFALL3",
+      "bytes": 8776
+    },
+    {
+      "name": "LFALL4",
+      "bytes": 8776
+    },
+    {
+      "name": "LONGWALL",
+      "bytes": 35080
+    },
+    {
+      "name": "M1_1",
+      "bytes": 10152
+    },
+    {
+      "name": "MARBLE1",
+      "bytes": 17544
+    },
+    {
+      "name": "MC1",
+      "bytes": 17544
+    },
+    {
+      "name": "MC10",
+      "bytes": 17544
+    },
+    {
+      "name": "MC11",
+      "bytes": 17544
+    },
+    {
+      "name": "MC12",
+      "bytes": 17544
+    },
+    {
+      "name": "MC13",
+      "bytes": 17544
+    },
+    {
+      "name": "MC14",
+      "bytes": 17544
+    },
+    {
+      "name": "MC15",
+      "bytes": 17544
+    },
+    {
+      "name": "MC16",
+      "bytes": 17544
+    },
+    {
+      "name": "MC17",
+      "bytes": 17544
+    },
+    {
+      "name": "MC18",
+      "bytes": 17544
+    },
+    {
+      "name": "MC19",
+      "bytes": 17544
+    },
+    {
+      "name": "MC2",
+      "bytes": 17544
+    },
+    {
+      "name": "MC20",
+      "bytes": 17544
+    },
+    {
+      "name": "MC3",
+      "bytes": 17544
+    },
+    {
+      "name": "MC4",
+      "bytes": 17544
+    },
+    {
+      "name": "MC5",
+      "bytes": 17544
+    },
+    {
+      "name": "MC6",
+      "bytes": 17544
+    },
+    {
+      "name": "MC7",
+      "bytes": 17544
+    },
+    {
+      "name": "MC8",
+      "bytes": 17544
+    },
+    {
+      "name": "MOD1",
+      "bytes": 8776
+    },
+    {
+      "name": "MOD2",
+      "bytes": 17544
+    },
+    {
+      "name": "MOD3",
+      "bytes": 8776
+    },
+    {
+      "name": "MOD4",
+      "bytes": 8776
+    },
+    {
+      "name": "MOD5",
+      "bytes": 8776
+    },
+    {
+      "name": "MOSROK2",
+      "bytes": 17544
+    },
+    {
+      "name": "MOSSBRIK",
+      "bytes": 17544
+    },
+    {
+      "name": "MOSSBRK8",
+      "bytes": 17544
+    },
+    {
+      "name": "MOSSROCK",
+      "bytes": 17544
+    },
+    {
+      "name": "MOULD",
+      "bytes": 17544
+    },
+    {
+      "name": "MTNT2",
+      "bytes": 2329
+    },
+    {
+      "name": "MUD",
+      "bytes": 17544
+    },
+    {
+      "name": "MURAL1",
+      "bytes": 17544
+    },
+    {
+      "name": "MURAL2",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL1_2",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL2_1",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL3_1",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL4_1",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL4_2",
+      "bytes": 17544
+    },
+    {
+      "name": "MWALL5_1",
+      "bytes": 17544
+    },
+    {
+      "name": "MYWOOD",
+      "bytes": 17544
+    },
+    {
+      "name": "NATROCK",
+      "bytes": 35080
+    },
+    {
+      "name": "NUKEDGE",
+      "bytes": 2120
+    },
+    {
+      "name": "PBLAK",
+      "bytes": 8776
+    },
+    {
+      "name": "PBLUE",
+      "bytes": 8776
+    },
+    {
+      "name": "PBRICK18",
+      "bytes": 17544
+    },
+    {
+      "name": "PBRICK28",
+      "bytes": 17544
+    },
+    {
+      "name": "PBRICK8",
+      "bytes": 17544
+    },
+    {
+      "name": "PCWINL",
+      "bytes": 2500
+    },
+    {
+      "name": "PDUMMY",
+      "bytes": 8776
+    },
+    {
+      "name": "PGREEN",
+      "bytes": 8776
+    },
+    {
+      "name": "PILLAR",
+      "bytes": 4392
+    },
+    {
+      "name": "PIVY3",
+      "bytes": 16477
+    },
+    {
+      "name": "PLAT2_1",
+      "bytes": 17544
+    },
+    {
+      "name": "PL_01",
+      "bytes": 81
+    },
+    {
+      "name": "PL_05",
+      "bytes": 261
+    },
+    {
+      "name": "PL_10",
+      "bytes": 455
+    },
+    {
+      "name": "PL_18",
+      "bytes": 602
+    },
+    {
+      "name": "PL_19",
+      "bytes": 222
+    },
+    {
+      "name": "PL_20",
+      "bytes": 267
+    },
+    {
+      "name": "PL_25",
+      "bytes": 149
+    },
+    {
+      "name": "PL_31",
+      "bytes": 302
+    },
+    {
+      "name": "PL_A",
+      "bytes": 149
+    },
+    {
+      "name": "PL_C",
+      "bytes": 163
+    },
+    {
+      "name": "PL_N",
+      "bytes": 168
+    },
+    {
+      "name": "PL_T",
+      "bytes": 195
+    },
+    {
+      "name": "PL_U",
+      "bytes": 152
+    },
+    {
+      "name": "POISON",
+      "bytes": 4680
+    },
+    {
+      "name": "PORAN",
+      "bytes": 8776
+    },
+    {
+      "name": "PRED",
+      "bytes": 8776
+    },
+    {
+      "name": "PREEL1",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL2",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL3",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL4",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL5",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL6",
+      "bytes": 580
+    },
+    {
+      "name": "PREEL7",
+      "bytes": 580
+    },
+    {
+      "name": "PS15A0",
+      "bytes": 1448
+    },
+    {
+      "name": "PS18A0",
+      "bytes": 1924
+    },
+    {
+      "name": "PS20A0",
+      "bytes": 1924
+    },
+    {
+      "name": "PSTON2",
+      "bytes": 17544
+    },
+    {
+      "name": "PWHITE",
+      "bytes": 8776
+    },
+    {
+      "name": "RAILING",
+      "bytes": 1960
+    },
+    {
+      "name": "REDLITE1",
+      "bytes": 4392
+    },
+    {
+      "name": "REDLITE2",
+      "bytes": 1104
+    },
+    {
+      "name": "REDOPEN",
+      "bytes": 3928
+    },
+    {
+      "name": "REDROCK",
+      "bytes": 35080
+    },
+    {
+      "name": "REDTNT2",
+      "bytes": 4411
+    },
+    {
+      "name": "RIPW15",
+      "bytes": 3208
+    },
+    {
+      "name": "ROCK",
+      "bytes": 17544
+    },
+    {
+      "name": "ROMERO1",
+      "bytes": 1104
+    },
+    {
+      "name": "RP1_1",
+      "bytes": 17544
+    },
+    {
+      "name": "RP1_2",
+      "bytes": 17544
+    },
+    {
+      "name": "RP2_1",
+      "bytes": 4392
+    },
+    {
+      "name": "RP2_2",
+      "bytes": 4392
+    },
+    {
+      "name": "RP2_3",
+      "bytes": 4392
+    },
+    {
+      "name": "RP2_4",
+      "bytes": 4392
+    },
+    {
+      "name": "RW10_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW10_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW10_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW10_4",
+      "bytes": 7364
+    },
+    {
+      "name": "RW11_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW11_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW12_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW12_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW12_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW12_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW13_1",
+      "bytes": 17544
+    },
+    {
+      "name": "RW14_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW15_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW15_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW15_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW15_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW16_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW16_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW16_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW16_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW18_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW18_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW18_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW19_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW19_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW19_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW19_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW1_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW1_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW1_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW1_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW20_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW20_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW20_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW21_1",
+      "bytes": 4392
+    },
+    {
+      "name": "RW21_2",
+      "bytes": 2200
+    },
+    {
+      "name": "RW21_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW21_5",
+      "bytes": 8776
+    },
+    {
+      "name": "RW22_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW22_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW22_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW23_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW23_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW23_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW24_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW24_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW24_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW24_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW25_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW25_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW25_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW25_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW26_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW26_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW26_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW27_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW27_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW28_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW28_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW28_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW28_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW30_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW30_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW31_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW31_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW31_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW32_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW32_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW32_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW33_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW33_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW33_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW33_5",
+      "bytes": 8776
+    },
+    {
+      "name": "RW33_6",
+      "bytes": 8776
+    },
+    {
+      "name": "RW34_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW34_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW35_1",
+      "bytes": 17544
+    },
+    {
+      "name": "RW35_2",
+      "bytes": 17544
+    },
+    {
+      "name": "RW36_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW36_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW36_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW37_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW37_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW37_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW38_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW38_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW38_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW38_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW39_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW39_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW41_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW41_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW41_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW41_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW42_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW42_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW42_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW43_1",
+      "bytes": 4744
+    },
+    {
+      "name": "RW43_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW43_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW44_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW44_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW45_1",
+      "bytes": 2920
+    },
+    {
+      "name": "RW46_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW46_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW46_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW47_1",
+      "bytes": 10360
+    },
+    {
+      "name": "RW47_2",
+      "bytes": 6104
+    },
+    {
+      "name": "RW47_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW47_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW48_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW48_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW5_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW5_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW5_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW5_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW6_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW7_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW7_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW8_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW8_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW8_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW8_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RW9_1",
+      "bytes": 8776
+    },
+    {
+      "name": "RW9_2",
+      "bytes": 8776
+    },
+    {
+      "name": "RW9_3",
+      "bytes": 8776
+    },
+    {
+      "name": "RW9_4",
+      "bytes": 8776
+    },
+    {
+      "name": "RWDMON1",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON10",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON2",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON3",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON4",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON5",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON7",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON8",
+      "bytes": 35080
+    },
+    {
+      "name": "RWDMON9",
+      "bytes": 35080
+    },
+    {
+      "name": "SAW1",
+      "bytes": 3877
+    },
+    {
+      "name": "SAW1SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SAW2",
+      "bytes": 3841
+    },
+    {
+      "name": "SAW2SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SAW3",
+      "bytes": 3824
+    },
+    {
+      "name": "SAW3SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SAW4",
+      "bytes": 3821
+    },
+    {
+      "name": "SAW4SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SAW5",
+      "bytes": 3828
+    },
+    {
+      "name": "SAW5SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SAW6",
+      "bytes": 3824
+    },
+    {
+      "name": "SAW6SD",
+      "bytes": 4392
+    },
+    {
+      "name": "SFALL1",
+      "bytes": 8776
+    },
+    {
+      "name": "SFALL2",
+      "bytes": 8776
+    },
+    {
+      "name": "SFALL3",
+      "bytes": 8776
+    },
+    {
+      "name": "SFALL4",
+      "bytes": 8776
+    },
+    {
+      "name": "SGCRATE2",
+      "bytes": 2344
+    },
+    {
+      "name": "SHAWN01",
+      "bytes": 17544
+    },
+    {
+      "name": "SHAWN02",
+      "bytes": 17544
+    },
+    {
+      "name": "SHAWN03",
+      "bytes": 17544
+    },
+    {
+      "name": "SKIRTING",
+      "bytes": 13320
+    },
+    {
+      "name": "SKULFACE",
+      "bytes": 2197
+    },
+    {
+      "name": "SKY2A",
+      "bytes": 35080
+    },
+    {
+      "name": "SKY2B",
+      "bytes": 35080
+    },
+    {
+      "name": "SKY2C",
+      "bytes": 35080
+    },
+    {
+      "name": "SKY2D",
+      "bytes": 35080
+    },
+    {
+      "name": "SKY3A",
+      "bytes": 35080
+    },
+    {
+      "name": "SKY3B",
+      "bytes": 35080
+    },
+    {
+      "name": "SMCRATG",
+      "bytes": 187
+    },
+    {
+      "name": "SMFILLER",
+      "bytes": 556
+    },
+    {
+      "name": "SNAK5_1",
+      "bytes": 8776
+    },
+    {
+      "name": "SNAK6_1",
+      "bytes": 8776
+    },
+    {
+      "name": "SNAK7_1",
+      "bytes": 8776
+    },
+    {
+      "name": "SNAK8_1",
+      "bytes": 8776
+    },
+    {
+      "name": "SPINE3_1",
+      "bytes": 13448
+    },
+    {
+      "name": "SPINE3_2",
+      "bytes": 13448
+    },
+    {
+      "name": "SPINE4_1",
+      "bytes": 17544
+    },
+    {
+      "name": "STEP03",
+      "bytes": 552
+    },
+    {
+      "name": "STEP04",
+      "bytes": 552
+    },
+    {
+      "name": "STEP05",
+      "bytes": 552
+    },
+    {
+      "name": "STEP06",
+      "bytes": 552
+    },
+    {
+      "name": "STEP08",
+      "bytes": 552
+    },
+    {
+      "name": "STEP09",
+      "bytes": 552
+    },
+    {
+      "name": "STEP10",
+      "bytes": 552
+    },
+    {
+      "name": "STONEW1",
+      "bytes": 17544
+    },
+    {
+      "name": "STONEW5",
+      "bytes": 17544
+    },
+    {
+      "name": "STWALL",
+      "bytes": 17544
+    },
+    {
+      "name": "SUPPORT2",
+      "bytes": 1952
+    },
+    {
+      "name": "SW11_1",
+      "bytes": 4392
+    },
+    {
+      "name": "SW11_2",
+      "bytes": 4392
+    },
+    {
+      "name": "SW11_4",
+      "bytes": 4392
+    },
+    {
+      "name": "SW11_5",
+      "bytes": 4392
+    },
+    {
+      "name": "SW12_1",
+      "bytes": 4392
+    },
+    {
+      "name": "SW12_2",
+      "bytes": 4392
+    },
+    {
+      "name": "SW15_1",
+      "bytes": 4392
+    },
+    {
+      "name": "SW15_3",
+      "bytes": 4392
+    },
+    {
+      "name": "SW15_4",
+      "bytes": 4392
+    },
+    {
+      "name": "SW15_6",
+      "bytes": 4392
+    },
+    {
+      "name": "SW16_1",
+      "bytes": 4392
+    },
+    {
+      "name": "SW16_2",
+      "bytes": 4392
+    },
+    {
+      "name": "SW16_4",
+      "bytes": 4392
+    },
+    {
+      "name": "SW16_6",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_1",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_2",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_3",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_4",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_5",
+      "bytes": 4392
+    },
+    {
+      "name": "SW17_6",
+      "bytes": 4392
+    },
+    {
+      "name": "SW18_5",
+      "bytes": 4392
+    },
+    {
+      "name": "SW18_7",
+      "bytes": 4392
+    },
+    {
+      "name": "SW19_5",
+      "bytes": 8776
+    },
+    {
+      "name": "SW19_6",
+      "bytes": 8776
+    },
+    {
+      "name": "SW2_1",
+      "bytes": 734
+    },
+    {
+      "name": "SW2_2",
+      "bytes": 758
+    },
+    {
+      "name": "SW2_3",
+      "bytes": 2126
+    },
+    {
+      "name": "SW2_4",
+      "bytes": 2126
+    },
+    {
+      "name": "T14_3",
+      "bytes": 5192
+    },
+    {
+      "name": "T14_4",
+      "bytes": 2200
+    },
+    {
+      "name": "T14_5",
+      "bytes": 1304
+    },
+    {
+      "name": "TILE",
+      "bytes": 17544
+    },
+    {
+      "name": "TOMW2_1",
+      "bytes": 10376
+    },
+    {
+      "name": "TOMW2_2",
+      "bytes": 10376
+    },
+    {
+      "name": "TP2_1",
+      "bytes": 17544
+    },
+    {
+      "name": "TP3_1",
+      "bytes": 17544
+    },
+    {
+      "name": "TP3_2",
+      "bytes": 17544
+    },
+    {
+      "name": "TP5_1",
+      "bytes": 4392
+    },
+    {
+      "name": "TP5_2",
+      "bytes": 4392
+    },
+    {
+      "name": "TP5_3",
+      "bytes": 4392
+    },
+    {
+      "name": "TP5_4",
+      "bytes": 4392
+    },
+    {
+      "name": "TP7_1",
+      "bytes": 17544
+    },
+    {
+      "name": "TP7_2",
+      "bytes": 17544
+    },
+    {
+      "name": "TSCRN1",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN2",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN3",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN4",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN5",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN6",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN7",
+      "bytes": 3473
+    },
+    {
+      "name": "TSCRN8",
+      "bytes": 3473
+    },
+    {
+      "name": "TTALL1_2",
+      "bytes": 1104
+    },
+    {
+      "name": "TYUNDER1",
+      "bytes": 4680
+    },
+    {
+      "name": "TYWFALL1",
+      "bytes": 9872
+    },
+    {
+      "name": "TYWFALL3",
+      "bytes": 9872
+    },
+    {
+      "name": "TYWFALL4",
+      "bytes": 9872
+    },
+    {
+      "name": "TYWHEEL1",
+      "bytes": 9352
+    },
+    {
+      "name": "VGCRATE1",
+      "bytes": 408
+    },
+    {
+      "name": "VINES1",
+      "bytes": 17544
+    },
+    {
+      "name": "W101_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W101_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W102_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W102_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W103_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W103_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W105_1",
+      "bytes": 19080
+    },
+    {
+      "name": "W107_1",
+      "bytes": 21713
+    },
+    {
+      "name": "W108_1",
+      "bytes": 8776
+    },
+    {
+      "name": "W108_4",
+      "bytes": 536
+    },
+    {
+      "name": "W109_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W109_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W110_1",
+      "bytes": 35080
+    },
+    {
+      "name": "W111_2",
+      "bytes": 3726
+    },
+    {
+      "name": "W111_3",
+      "bytes": 3726
+    },
+    {
+      "name": "W112_1",
+      "bytes": 4240
+    },
+    {
+      "name": "W112_2",
+      "bytes": 2271
+    },
+    {
+      "name": "W112_3",
+      "bytes": 2212
+    },
+    {
+      "name": "W113_1",
+      "bytes": 15548
+    },
+    {
+      "name": "W113_2",
+      "bytes": 4299
+    },
+    {
+      "name": "W113_3",
+      "bytes": 4341
+    },
+    {
+      "name": "W13_8",
+      "bytes": 1304
+    },
+    {
+      "name": "W13_A",
+      "bytes": 1304
+    },
+    {
+      "name": "W15_4",
+      "bytes": 5192
+    },
+    {
+      "name": "W15_5",
+      "bytes": 5192
+    },
+    {
+      "name": "W15_6",
+      "bytes": 1952
+    },
+    {
+      "name": "W17_1",
+      "bytes": 28080
+    },
+    {
+      "name": "W28_6",
+      "bytes": 4680
+    },
+    {
+      "name": "W28_7",
+      "bytes": 4680
+    },
+    {
+      "name": "W31_2",
+      "bytes": 4680
+    },
+    {
+      "name": "W32_1",
+      "bytes": 4680
+    },
+    {
+      "name": "W32_2",
+      "bytes": 4680
+    },
+    {
+      "name": "W32_4",
+      "bytes": 4680
+    },
+    {
+      "name": "W32_5",
+      "bytes": 4680
+    },
+    {
+      "name": "W33_5",
+      "bytes": 4680
+    },
+    {
+      "name": "W33_6",
+      "bytes": 4680
+    },
+    {
+      "name": "W33_7",
+      "bytes": 4680
+    },
+    {
+      "name": "W33_9",
+      "bytes": 4680
+    },
+    {
+      "name": "W35_1",
+      "bytes": 4680
+    },
+    {
+      "name": "W35_2",
+      "bytes": 4680
+    },
+    {
+      "name": "W46_37",
+      "bytes": 208
+    },
+    {
+      "name": "W46_38",
+      "bytes": 208
+    },
+    {
+      "name": "W46_39",
+      "bytes": 208
+    },
+    {
+      "name": "W64B_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W64B_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W65B_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W65B_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W67_1",
+      "bytes": 4680
+    },
+    {
+      "name": "W67_2",
+      "bytes": 2344
+    },
+    {
+      "name": "W73A_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W73A_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W73B_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W74A_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W74A_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W74B_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W92_1",
+      "bytes": 14472
+    },
+    {
+      "name": "W92_2",
+      "bytes": 14472
+    },
+    {
+      "name": "W94_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W96_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W96_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W98_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W98_2",
+      "bytes": 17544
+    },
+    {
+      "name": "W99_1",
+      "bytes": 17544
+    },
+    {
+      "name": "W99_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL00_2",
+      "bytes": 2200
+    },
+    {
+      "name": "WALL00_4",
+      "bytes": 2200
+    },
+    {
+      "name": "WALL00_5",
+      "bytes": 2520
+    },
+    {
+      "name": "WALL00_8",
+      "bytes": 2520
+    },
+    {
+      "name": "WALL01_5",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_6",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_7",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_8",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_9",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_A",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_B",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL01_C",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL02_1",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL02_3",
+      "bytes": 1952
+    },
+    {
+      "name": "WALL03_1",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL03_3",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL03_4",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL04_2",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_3",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_4",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_5",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_7",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_9",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_A",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_B",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL04_C",
+      "bytes": 1304
+    },
+    {
+      "name": "WALL05_2",
+      "bytes": 4168
+    },
+    {
+      "name": "WALL21_1",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL21_3",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL21_5",
+      "bytes": 5192
+    },
+    {
+      "name": "WALL22_1",
+      "bytes": 15496
+    },
+    {
+      "name": "WALL23_1",
+      "bytes": 15496
+    },
+    {
+      "name": "WALL23_2",
+      "bytes": 15496
+    },
+    {
+      "name": "WALL24_1",
+      "bytes": 36960
+    },
+    {
+      "name": "WALL25_1",
+      "bytes": 13448
+    },
+    {
+      "name": "WALL30_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL30_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL30_4",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL40_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL42_3",
+      "bytes": 3296
+    },
+    {
+      "name": "WALL47_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL48_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL48_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL48_4",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL49_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL49_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL49_4",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL50_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL50_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL51_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL51_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL51_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL52_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL52_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL53_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL54_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL55_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL57_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL57_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL57_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL57_4",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL58_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL58_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL58_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL59_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL59_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL59_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL59_4",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL63_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL63_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL64_2",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL69_4",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL70_2",
+      "bytes": 4096
+    },
+    {
+      "name": "WALL70_3",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL70_4",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL70_9",
+      "bytes": 2928
+    },
+    {
+      "name": "WALL71_5",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL72_3",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL72_5",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL72_7",
+      "bytes": 4680
+    },
+    {
+      "name": "WALL76_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL78_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL79_1",
+      "bytes": 17544
+    },
+    {
+      "name": "WALL97_1",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL97_2",
+      "bytes": 8776
+    },
+    {
+      "name": "WALL97_3",
+      "bytes": 8776
+    },
+    {
+      "name": "WFALL1",
+      "bytes": 8776
+    },
+    {
+      "name": "WFALL2",
+      "bytes": 8776
+    },
+    {
+      "name": "WFALL3",
+      "bytes": 8776
+    },
+    {
+      "name": "WFALL4",
+      "bytes": 8776
+    },
+    {
+      "name": "WLITA0",
+      "bytes": 144
+    },
+    {
+      "name": "WLITB0",
+      "bytes": 144
+    },
+    {
+      "name": "WLITC0",
+      "bytes": 144
+    },
+    {
+      "name": "WOLF1",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF10",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF11",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF12",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF13",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF14",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF17",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF18",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF2",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF2B",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF3",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF3B",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF4",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF4B",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF5",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF6",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF7",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF7B",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF8",
+      "bytes": 17544
+    },
+    {
+      "name": "WOLF9",
+      "bytes": 17544
+    },
+    {
+      "name": "WOOD",
+      "bytes": 9352
+    },
+    {
+      "name": "YELLITE1",
+      "bytes": 4392
+    },
+    {
+      "name": "YELLITE2",
+      "bytes": 1104
+    },
+    {
+      "name": "YELLITE3",
+      "bytes": 17544
+    },
+    {
+      "name": "YELLOW",
+      "bytes": 280
+    },
+    {
+      "name": "YELTNT",
+      "bytes": 4654
+    },
+    {
+      "name": "BLOOD1",
+      "bytes": 4096
+    },
+    {
+      "name": "BLOOD2",
+      "bytes": 4096
+    },
+    {
+      "name": "BLOOD3",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL1_2",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL1_3",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_1",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_2",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_4",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_5",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_6",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL4_3",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL5_1",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL5_2",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL5_3",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_3",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_5",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_6",
+      "bytes": 4096
+    },
+    {
+      "name": "DUMMY1",
+      "bytes": 4096
+    },
+    {
+      "name": "DUMMY2",
+      "bytes": 4096
+    },
+    {
+      "name": "DUMMY3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT17",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT1_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT1_2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT1_3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT22",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_6",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_7",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT8",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR0_2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR0_7",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR1_6",
+      "bytes": 4096
+    },
+    {
+      "name": "GRASS1",
+      "bytes": 4096
+    },
+    {
+      "name": "GRASS2",
+      "bytes": 4096
+    },
+    {
+      "name": "GRNLITE1",
+      "bytes": 4096
+    },
+    {
+      "name": "LAVA1",
+      "bytes": 4096
+    },
+    {
+      "name": "LAVA2",
+      "bytes": 4096
+    },
+    {
+      "name": "LAVA3",
+      "bytes": 4096
+    },
+    {
+      "name": "LAVA4",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK01",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK02",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK03",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK04",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK05",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK06",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK07",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK08",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK09",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK10",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK11",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK12",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK13",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK14",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK15",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK16",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK17",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK18",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK19",
+      "bytes": 4096
+    },
+    {
+      "name": "RROCK20",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR6_4",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR7_1",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR7_4",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME01",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME02",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME03",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME04",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME05",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME06",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME07",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME08",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME09",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME10",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME11",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME12",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME13",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME14",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME15",
+      "bytes": 4096
+    },
+    {
+      "name": "SLIME16",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL4_2",
+      "bytes": 4096
+    },
+    {
+      "name": "CONS1_1",
+      "bytes": 4096
+    },
+    {
+      "name": "CONS1_5",
+      "bytes": 4096
+    },
+    {
+      "name": "CONS1_7",
+      "bytes": 4096
+    },
+    {
+      "name": "CONS1_9",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_1",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_2",
+      "bytes": 4096
+    },
+    {
+      "name": "DEM1_4",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT10",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT14",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT18",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT20",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT23",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_4",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_5",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR0_3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR0_6",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR1_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR1_7",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR3_3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR4_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR4_5",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR4_6",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR5_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR5_2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR5_3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR5_4",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR6_1",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR6_2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR7_1",
+      "bytes": 4096
+    },
+    {
+      "name": "MFLR8_1",
+      "bytes": 4096
+    },
+    {
+      "name": "NUKAGE1",
+      "bytes": 4096
+    },
+    {
+      "name": "NUKAGE2",
+      "bytes": 4096
+    },
+    {
+      "name": "NUKAGE3",
+      "bytes": 4096
+    },
+    {
+      "name": "STEP1",
+      "bytes": 4096
+    },
+    {
+      "name": "STEP2",
+      "bytes": 4096
+    },
+    {
+      "name": "TLITE6_1",
+      "bytes": 4096
+    },
+    {
+      "name": "TLITE6_4",
+      "bytes": 4096
+    },
+    {
+      "name": "TLITE6_5",
+      "bytes": 4096
+    },
+    {
+      "name": "TLITE6_6",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL3_3",
+      "bytes": 4096
+    },
+    {
+      "name": "CEIL4_1",
+      "bytes": 4096
+    },
+    {
+      "name": "COMP01",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT4",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_3",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_8",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT9",
+      "bytes": 4096
+    },
+    {
+      "name": "FLOOR0_5",
+      "bytes": 4096
+    },
+    {
+      "name": "FWATER1",
+      "bytes": 4096
+    },
+    {
+      "name": "FWATER2",
+      "bytes": 4096
+    },
+    {
+      "name": "FWATER3",
+      "bytes": 4096
+    },
+    {
+      "name": "FWATER4",
+      "bytes": 4096
+    },
+    {
+      "name": "GATE1",
+      "bytes": 4096
+    },
+    {
+      "name": "GATE2",
+      "bytes": 4096
+    },
+    {
+      "name": "GATE3",
+      "bytes": 4096
+    },
+    {
+      "name": "GATE4",
+      "bytes": 4096
+    },
+    {
+      "name": "CRATOP1",
+      "bytes": 4096
+    },
+    {
+      "name": "CRATOP2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT19",
+      "bytes": 4096
+    },
+    {
+      "name": "MFLR8_2",
+      "bytes": 4096
+    },
+    {
+      "name": "SWATER1",
+      "bytes": 4096
+    },
+    {
+      "name": "SWATER2",
+      "bytes": 4096
+    },
+    {
+      "name": "SWATER3",
+      "bytes": 4096
+    },
+    {
+      "name": "SWATER4",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF001",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF002",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF003",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF004",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF005",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF006",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF007",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF008",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF009",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF010",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF011",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF012",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF013",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF014",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF015",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF016",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF017",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF018",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF019",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF020",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF021",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF022",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF023",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF024",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF025",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF026",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF027",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF028",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF029",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF030",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF031",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF032",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF033",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF034",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF035",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF036",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF037",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF038",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF039",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF040",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF041",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF042",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF043",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF044",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF045",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF046",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF047",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF048",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF049",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF050",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF051",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF052",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF053",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF054",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF055",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF056",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF057",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF058",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF059",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF060",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF061",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF062",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF063",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF064",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF065",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF066",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF067",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF068",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF069",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF070",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF071",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF072",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF073",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF074",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF075",
+      "bytes": 4096
+    },
+    {
+      "name": "AQF076",
+      "bytes": 4096
+    },
+    {
+      "name": "FCGRATE1",
+      "bytes": 4096
+    },
+    {
+      "name": "FCGRATE2",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_6B",
+      "bytes": 4096
+    },
+    {
+      "name": "FLAT5_6C",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR4_1",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR4_4",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR5_1",
+      "bytes": 4096
+    },
+    {
+      "name": "SFLR5_4",
+      "bytes": 4096
+    }
+  ]
+}

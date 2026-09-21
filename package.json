@@ -1,0 +1,47 @@
+{
+  "name": "doom-exe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "assets": "tsx scripts/prepare-assets.ts",
+    "bundle": "tsx scripts/bundle.ts",
+    "compile": "tsx scripts/compile.ts",
+    "deploy": "tsx scripts/deploy-rom.ts",
+    "verify": "tsx scripts/verify-rom.ts",
+    "test": "vitest run --root .",
+    "smoke": "tsx scripts/smoke-engine.ts",
+    "source": "tsx scripts/source.ts",
+    "level": "tsx scripts/rebuild-level.ts",
+    "trim": "tsx scripts/trim-rom.ts",
+    "check:trim": "tsx scripts/smoke-engine.ts game/trimmed/doomexe.wad && tsx scripts/check-trim.ts",
+    "music": "tsx scripts/prepare-music.ts",
+    "check:music": "tsx scripts/check-music.ts"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "viem": "2.56.6"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "6.1.1",
+    "fflate": "0.8.2",
+    "ganache": "7.9.2",
+    "solc": "0.8.30",
+    "tsx": "4.23.13",
+    "typescript": "5.9.2",
+    "vite": "8.3.0",
+    "vitest": "5.0.1"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  }
+}

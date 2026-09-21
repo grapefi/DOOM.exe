@@ -1,0 +1,14 @@
+import './env.ts';
+import { createPublicClient,http,isAddress } from 'viem';
+import { readFile } from 'node:fs/promises';
+import { chain } from '../shared/chain.ts';
+import { fetchOnchain } from '../shared/onchain.ts';
+import { decompressVerified,validateMeta } from '../shared/rom.ts';
+const address=process.argv[2]||process.env.VITE_MANIFEST_ADDRESS;
+if(!address||!isAddress(address)) throw new Error('Usage: pnpm verify 0xManifestAddress');
+const client=createPublicClient({chain,transport:http(process.env.RPC_URL||chain.rpcUrls.default.http[0],{timeout:30_000,retryCount:3})});
+const {bytes,meta,blockNumber}=await fetchOnchain(client,address,(n,total)=>{if(n%20===0||n===total)console.log(`${n}/${total} chunks`);});
+const local=JSON.parse(await readFile('web/public/rom/manifest.json','utf8'));validateMeta(local);
+if(meta.compressedHash!==local.compressedHash||meta.rawHash!==local.rawHash||meta.rawSize!==local.rawSize||meta.compressedSize!==local.compressedSize) throw new Error('On-chain manifest differs from local build');
+const {wasm,wad}=await decompressVerified(bytes,meta);
+console.log(`Verified at block ${blockNumber}: ${wasm.length} WASM bytes, ${wad.length} WAD bytes. ROM ${meta.compressedHash}`);

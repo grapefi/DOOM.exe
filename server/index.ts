@@ -14,8 +14,9 @@ export default {
   try{
    const db=database(env);
    if(path==='/api/leaderboard'&&request.method==='GET'){
-    const {results}=await db.prepare("SELECT player_name AS name, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE outcome = 'complete' AND player_name IS NOT NULL ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50").all();
-    return json({entries:results});
+    const dayStart=Math.floor(Date.now()/86400000)*86400000,dayEnd=dayStart+86400000;
+    const {results}=await db.prepare("SELECT player_name AS name, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE outcome = 'complete' AND player_name IS NOT NULL AND finished_at >= ? AND finished_at < ? ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50").bind(dayStart,dayEnd).all();
+    return json({entries:results,dayStart,dayEnd});
    }
    if(request.method!=='POST')return json({error:'Not found'},404);
    if(request.headers.get('origin')&&request.headers.get('origin')!==url.origin)return json({error:'Invalid request origin'},403);

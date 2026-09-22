@@ -200,3 +200,5 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .boot.loading .loading-brand{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.loading-brand .game-brand.compact{flex:none;margin:0 auto 12px}
 
 .boot.loading h2,.finished h2{box-sizing:border-box;align-self:center;width:100%;max-width:100%;margin-left:auto;margin-right:auto;text-align:center;text-wrap:balance}
+
+@keyframes chain-loading-pulse{0%,100%{opacity:1}50%{opacity:.35}}.boot.loading h2{animation:chain-loading-pulse 2.8s ease-in-out infinite}@media(prefers-reduced-motion:reduce){.boot.loading h2{animation:none}}

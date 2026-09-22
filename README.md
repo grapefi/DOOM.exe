@@ -2,7 +2,7 @@
 
 A playable, original **EXECUTION** arena using Freedoom 0.13.0 resources, a standalone DOOM-compatible WASM engine, and immutable EVM ROM storage.
 
-**Status:** the public website loads its optimized cartridge from **Robinhood Chain mainnet (4663)**: 74 immutable data contracts plus a manifest, about 1.72 MiB compressed. The deployment address and pinned hash are recorded in `shared/mainnetDeployment.json`. Gameplay and leaderboard results run in the browser and website backend, not in smart contracts.
+**Status:** the public website loads its optimized cartridge from **Robinhood Chain mainnet (4663)**: 74 immutable data contracts plus a manifest, about 1.72 MiB compressed. The mainnet ROM manifest is [`0x2FfFA6333487C97c7653D005162DA228C7B83b14`](https://robin.etherscan.io/address/0x2FfFA6333487C97c7653D005162DA228C7B83b14#code), with [exact-match source verification on Sourcify](https://repo.sourcify.dev/4663/0x2fffa6333487c97c7653d005162da228c7b83b14). The address and pinned hash are recorded in `shared/mainnetDeployment.json`. Gameplay and leaderboard results run in the browser and website backend, not in smart contracts.
 
 ## Quick start
 
@@ -54,7 +54,7 @@ The defaults follow the [official Robinhood Chain network configuration](https:/
 | Chain ID | 4663 |
 | RPC | https://rpc.mainnet.chain.robinhood.com |
 | Gas token | ETH |
-| Explorer | https://robinhoodchain.blockscout.com |
+| Explorer | https://robin.etherscan.io |
 
 1. Copy `.env.example` to `.env`.
 2. Fund a dedicated deployment account with ETH on Robinhood Chain.

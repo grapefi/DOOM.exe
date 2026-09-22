@@ -18,7 +18,7 @@ export function OnChain(){return <section className="onchain" aria-labelledby="o
    <div className="chain-card-head"><span className="chain-status live">LIVE ON MAINNET</span><span>GAME CARTRIDGE</span></div>
    <h3>ROBINHOOD MAINNET</h3>
    <p>The optimized 1.72 MiB cartridge is stored across 74 immutable data contracts plus one manifest. The site reads their runtime bytecode and verifies the committed hashes before the engine starts.</p>
-   {manifestAddress?<a href={`${chain.blockExplorers.default.url}/address/${manifestAddress}`} target="_blank" rel="noreferrer">VIEW ROM MANIFEST ↗</a>:<span className="manifest-pending">MANIFEST ADDRESS PUBLISHES AFTER DEPLOYMENT</span>}
+   {manifestAddress?<><p className="manifest-address"><span>VERIFIED ROM MANIFEST</span><a href={`${chain.blockExplorers.default.url}/address/${manifestAddress}#code`} target="_blank" rel="noreferrer">{manifestAddress}</a></p><a href={`${chain.blockExplorers.default.url}/address/${manifestAddress}#code`} target="_blank" rel="noreferrer">VIEW ON ROBINSCAN ↗</a></>:<span className="manifest-pending">MANIFEST ADDRESS PUBLISHES AFTER DEPLOYMENT</span>}
   </article>
 
  </div>

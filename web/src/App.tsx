@@ -15,6 +15,7 @@ export default function App(){
  const [error,setError]=useState(''),[meta,setMeta]=useState<RomMeta>();
  const [muted,setMuted]=useState(false);
  const [elapsed,setElapsed]=useState(0),[paused,setPaused]=useState(false),[name,setName]=useState(''),[scoreError,setScoreError]=useState(''),[saving,setSaving]=useState(false),[saved,setSaved]=useState(false),[ranked,setRanked]=useState(true),[revision,setRevision]=useState(0);
+ const [wallet,setWallet]=useState(()=>{try{return localStorage.getItem('doom-player-wallet')||'';}catch{return '';}});
  const result=useRef<{id:string;outcome:Outcome;elapsedMs:number}|null>(null);
  const viewport=useRef<HTMLDivElement>(null);
  const canvas=useRef<HTMLCanvasElement>(null),stop=useRef<(()=>void)|null>(null),abort=useRef<AbortController|null>(null),audio=useRef<AudioContext|null>(null);
@@ -43,7 +44,7 @@ export default function App(){
  async function saveScore(event:React.FormEvent){
   event.preventDefault();const ended=result.current;if(!ended||ended.outcome!=='complete'||saving||saved)return;
   setSaving(true);setScoreError('');
-  try{await scoreApi('/api/runs/finish',ended);await scoreApi('/api/leaderboard',{id:ended.id,name});if(result.current===ended){setSaved(true);setRevision(x=>x+1);}}
+  try{await scoreApi('/api/runs/finish',ended);await scoreApi('/api/leaderboard',{id:ended.id,name,wallet});try{localStorage.setItem('doom-player-wallet',wallet.trim());}catch{}if(result.current===ended){setSaved(true);setRevision(x=>x+1);}}
   catch(e){if(result.current===ended)setScoreError(e instanceof Error?e.message:'Unable to save time. Please try again.');}
   finally{if(result.current===ended)setSaving(false);}
  }
@@ -65,7 +66,7 @@ export default function App(){
      {phase==='loading'&&<div className="boot loading"><img className="game-brand compact" src="/doom-exe-wordmark.png" alt="DOOM.EXE"/><p className="eyebrow">BOOT SEQUENCE</p><h2>LOADING FROM CHAIN<span className="blink">...</span></h2><progress value={progress.percent} max={100}/><p role="status">{progress.label}</p><button className="text-button" onClick={reset}>CANCEL</button></div>}
      {phase==='dead'&&<div className="finished death-screen" role="region" aria-label="You died"><img className="game-brand compact" src="/doom-exe-wordmark.png" alt="DOOM.EXE"/><p className="eyebrow">ROUND OVER</p><h2>YOU DIED.</h2><p>The arena claimed another.</p><p className="result-time">{formatTime(elapsed)}</p><button className="primary play-again" onClick={launch}>↻ PLAY AGAIN</button></div>}
      {phase==='complete'&&<div className="finished" role="region" aria-label="Round completed"><img className="game-brand compact" src="/doom-exe-wordmark.png" alt="DOOM.EXE"/><p className="eyebrow">EXIT REACHED</p><h2>EXECUTED.</h2><p className="result-time">{formatTime(elapsed)}</p>
-      {ranked?(saved?<p className="score-success" role="status">TIME SAVED TO THE LEADERBOARD</p>:<form className="score-form" onSubmit={saveScore}><label htmlFor="player-name">YOUR NAME</label><div><input id="player-name" value={name} onChange={e=>setName(e.target.value)} minLength={2} maxLength={20} required autoComplete="nickname" placeholder="Enter your name" disabled={saving}/><button type="submit" disabled={saving}>{saving?'SAVING…':'POST TIME'}</button></div><small>2–20 characters · your name will be public</small>{scoreError&&<p role="alert">{scoreError}</p>}</form>):<p className="ranking-note">Preview rounds do not enter the daily prize leaderboard. Ranked play opens with the Robinhood mainnet launch.</p>}
+      {ranked?(saved?<p className="score-success" role="status">TIME SAVED TO THE LEADERBOARD</p>:<form className="score-form" onSubmit={saveScore}><label htmlFor="player-name">YOUR NAME</label><div><input id="player-name" value={name} onChange={e=>setName(e.target.value)} minLength={2} maxLength={20} required autoComplete="nickname" placeholder="Enter your name" disabled={saving}/><button type="submit" disabled={saving}>{saving?'SAVING…':'POST TIME'}</button></div><label htmlFor="player-wallet">PRIZE WALLET ADDRESS</label><input id="player-wallet" value={wallet} onChange={e=>setWallet(e.target.value)} required pattern="0x[0-9a-fA-F]{40}" maxLength={42} placeholder="0x…" autoComplete="off" spellCheck={false} disabled={saving}/><small>Your name and wallet address are public. Double-check your payout address. No connection required; ownership is not verified.</small>{scoreError&&<p role="alert">{scoreError}</p>}</form>):<p className="ranking-note">Preview rounds do not enter the daily prize leaderboard. Ranked play opens with the Robinhood mainnet launch.</p>}
       <div className="round-actions"><button className="primary play-again" onClick={launch} disabled={saving}>↻ PLAY AGAIN</button><ShareRound elapsedMs={elapsed}/></div></div>}
     </div>
     <div className="screen-bottom"><span className={meta?'verified':''}>{meta?'✓ ROM INTEGRITY VERIFIED':'> AWAITING EXECUTION'}</span><button onClick={()=>{void viewport.current?.requestFullscreen().catch(()=>{});}}>FULLSCREEN ↗</button></div>

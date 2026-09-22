@@ -49,7 +49,10 @@ export default function App(){
  useEffect(()=>{if(phase==='dead'||phase==='complete')viewport.current?.querySelector<HTMLButtonElement>('.play-again')?.focus();},[phase]);
  function toggleSound(){const next=!muted;setMuted(next);if(audio.current){void (next?audio.current.suspend():audio.current.resume()).catch(()=>{});}canvas.current?.focus();}
  return <main>
-  <header><a className="brand" href="/" aria-label="DOOM.EXE home"><img src="/doom-exe-icon.png" alt=""/><span className="wordmark">DOOM<span>.EXE</span></span></a><div className="network"><i/> ROBINHOOD CHAIN <b>MAINNET / {chain.id}</b></div><a className="github-link" href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GITHUB ↗</a></header>
+  <header className="site-hero">
+   <img className="hero-image" src="/doom-exe-header.png" alt="DOOM.EXE live on Robinhood Chain"/>
+   <div className="brand-bar"><a className="brand" href="/" aria-label="DOOM.EXE home"><img src="/doom-exe-icon.png" alt=""/><span className="wordmark">DOOM<span>.EXE</span></span></a><div className="network"><i/> ROBINHOOD CHAIN <b>MAINNET / {chain.id}</b></div><div className="header-actions"><a className="competition-link" href="#competition">PRIZE + LEADERBOARD ↓</a><a className="github-link" href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GITHUB ↗</a></div></div>
+  </header>
   <section className="titlebar"><div><p className="eyebrow">EPISODE 01 // SURVIVAL</p><h1>EXECUTION<span>_</span></h1></div><p className="edition"><b>24 HOSTILES.</b><br/>ONE WAY OUT.</p></section>
   <section className="console">
    <div className="screen-column" ref={viewport}>
@@ -80,8 +83,11 @@ export default function App(){
   {phase==='playing'&&!ranked&&<p className="notice">Leaderboard unavailable. You can still play, but this round cannot be ranked.</p>}
   {error&&<div className="error" role="alert"><b>BOOT FAILED</b> {error}</div>}
   <div className="under-console"><span>LOAD FROM CHAIN. PLAY IN YOUR BROWSER.</span><span>Click the viewport to focus · leaving it pauses play and the timer</span></div>
-  <PrizePool/>
-  <Leaderboard revision={revision}/>
+  <section className="competition" id="competition" aria-labelledby="competition-title">
+   <div className="competition-intro"><div><p className="eyebrow">COMPETE // SURVIVE // WIN</p><h2 id="competition-title">FASTEST OUT.<br/><em>BIGGEST PRIZE.</em></h2></div><p>Finish the arena, post your round time, and climb the leaderboard. The fastest completed runs rank first while the Robinhood Chain prize reserve grows from token trading fees.</p></div>
+   <PrizePool/>
+   <Leaderboard revision={revision}/>
+  </section>
   <OnChain/>
   <details><summary>ROM details & source</summary><p>Independent project using original arena geometry and Freedoom resources. Level music and sound effects supported; persistent saves are outside V1. No scores or gameplay are recorded on chain.</p><p>Robinhood mainnet manifest: {manifestAddress?<a href={chain.blockExplorers.default.url+'/address/'+manifestAddress} target="_blank" rel="noreferrer">{manifestAddress}</a>:'deploying soon'}</p><p className="hash">Compressed hash: {meta?.compressedHash||'available after mainnet deployment'}</p><p><a href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GitHub repository ↗</a> · <a href="/source/doom-exe-source.zip">Source archive</a> · <a href="/source/wasmdoom-v0.0.2-source.zip">Engine source</a> · <a href="/licenses/wasmdoom-GPL-2.0.txt">Engine license</a> · <a href="/licenses/COPYING.txt">Freedoom license</a> · <a href="/rom/provenance.json">Asset provenance</a></p></details>
   <footer><span>DOOM.EXE <b>© 2026</b></span><span>BUILT TO RUN. STORED TO LAST.</span><span>INDEPENDENT / NOT AFFILIATED WITH ID SOFTWARE OR ROBINHOOD</span></footer>

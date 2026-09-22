@@ -6,6 +6,7 @@ import {formatTime,type Outcome} from '../../shared/round';
 import {Leaderboard,scoreApi} from './leaderboard';
 import {ShareRound} from './share';
 import {PrizePool} from './PrizePool';
+import {OnChain} from './OnChain';
 import type {RomMeta} from '../../shared/rom';
 export default function App(){
  const [source,setSource]=useState<'local'|'chain'>(manifestAddress&&!trimmedPreview?'chain':'local');
@@ -82,6 +83,7 @@ export default function App(){
   <div className="under-console"><span>LOAD FROM CHAIN. PLAY IN YOUR BROWSER.</span><span>Click the viewport to focus · leaving it pauses play and the timer</span></div>
   <PrizePool/>
   <Leaderboard revision={revision}/>
+  <OnChain/>
   <details><summary>ROM details & source</summary><p>Independent project using original arena geometry and Freedoom resources. Level music and sound effects supported; persistent saves are outside V1. No scores or gameplay are recorded on chain.</p><p>Manifest: {manifestAddress?<a href={chain.blockExplorers.default.url+'/address/'+manifestAddress} target="_blank" rel="noreferrer">{manifestAddress}</a>:'not configured'}</p><p className="hash">Compressed hash: {meta?.compressedHash||'load a cartridge to verify'}</p><p><a href="/source/doom-exe-source.zip">Project source</a> · <a href="/source/wasmdoom-v0.0.2-source.zip">Engine source</a> · <a href="/licenses/wasmdoom-GPL-2.0.txt">Engine license</a> · <a href="/licenses/COPYING.txt">Freedoom license</a> · <a href="/rom/provenance.json">Asset provenance</a></p></details>
   <footer><span>DOOM.EXE <b>© 2026</b></span><span>BUILT TO RUN. STORED TO LAST.</span><span>INDEPENDENT / NOT AFFILIATED WITH ID SOFTWARE OR ROBINHOOD</span></footer>
  </main>;

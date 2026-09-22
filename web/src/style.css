@@ -188,3 +188,4 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .daily-pot li{min-height:110px}.boot.loading h2{font-size:clamp(12px,2vw,23px);line-height:1.8}
 @media(max-width:780px){.daily-pot .doom-medal{width:60px;height:60px}.daily-pot li{column-gap:8px}.daily-pot li>strong{font-size:22px}}
 @media(max-width:520px){.daily-pot .doom-medal{width:64px;height:64px}.daily-pot li{min-height:86px}.leaderboard td .doom-medal{width:36px;height:36px}}
+.doom-medal img{image-rendering:pixelated}

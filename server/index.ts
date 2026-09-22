@@ -15,7 +15,7 @@ export default {
    const db=database(env);
    if(path==='/api/leaderboard'&&request.method==='GET'){
     const dayStart=Math.floor(Date.now()/86400000)*86400000,dayEnd=dayStart+86400000;
-    const {results}=await db.prepare("SELECT player_name AS name, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE outcome = 'complete' AND player_name IS NOT NULL AND finished_at >= ? AND finished_at < ? ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50").bind(dayStart,dayEnd).all();
+    const {results}=await db.prepare("SELECT player_name AS name, CASE WHEN wallet_address IS NULL THEN NULL ELSE substr(wallet_address, 1, 6) || '…' || substr(wallet_address, -4) END AS walletShort, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE outcome = 'complete' AND player_name IS NOT NULL AND finished_at >= ? AND finished_at < ? ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50").bind(dayStart,dayEnd).all();
     return json({entries:results,dayStart,dayEnd});
    }
    if(path==='/api/player-scores'&&request.method==='GET'){
@@ -24,7 +24,7 @@ export default {
     const offset=Math.max(0,Math.min(100000,Number(url.searchParams.get('offset'))||0));
     const match="outcome = 'complete' AND player_name IS NOT NULL AND (player_name = ? COLLATE NOCASE OR wallet_address = ? COLLATE NOCASE)";
     const summary=await db.prepare(`SELECT COUNT(*) AS total, MIN(elapsed_ms) AS bestMs FROM runs WHERE ${match}`).bind(query,query).first();
-    const {results}=await db.prepare(`SELECT player_name AS name, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE ${match} ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50 OFFSET ?`).bind(query,query,Math.floor(offset)).all();
+    const {results}=await db.prepare(`SELECT player_name AS name, CASE WHEN wallet_address IS NULL THEN NULL ELSE substr(wallet_address, 1, 6) || '…' || substr(wallet_address, -4) END AS walletShort, elapsed_ms AS elapsedMs, finished_at AS finishedAt FROM runs WHERE ${match} ORDER BY elapsed_ms ASC, finished_at ASC, id ASC LIMIT 50 OFFSET ?`).bind(query,query,Math.floor(offset)).all();
     return json({entries:results,...summary as object});
    }
    if(request.method!=='POST')return json({error:'Not found'},404);

@@ -77,3 +77,14 @@ header.site-hero:after{height:4px;background:linear-gradient(90deg,#601814,#f15c
 @media(max-width:900px){.brand-bar{grid-template-columns:1fr auto}.brand-bar .network{grid-column:1/-1;grid-row:2;justify-self:center}.header-actions{grid-column:2;grid-row:1}.competition-intro{grid-template-columns:1fr;gap:18px}}
 @media(max-width:780px){header.site-hero{height:auto;padding:0}.hero-image{aspect-ratio:3/1;min-height:128px}.brand-bar{min-height:74px;padding:10px;gap:10px}.brand-bar .brand{gap:7px}.brand-bar .brand img{width:42px;height:42px}.header-actions{gap:6px}.competition-link{display:none}.competition{margin:27px 0;padding:22px 14px 14px}.competition:before{left:12px;font-size:7px}.competition-intro{padding:9px 4px 20px}.competition-intro>p{font-size:14px}.competition .prize-pool{margin-top:18px}}
 @media(max-width:500px){.hero-image{min-height:112px}.brand-bar{display:flex;flex-wrap:wrap}.brand-bar .network{order:3;width:100%;justify-content:center}.header-actions{margin-left:auto}.brand-bar .wordmark{font-size:14px}.brand-bar .brand img{width:36px;height:36px}}
+
+/* Seamless hero transition */
+header.site-hero{border:0;background:transparent;box-shadow:0 20px 48px #0008;isolation:isolate}
+header.site-hero:before{content:'';position:absolute;inset:auto 0 0;height:110px;background:linear-gradient(180deg,transparent,#120b0a 72%);pointer-events:none;z-index:1}
+header.site-hero:after{bottom:0;height:2px;opacity:.78;z-index:3}
+.hero-image{border:0;position:relative;z-index:0}
+.brand-bar{position:relative;z-index:2;margin-top:-68px;min-height:142px;padding:70px 18px 12px;background:linear-gradient(180deg,transparent 0,#1a0e0cca 42%,#130c0b 70%),repeating-linear-gradient(90deg,#ffffff04 0 1px,transparent 1px 7px)}
+.brand-bar .brand img{border-color:#713724;box-shadow:0 0 0 2px #100706aa,0 0 22px #e9432940}
+.titlebar{position:relative}.titlebar:before{content:'';position:absolute;left:0;right:0;top:0;height:45px;background:linear-gradient(180deg,#130c0b99,transparent);pointer-events:none;z-index:-1}
+@media(max-width:780px){.brand-bar{margin-top:-46px;min-height:112px;padding-top:50px}}
+@media(max-width:500px){.brand-bar{margin-top:-38px;min-height:118px;padding-top:43px}}

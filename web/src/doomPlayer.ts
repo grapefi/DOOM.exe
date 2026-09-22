@@ -1,8 +1,8 @@
-import {playerIsDead,isPlayingLevel,type Outcome} from '../../shared/round';
+import {playerIsDead,isPlayingLevel,updateExitLock,type Outcome} from '../../shared/round';
 import {createMusic} from './music';
 import {bootEngine,type Doom} from '../../shared/engine';
 const keys:Record<string,number>={ArrowUp:0xad,KeyW:0xad,ArrowDown:0xaf,KeyS:0xaf,ArrowLeft:0xac,ArrowRight:0xae,KeyA:44,KeyD:46,ControlLeft:32,ControlRight:32,Space:0x9d,KeyE:32,ShiftLeft:0xb6,ShiftRight:0xb6,Escape:27,Enter:13,Tab:9,Backspace:127};
-export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:Uint8Array,audio:AudioContext|null,onEnd:(outcome:Outcome,elapsedMs:number)=>void,onError:(message:string)=>void,onTime:(elapsedMs:number,paused:boolean)=>void){
+export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:Uint8Array,audio:AudioContext|null,onEnd:(outcome:Outcome,elapsedMs:number)=>void,onError:(message:string)=>void,onTime:(elapsedMs:number,paused:boolean,remaining?:number)=>void){
  const doom=await bootEngine(wasm,wad),ctx=canvas.getContext('2d');
  if(!ctx)throw new Error('Canvas is unavailable');
  const music=audio?await createMusic(audio,wad):null;
@@ -45,7 +45,7 @@ export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:U
  function keyboard(event:KeyboardEvent){
   const k=keys[event.code]??(/^Digit[1-7]$/.test(event.code)?event.code.charCodeAt(5):undefined);
   if(k===undefined||finished||disposed)return;event.preventDefault();
-  if(event.type==='keydown'){if(!event.repeat&&!down.has(event.code)){down.set(event.code,k);doom.wasmdoom_keydown(k);}}
+  if(event.type==='keydown'){if(!event.repeat&&!down.has(event.code)){down.set(event.code,k);if(k!==32)doom.wasmdoom_keydown(k);}}
   else{down.delete(event.code);if(![...down.values()].includes(k))doom.wasmdoom_keyup(k);}
  }
  const focus=()=>{if(!finished&&!document.hidden){music?.pause(false);onTime(elapsed(),false);}};
@@ -56,10 +56,11 @@ export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:U
  const stop=()=>{if(disposed)return;disposed=true;clearInterval(timer);release();music?.stop();canvas.removeEventListener('keydown',keyboard);canvas.removeEventListener('keyup',keyboard);canvas.removeEventListener('blur',blur);canvas.removeEventListener('focus',focus);document.removeEventListener('visibilitychange',visibility);};
  function step(){
   if(isPlayingLevel(doom))ticks++;
+  const remaining=updateExitLock(doom,[...down.values()].includes(32));
   doom.wasmdoom_tick();drain();draw();
-  const outcome=playerIsDead(doom)?'dead':exitReached?'complete':null;
+  const outcome=playerIsDead(doom)?'dead':exitReached&&remaining===0?'complete':null;
   if(outcome){finished=true;clearInterval(timer);release();onTime(elapsed(),false);onEnd(outcome,elapsed());}
-  else onTime(elapsed(),!isPlayingLevel(doom));
+  else onTime(elapsed(),!isPlayingLevel(doom),remaining);
  }
  try{drain();}catch(e){stop();throw e;}
  timer=window.setInterval(()=>{if(disposed||finished||document.hidden||document.activeElement!==canvas)return;try{step();}catch(e){stop();onError(e instanceof Error?e.message:'Engine stopped');}},1000/35);

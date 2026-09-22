@@ -131,3 +131,18 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .source-tabs button[aria-pressed=true]{color:#ffe1bd;background:linear-gradient(#6b261c,#35110f);border-color:#be5c41 #200908 #200908 #a54a32}
 @media(max-width:780px){.brand-bar .brand .header-wordmark{width:170px;height:auto}.game-brand{width:min(330px,88%);margin-bottom:14px}.game-brand.compact{width:170px}}
 @media(max-width:380px){.brand-bar .brand .header-wordmark{width:145px}}
+
+/* Clearer header spacing and competition panels */
+.brand-bar{padding-top:88px;padding-bottom:22px}
+.brand-bar .brand{padding-top:8px}
+.competition .prize-pool{border:3px solid #eda75e;background:linear-gradient(115deg,#633223,#301811 72%);box-shadow:0 0 0 1px #1a0905,inset 0 1px #ffd4a366,0 0 26px #de713829;padding:28px}
+.competition .leaderboard{border:3px solid #e77755;background:linear-gradient(130deg,#472a22,#231613 75%);box-shadow:0 0 0 1px #150807,inset 0 1px #ffb59a55,0 0 26px #db4d3026;padding:28px}
+.competition .prize-pool h2,.competition .leaderboard h2{color:#ffe4bb}
+.prize-amounts{gap:18px}.prize-amounts>div{background:#160e0bcc;border:1px solid #ba8152;padding:18px}.prize-amounts span{color:#e0c5a2}.prize-amounts strong{font-size:clamp(24px,3vw,38px);color:#ffe8c7}
+.competition .prize-pool p,.competition .ranking-note{color:#ead5bf}
+.competition .prize-status{border-color:#aa7352;color:#d9bfa8}
+.competition .ranking-empty{background:#120c09aa;border:1px solid #a46d50;margin-top:20px;color:#ffe1ae}
+.competition .daily-pot{background:#180f0d;border-color:#bc7952}
+.chain-grid.cartridge-only{grid-template-columns:minmax(0,1fr)}
+@media(max-width:780px){.brand-bar{padding-top:64px;padding-bottom:18px}.brand-bar .brand{padding-top:5px}.competition .prize-pool,.competition .leaderboard{padding:18px}.prize-amounts>div{padding:12px}}
+@media(max-width:500px){.brand-bar{padding-top:57px}}

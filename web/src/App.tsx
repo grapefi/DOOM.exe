@@ -51,7 +51,7 @@ export default function App(){
  function toggleSound(){const next=!muted;setMuted(next);if(audio.current){void (next?audio.current.suspend():audio.current.resume()).catch(()=>{});}canvas.current?.focus();}
  return <main>
   <header className="site-hero">
-   <img className="hero-image" src="/doom-exe-hell-header.png" alt="DOOM.EXE — Hell has a new home. Play on Robinhood Chain."/>
+   <img className="hero-image" src="/doom-exe-hell-header-clean.png" alt="DOOM.EXE — Hell has a new home. Play on Robinhood Chain."/>
    <div className="brand-bar"><a className="brand" href="/" aria-label="DOOM.EXE home"><img className="header-wordmark" src="/doom-exe-wordmark.png" alt="DOOM.EXE"/></a><div className="network"><i/> ROBINHOOD CHAIN <b>MAINNET / {chain.id}</b></div><div className="header-actions"><a className="competition-link" href="#competition">PRIZE + LEADERBOARD ↓</a><a className="github-link" href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GITHUB ↗</a></div></div>
   </header>
   <section className="titlebar"><div><p className="eyebrow">EPISODE 01 // SURVIVAL</p><h1>EXECUTION<span>_</span></h1></div><p className="edition"><b>24 HOSTILES.</b><br/>ONE WAY OUT.</p></section>

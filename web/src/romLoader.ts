@@ -12,10 +12,10 @@ export async function loadRom(source:CartridgeSource,report:(p:Progress)=>void,s
  const activeChain=source==='arbitrum'?arbitrumChain:chain;
  const address=source==='arbitrum'?arbitrumManifestAddress:manifestAddress;
  const activeRpc=source==='arbitrum'?arbitrumChain.rpcUrls.default.http[0]:rpc;
- report({label:`Loading from chain...`,percent:3});
+ report({label:`Loading from chain`,percent:3});
  if(!isAddress(address))throw new Error('Robinhood mainnet cartridge is not deployed yet.');
  const client=createPublicClient({chain:activeChain,transport:http(activeRpc,{timeout:20_000,retryCount:2})});
- const result=await fetchOnchain(client,address,(n,total)=>report({label:`Loading from chain... ${n} / ${total} chunks`,percent:5+Math.round(n/total*75)}),signal,activeChain);
+ const result=await fetchOnchain(client,address,(n,total)=>report({label:`Loading from chain ${n} / ${total} chunks`,percent:5+Math.round(n/total*75)}),signal,activeChain);
  const bytes=result.bytes,meta:RomMeta=result.meta;
  const pin=(source==='arbitrum'?arbitrumHash:import.meta.env.VITE_ROM_HASH) as Hex|undefined;
  if(pin&&pin.toLowerCase()!==meta.compressedHash.toLowerCase())throw new Error('Manifest does not match the published ROM hash');

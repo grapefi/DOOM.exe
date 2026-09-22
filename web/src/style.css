@@ -198,3 +198,5 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .finished .executed-title{align-self:center;box-sizing:border-box;width:100%;max-width:100%;margin:4px auto;text-align:center;font-size:clamp(20px,3vw,36px);line-height:1.5;letter-spacing:0}.exit-status{text-align:center;padding:10px 12px;background:#35130e;border-top:1px solid #984831;color:#ffd09d;font-size:14px;line-height:1.5}
 
 .boot.loading .loading-brand{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.loading-brand .game-brand.compact{flex:none;margin:0 auto 12px}
+
+.boot.loading h2,.finished h2{box-sizing:border-box;align-self:center;width:100%;max-width:100%;margin-left:auto;margin-right:auto;text-align:center;text-wrap:balance}

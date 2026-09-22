@@ -1,10 +1,11 @@
 import {playerIsDead,isPlayingLevel,updateExitLock,type Outcome} from '../../shared/round';
+import {balanceArena} from '../../shared/arenaBalance';
 import {createMusic} from './music';
 import {playRoundMusic} from './roundMusic';
 import {bootEngine,type Doom} from '../../shared/engine';
 const keys:Record<string,number>={ArrowUp:0xad,KeyW:0xad,ArrowDown:0xaf,KeyS:0xaf,ArrowLeft:0xac,ArrowRight:0xae,KeyA:44,KeyD:46,ControlLeft:32,ControlRight:32,Space:0x9d,KeyE:32,ShiftLeft:0xb6,ShiftRight:0xb6,Escape:27,Enter:13,Tab:9,Backspace:127};
 export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:Uint8Array,audio:AudioContext|null,onEnd:(outcome:Outcome,elapsedMs:number)=>void,onError:(message:string)=>void,onTime:(elapsedMs:number,paused:boolean,remaining?:number)=>void){
- const doom=await bootEngine(wasm,wad),ctx=canvas.getContext('2d');
+ const doom=await bootEngine(wasm,balanceArena(wad)),ctx=canvas.getContext('2d');
  if(!ctx)throw new Error('Canvas is unavailable');
  const music=audio?await createMusic(audio,wad):null;
  canvas.width=320;canvas.height=200;const image=ctx.createImageData(320,200);

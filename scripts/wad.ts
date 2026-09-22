@@ -30,9 +30,9 @@ export function makeArena(input: Uint8Array) {
   enemyRows.forEach((row,r)=>row.forEach((type,c)=>spawns.push([-400+c*160,-80+r*160,270,type,7])));
   // Shotgun at spawn; armor just ahead; chaingun deep in the northern arena.
   spawns.push([0,-400,0,2001,7],[0,-350,0,2018,7],[0,320,0,2002,7]);
-  // Six shell boxes and six bullet boxes: sweep the perimeter to stay supplied.
-  for(const [x,y] of [[-96,-400],[128,-400],[-432,-240],[432,-240],[-432,320],[432,320]])spawns.push([x,y,0,2049,7]);
-  for(const [x,y] of [[-160,-400],[192,-400],[-432,0],[432,0],[-240,448],[240,448]])spawns.push([x,y,0,2048,7]);
+  // Four ammo boxes total: two shells and two bullets on exposed side lanes.
+  for(const [x,y] of [[-432,-240],[432,-240]])spawns.push([x,y,0,2049,7]);
+  for(const [x,y] of [[-432,320],[432,320]])spawns.push([x,y,0,2048,7]);
   // Only two medikits, both exposed on the side lanes beyond the first enemy row.
   for(const [x,y] of [[-432,160],[432,160]])spawns.push([x,y,0,2012,7]);
   const things=shorts(spawns.flat());

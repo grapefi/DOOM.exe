@@ -9,8 +9,8 @@
     "archiveSha256": "3f9b264f3e3ce503b4fb7f6bdcb1f419d93c7b546f4df3e874dd878db9688f59"
   },
   "wad": {
-    "sha256": "a17dacab6b9b2e2d514f0ba9af7341ee7c15495cea9da35e88616b40ceafd0ee",
-    "sourceSha256": "ecb3f8974127d31d773f8421d706f5c60923f165ff2b1b11420723ad6c5c5c7c",
+    "sha256": "016f0e75d0fc92896f524e0c3a4632f0d9bf16fd40a840a8ee2defc92a875dc6",
+    "sourceSha256": "b02f8d53db4faa9b84c6ad623ae166093fa61e2e9fcdb3876d8eb523c348dbca",
     "description": "EXECUTION arena with unused sprite/texture/flat data removed and Freedoom E1M1 music and GENMIDI retained; other tracks replaced by silent MUS entries; shared digital sound effects and menu resources retained."
   }
 }

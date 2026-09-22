@@ -1,9 +1,9 @@
-import { type PublicClient,type Address,hexToBytes } from 'viem';
+import { type PublicClient,type Address,type Chain,hexToBytes } from 'viem';
 import { chain,manifestAbi } from './chain.ts';
 import { CHUNK_BYTES, validateMeta,checkHash,type RomMeta } from './rom.ts';
-export async function fetchOnchain(client:PublicClient,address:Address,progress:(done:number,total:number)=>void=()=>{},signal?:AbortSignal) {
+export async function fetchOnchain(client:PublicClient,address:Address,progress:(done:number,total:number)=>void=()=>{},signal?:AbortSignal,expectedChain:Chain=chain) {
   signal?.throwIfAborted();
-  if(await client.getChainId()!==chain.id) throw new Error(`RPC is not ${chain.name} (${chain.id})`);
+  if(await client.getChainId()!==expectedChain.id) throw new Error(`RPC is not ${expectedChain.name} (${expectedChain.id})`);
   const blockNumber=await client.getBlockNumber({cacheTime:0});
   const read=(functionName:'VERSION'|'compressedHash'|'rawHash'|'compressedSize'|'rawSize'|'chunkCount')=>client.readContract({address,abi:manifestAbi,functionName,blockNumber});
   const [version,compressedHash,rawHash,compressedSize,rawSize,count]=await Promise.all(['VERSION','compressedHash','rawHash','compressedSize','rawSize','chunkCount'].map(n=>read(n as Parameters<typeof read>[0])));

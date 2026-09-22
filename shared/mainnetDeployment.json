@@ -1,0 +1,10 @@
+{
+  "chainId": 4663,
+  "manifestAddress": "0x2fffa6333487c97c7653d005162da228c7b83b14",
+  "compressedHash": "0x087add2af875723afec8a3e5b8b6ba56341d6a7e63373ec301f35d868c2e2bc2",
+  "rawHash": "0xc26ab9dc3d80ad02257383cc09a2dbfdaf1998db80275d46b371e0d7cd49a810",
+  "compressedSize": 1802242,
+  "rawSize": 3825149,
+  "chunkCount": 74,
+  "manifestTransaction": "0xb689711d6f226734847a59dd9c09e31393522a4338a01dc80b5745b446239ce2"
+}

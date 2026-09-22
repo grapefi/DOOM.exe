@@ -1,3 +1,15 @@
+# Robinhood mainnet deployment — 2026-09-23
+
+- Deployed 74 data contracts and manifest `0x2fffa6333487c97c7653d005162da228c7b83b14` on chain 4663.
+- Reconstructed all 74 chunks from mainnet at block 70006218; compressed and raw hashes match the local optimized cartridge.
+- Compressed cartridge: 1,802,242 bytes; engine: 311,507 bytes; WAD: 3,513,626 bytes.
+- Transaction fees: 0.022512821876754 ETH across 75 confirmed deployments.
+- All 19 automated tests passed. Engine smoke passed; 3,081 simulation-equivalent frames and matching sound samples passed trim comparison.
+- Mainnet address and independent hash pin are persisted in `shared/mainnetDeployment.json` for reproducible frontend builds.
+- Public scores remain browser-reported. Automated prize distribution remains outside this deployment.
+
+Earlier records below describe the project at those dates.
+
 # Round results and leaderboard update
 
 Real WASM checks exercise natural death, frozen final timing, pause on focus loss, and fresh replay. Existing engine smoke checks confirm north-wall completion and combat/pickups. The Worker is exercised against SQLite using its generated migration: running/dead result rejection, immutable outcomes, time bounds, invalid names, idempotency, and fastest-first sorting. Browser preview confirms death and Play Again resets the timer. Public scores are browser-reported, without authoritative anti-cheat verification.

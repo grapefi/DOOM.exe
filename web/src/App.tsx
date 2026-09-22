@@ -76,7 +76,7 @@ export default function App(){
    <aside>
     <div className="panel-heading"><span>01</span> CARTRIDGE NETWORK</div>
     <div className="source-tabs" role="group" aria-label="Launch network"><button aria-pressed="true" disabled>ROBINHOOD MAINNET</button></div>
-    <p className="source-note">DOOM.EXE is preparing for Robinhood Chain mainnet. The browser reconstructs the on-chain cartridge and verifies every byte before play.</p>
+    <p className="source-note">DOOM.EXE is live on Robinhood Chain mainnet. The browser reconstructs the on-chain cartridge and verifies every byte before play.</p>
     {!manifestAddress&&<p className="notice">Robinhood mainnet deployment is coming soon. Try the playable preview while we prepare for launch.</p>}
     <dl><div><dt>LEVEL</dt><dd>EXECUTION</dd></div><div><dt>ASSETS</dt><dd>FREEDOOM 0.13.0</dd></div><div><dt>ENGINE</dt><dd>WASMDOOM</dd></div><div><dt>ROM SIZE</dt><dd>{meta?(meta.compressedSize/1048576).toFixed(2)+' MiB':'—'}</dd></div><div><dt>CHUNKS</dt><dd>{meta?Math.ceil(meta.compressedSize/24575):'—'}</dd></div></dl>
     <div className="panel-heading"><span>02</span> MISSION BRIEF</div><p className="brief">24 hostiles. Shotgun at spawn.<br/>Chaingun at the far north end.<br/>2 medikits. 4 ammo boxes.<br/>Kill every enemy to unlock the north-wall exit.</p>

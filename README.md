@@ -2,7 +2,7 @@
 
 A playable, original **EXECUTION** arena using Freedoom 0.13.0 resources, a standalone DOOM-compatible WASM engine, and immutable EVM ROM storage.
 
-**Status:** the public website is configured for on-chain play on **Robinhood Chain mainnet (4663)**. The optimized 74-chunk cartridge is tested and ready for deployment; the play button remains in a clearly marked “deploying soon” state until its mainnet manifest address and hash are configured. No proprietary DOOM WAD, artwork, music, or logo is included.
+**Status:** the public website loads its optimized cartridge from **Robinhood Chain mainnet (4663)**: 74 immutable data contracts plus a manifest, about 1.72 MiB compressed. The deployment address and pinned hash are recorded in `shared/mainnetDeployment.json`. Gameplay and leaderboard results run in the browser and website backend, not in smart contracts.
 
 ## Quick start
 
@@ -17,11 +17,11 @@ pnpm run music
 pnpm run dev
 ```
 
-Open the printed localhost address to inspect the site. Public gameplay is chain-only, so the play button activates after a valid Robinhood mainnet manifest address and ROM hash are added to `.env`. The delivered source includes prepared assets and ROM files for build, validation and deployment. Asset downloads require internet access. The browser uses modern WebAssembly and DecompressionStream support (current Chrome, Edge, Firefox or Safari). Serve over localhost or HTTPS; opening index.html directly does not work.
+Open the printed localhost address to inspect the site. Public gameplay loads the published mainnet cartridge by default. Optional `.env` values can override the mainnet manifest address and pinned ROM hash. The delivered source includes prepared assets and ROM files for build, validation and deployment. Asset downloads require internet access. The browser uses modern WebAssembly and DecompressionStream support (current Chrome, Edge, Firefox or Safari). Serve over localhost or HTTPS; opening index.html directly does not work.
 
-Controls: W/S forward/back, A/D strafe, arrow keys turn, Space fire, Ctrl/E use the north-wall exit, Shift run, Tab map. Click the game to focus; it pauses when it loses focus. Collect the shotgun at spawn and push through the arena to reach the chaingun near the north side. The crowded survival arena has 24 enemies (eight former humans, twelve imps and four melee demons), six shell boxes, six bullet boxes and only two medikits on exposed side lanes. The exit is usable even before all enemies are defeated. Reaching the exit shows the completion overlay. Reset/replay starts a fresh instance.
+Controls: W/S forward/back, A/D strafe, arrow keys turn, Space fire, Ctrl/E use the north-wall exit, Shift run, Tab map. Click the game to focus; it pauses when it loses focus. Collect the shotgun at spawn and push through the arena to reach the chaingun near the north side. The crowded survival arena has 24 enemies (eight former humans, twelve imps and four melee demons), two shell boxes, two bullet boxes and only two medikits on exposed side lanes. The browser locks the use/exit action until all 24 enemies are dead. Reaching the exit shows the completion overlay. Reset/replay starts a fresh instance.
 
-This is a desktop keyboard V1. The layout adapts to small screens, but touch/gamepad controls, persistent saves, multiplayer, tournaments and rewards are not implemented. Sound effects and looping Freedoom E1M1 level music are supported.
+This is a desktop keyboard V1. The layout adapts to small screens, but touch/gamepad controls, persistent saves and multiplayer are not implemented. Daily leaderboards and wallet-address score submissions are available; automated prize payouts and rollover are not implemented. Sound effects and looping Freedoom E1M1 level music are supported.
 
 ## Rebuild after level edits
 
@@ -89,9 +89,9 @@ The browser only exposes chain loading. Reading and playing require no wallet or
 
 ## Actual V1 size
 
-The prepared ROM is **6,650,980 compressed bytes (6.34 MiB)** and **18,354,600 raw bytes**, requiring **271 data contracts plus one manifest**. Engine: 311,507 bytes. IWAD: 18,043,077 bytes.
+The deployed optimized ROM is **1,802,242 compressed bytes (1.72 MiB)**, requiring **74 data contracts plus one manifest**. The original untrimmed build used 271 data contracts.
 
-This first working build retains the complete Freedoom Phase 1 shared resources and replaces campaign geometry with the original arena. It does **not** meet the earlier speculative 0.8–1.8 MB target. Pruning unused textures, sprites, sounds and music is a separate optimization; deleting lumps blindly can break engine initialization or animations.
+The optimized build removes resources unused by this arena while retaining gameplay assets, sound effects, and E1M1 music. Engine tests compare simulation and sound behavior against the untrimmed build.
 
 The original build’s code-deposit cost alone is at least **1,330,250,200 gas** across the chunk transactions. This is not a deployment quote: constructor execution, transaction overhead, the manifest, and L1 data fees are extra. The optimized build cuts the cartridge to 74 chunks. Run the planning command and review current Robinhood Chain fees before broadcasting.
 

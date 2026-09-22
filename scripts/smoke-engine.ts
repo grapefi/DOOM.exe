@@ -28,8 +28,9 @@ assert.ok(new Set(pixels).size>16,'Engine must render a real game frame');
 const solo=await bootEngine(wasm,wad,{noMonsters:true}) as Inspectable;
 for(let i=0;i<35;i++)tick(solo);
 let p=player(solo);p.setInt32(0,50,true);p.setUint32(156,1,true);solo.wasmdoom_apply_player();
+p=player(solo);p.setInt32(128,-432*65536,true);p.setInt32(132,-300*65536,true);p.setUint32(140,0x40000000,true);p.setInt32(144,0,true);p.setInt32(148,0,true);p.setUint32(156,1<<21,true);solo.wasmdoom_apply_player();
 const shells=player(solo).getInt32(76,true);
-solo.wasmdoom_keydown(44);for(let i=0;i<30;i++)tick(solo);solo.wasmdoom_keyup(44);
+solo.wasmdoom_keydown(0xad);for(let i=0;i<15;i++)tick(solo);solo.wasmdoom_keyup(0xad);
 for(let i=0;i<12;i++)tick(solo);
 assert.ok(player(solo).getInt32(76,true)>shells,'Shell box must replenish ammunition');
 // Verify one of the two exposed side-lane medikits, then return to the central

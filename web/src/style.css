@@ -176,3 +176,15 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .competition .ranking-empty{padding:34px 16px;border:2px dashed #a35035;background:#150b09;color:#ffcf92}
 @media(max-width:780px){.daily-pot ol{gap:8px}.daily-pot li{column-gap:8px;padding:12px 8px}.daily-pot .doom-medal{width:42px;height:52px}.daily-pot li>strong{font-size:24px}.leaderboard-heading{gap:16px}.leaderboard td:first-child{width:88px}}
 @media(max-width:520px){.daily-pot li{grid-template-columns:auto 1fr auto;padding:10px 14px}.daily-pot .doom-medal{width:42px;height:50px}.leaderboard .rank-number{display:inline-block;font-size:11px;margin-right:5px}.leaderboard td .doom-medal{width:30px;height:38px}.leaderboard td:first-child{width:74px}}
+
+/* Sculpted metal trophies */
+.daily-pot .doom-medal,.leaderboard td .doom-medal,.doom-medal{display:inline-grid;width:76px;height:76px;padding:0;border:0;border-radius:0;clip-path:none;overflow:visible;background:transparent;box-shadow:none!important}
+.doom-medal:after{display:none}
+.doom-medal img{width:100%;height:100%;object-fit:contain;border:0;image-rendering:auto;filter:drop-shadow(0 3px 3px #000)}
+.doom-medal.gold img{filter:sepia(1) saturate(1.8) brightness(1.13) drop-shadow(0 3px 4px #000)}
+.doom-medal.silver img{filter:brightness(1.15) drop-shadow(0 3px 4px #000)}
+.doom-medal.bronze img{filter:sepia(1) saturate(2.6) hue-rotate(342deg) brightness(.86) drop-shadow(0 3px 4px #000)}
+.leaderboard td .doom-medal{width:48px;height:48px}
+.daily-pot li{min-height:110px}.boot.loading h2{font-size:clamp(12px,2vw,23px);line-height:1.8}
+@media(max-width:780px){.daily-pot .doom-medal{width:60px;height:60px}.daily-pot li{column-gap:8px}.daily-pot li>strong{font-size:22px}}
+@media(max-width:520px){.daily-pot .doom-medal{width:64px;height:64px}.daily-pot li{min-height:86px}.leaderboard td .doom-medal{width:36px;height:36px}}

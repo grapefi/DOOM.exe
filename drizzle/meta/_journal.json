@@ -15,6 +15,13 @@
       "when": 1790075006011,
       "tag": "0001_careful_hitman",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790078493691,
+      "tag": "0002_remove_dev_score",
+      "breakpoints": true
     }
   ]
 }

@@ -162,3 +162,13 @@ Validation: survival smoke passed, plus 3,081 ticks with identical player snapsh
 The website synthesizes the licensed Freedoom E1M1 track with wasmdoom's 15,040-byte OPL music synthesizer, served from `/audio/wasmdoom.music.wasm`. This small playback component is a website asset, separate from the on-chain ROM. Its pinned SHA-256 is checked both by `pnpm run music` and by the browser. Corresponding synth sources are included in the engine source ZIP; upstream GPL notices remain available. The original on-chain cartridge already contains the track and instruments, so music works without redeployment. The optimized local ROM now retains them too.
 
 Music loops beneath sound effects, follows the SOUND ON/OFF control, pauses when the game loses focus or the tab is hidden, and stops on level completion/reset. It starts after Enter Arena, respecting browser autoplay restrictions. `pnpm run check:music` exercises the actual worklet with the Freedoom track, checking nonzero finite stereo PCM, pause/resume and disposal. MIDI-to-MUS conversion uses a 140 Hz timebase. The soundtrack is fixed to this level; the in-engine music-volume slider controls its volume.
+
+## Round results and shared leaderboard
+
+Death freezes the round, stops sound playback and shows a Play Again screen. Completing the exit shows the final time and a name form for the shared top-50 leaderboard. Both Ctrl keys (or E) use the exit; Space fires. Fullscreen includes the result overlays.
+
+Round time uses game steps at 35 Hz, excludes loading and stops while the viewport is unfocused or the tab is hidden. It resets on every replay and stops on death or completion. A completed run can be submitted once under a 2–20 character public display name; retries are idempotent. Rankings sort by elapsed time ascending, then completion time. Names are guest display names, not verified accounts. Results are browser-reported casual scores, not server-verified gameplay or on-chain records.
+
+The website now includes a Cloudflare Worker and a managed D1 binding named DB. Drizzle migrations in drizzle/ are applied by Sites on publication. The ROM and on-chain contracts are unchanged. Server endpoints provide start/finish receipts, reject dead or unfinished runs, bound timings, and preserve immutable finishes. Failed saves retain the entered name and can be retried. If storage is unavailable at round start, gameplay remains available as an unranked run.
+
+Build: pnpm build. Local full-stack preview: pnpm exec tsx scripts/preview-server.ts (http://127.0.0.1:4175), after building. Its SQLite database stays in ignored work/ and is never published. Checks: pnpm exec tsx scripts/check-round.ts and pnpm exec tsx scripts/check-leaderboard.ts. Production uses the same handler with D1.

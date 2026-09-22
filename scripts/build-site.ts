@@ -1,0 +1,12 @@
+import {build} from 'vite';
+import {mkdir,cp,writeFile,rm} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const output=resolve('dist');
+if(output!==resolve(process.cwd(),'dist'))throw new Error('Invalid build output path');
+await rm(output,{recursive:true,force:true});
+await build({build:{outDir:'../dist/client',emptyOutDir:true}});
+await build({publicDir:false,build:{ssr:resolve('server/index.ts'),outDir:'../dist/server',emptyOutDir:true,rollupOptions:{output:{entryFileNames:'index.js'}}}});
+await mkdir('dist/.openai',{recursive:true});
+await cp('.openai/hosting.json','dist/.openai/hosting.json');
+await cp('drizzle','dist/.openai/drizzle',{recursive:true});
+await writeFile('dist/server/wrangler.json',JSON.stringify({name:'doom-exe',main:'index.js',compatibility_date:'2026-09-01',assets:{directory:'../client',binding:'ASSETS',run_worker_first:['/api/*']},d1_databases:[{binding:'DB',database_name:'doom-exe',database_id:'local-preview'}]}));

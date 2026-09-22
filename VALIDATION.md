@@ -1,3 +1,7 @@
+# Round results and leaderboard update
+
+Real WASM checks exercise natural death, frozen final timing, pause on focus loss, and fresh replay. Existing engine smoke checks confirm north-wall completion and combat/pickups. The Worker is exercised against SQLite using its generated migration: running/dead result rejection, immutable outcomes, time bounds, invalid names, idempotency, and fastest-first sorting. Browser preview confirms death and Play Again resets the timer. Public scores are browser-reported, without authoritative anti-cheat verification.
+
 # Level music update
 
 Freedoom E1M1 MIDI converted to MUS; licensed OPL instruments retained. Real AudioWorklet synthesizer exercised against both original and optimized WADs: nonzero finite stereo samples, pause/resume and disposal pass. Survival smoke and strict typecheck pass. Browser launches music-enabled optimized cartridge without captured console errors. Optimized ROM: 1,802,348 bytes, 74 chunks; 72.90% smaller than deployed ROM. Music synth is a separate 15,040-byte website asset. No new chain deployment.

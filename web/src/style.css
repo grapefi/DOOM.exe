@@ -105,3 +105,29 @@ header.site-hero:after{bottom:0;height:2px;opacity:.78;z-index:3}
 .boot .eyebrow{margin-bottom:12px}.boot h2{font-size:clamp(12px,1.3vw,18px);margin:5px 0}.boot .primary{margin-top:12px}.boot small{margin-top:10px}
 .finished{background:linear-gradient(#1b0505ee,#130605f5),url('/doom-exe-hell-header.png') center/cover}
 @media(max-width:780px){.brand-bar .brand img{width:48px;height:48px}.brand-motto{font-size:8px}.game-brand{width:112px}.game-brand.compact{width:58px}.boot{padding:14px}.boot>p:not(.eyebrow){margin:5px 0}.boot .game-slogan{font-size:8px}}
+
+/* Bone and crimson wordmark system */
+.brand-bar .brand .header-wordmark{width:220px;height:auto;aspect-ratio:3/1;object-fit:contain;border:0;background:transparent;box-shadow:none;image-rendering:pixelated}
+.game-brand{width:min(430px,86%);height:auto;aspect-ratio:3/1;object-fit:contain;background:transparent;box-shadow:none;margin:6px 0 20px}
+.game-brand.compact{width:210px;max-width:55%;margin:0 0 12px}
+.boot:before{background:url('/arena-preview.png') center/cover;filter:sepia(.65) saturate(1.4);opacity:.22}
+.boot:after{background:repeating-linear-gradient(0deg,#0004 0 1px,transparent 1px 4px),radial-gradient(ellipse,#49090770,#100403ee)}
+.finished{background:radial-gradient(ellipse at top,#50100ded,#100605f7)}
+:root{--gold:#e8c8a0;--red:#d33822;--muted:#b99c8c}
+body{background:radial-gradient(ellipse at 50% 12%,#68161245,transparent 65%),repeating-linear-gradient(0deg,#ffffff05 0 1px,transparent 1px 4px),#0c0808}
+h1,.competition-intro h2,.onchain h2{color:#e9d2ad;text-shadow:2px 2px #6e261d,5px 5px #070404}
+.console{border-color:#725047 #261513 #150c0b #624037;background:#241614}
+.console:before{background:repeating-linear-gradient(135deg,#873427 0 9px,#21100e 9px 18px)}
+.screen-column,aside{background:repeating-linear-gradient(0deg,#ffffff03 0 1px,transparent 1px 4px),linear-gradient(120deg,#2c201d,#1a1110)}
+.panel-heading{background:linear-gradient(#42271f,#271713);border-top-color:#814132;color:#e6c9a6}
+button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#886052 #170c0a #170c0a #886052}
+.primary{color:#f6d8b0;background:linear-gradient(#a1261b,#5d110e);border-color:#de6246 #310a09 #310a09 #ac3b29}
+.competition-link{background:#8d2017;color:#f5d7b0;border-color:#d55a3b #350a08 #350a08 #c1482e}
+.competition-link:hover{background:#b63221;color:#ffead0}
+.competition .prize-pool{border-color:#a64b32;background:linear-gradient(120deg,#3b1b14,#1b100e 65%);box-shadow:inset 0 0 35px #b5352212,0 8px 24px #0006}
+.competition .leaderboard,.onchain,.chain-grid article,.optimization,.expansion{background:repeating-linear-gradient(0deg,#ffffff03 0 1px,transparent 1px 4px),linear-gradient(135deg,#2d1c17,#140e0c);border-color:#774336}
+.competition-intro h2 em,.prize-pool h2,.leaderboard h2,.optimization h3,.expansion h3{color:#edc59e}
+.prize-amounts strong,.round-clock time{color:#ffe0b3}.daily-pot{border-color:#8f4933;background:linear-gradient(110deg,#371910,#160d0b)}
+.source-tabs button[aria-pressed=true]{color:#ffe1bd;background:linear-gradient(#6b261c,#35110f);border-color:#be5c41 #200908 #200908 #a54a32}
+@media(max-width:780px){.brand-bar .brand .header-wordmark{width:170px;height:auto}.game-brand{width:min(330px,88%);margin-bottom:14px}.game-brand.compact{width:170px}}
+@media(max-width:380px){.brand-bar .brand .header-wordmark{width:145px}}

@@ -1,6 +1,6 @@
 import {createMusic} from './music';
 import {bootEngine,type Doom} from '../../shared/engine';
-const keys:Record<string,number>={ArrowUp:0xad,KeyW:0xad,ArrowDown:0xaf,KeyS:0xaf,ArrowLeft:0xac,ArrowRight:0xae,KeyA:44,KeyD:46,ControlLeft:0x9d,ControlRight:0x9d,Space:32,KeyE:32,ShiftLeft:0xb6,ShiftRight:0xb6,Escape:27,Enter:13,Tab:9,Backspace:127};
+const keys:Record<string,number>={ArrowUp:0xad,KeyW:0xad,ArrowDown:0xaf,KeyS:0xaf,ArrowLeft:0xac,ArrowRight:0xae,KeyA:44,KeyD:46,ControlLeft:32,ControlRight:32,Space:0x9d,KeyE:32,ShiftLeft:0xb6,ShiftRight:0xb6,Escape:27,Enter:13,Tab:9,Backspace:127};
 export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:Uint8Array,audio:AudioContext|null,onComplete:()=>void,onError:(message:string)=>void){
  const doom=await bootEngine(wasm,wad),ctx=canvas.getContext('2d');
  if(!ctx)throw new Error('Canvas is unavailable');

@@ -32,7 +32,7 @@ export default function App(){
    <div className="screen-column">
     <div className="screen-top"><span><i/> {source==='chain'?'CHAIN CARTRIDGE':'LOCAL CARTRIDGE'}</span><span>320 × 200 / 35 HZ</span></div>
     <div className="viewport">
-     <canvas ref={canvas} tabIndex={0} aria-label="Game viewport. WASD move, arrows turn, Control fire, Space use." className={phase==='playing'||phase==='complete'?'visible':''}/>
+     <canvas ref={canvas} tabIndex={0} aria-label="Game viewport. WASD move, arrows turn, Space fire, Control use/exit." className={phase==='playing'||phase==='complete'?'visible':''}/>
      {(phase==='ready'||phase==='error')&&<div className="boot"><p className="eyebrow">// SELECT YOUR BATTLEGROUND //</p><div className="boot-logo" aria-hidden="true">DOOM<span>.EXE</span></div><h2>ENTER THE<br/><em>EXECUTION ZONE</em></h2><p>Survive the crowd. Scavenge supplies. Reach the exit.</p><button className="primary" onClick={launch}>▶ ENTER ARENA</button><small>Desktop keyboard required · no wallet needed</small></div>}
      {phase==='loading'&&<div className="boot loading"><p className="eyebrow">BOOT SEQUENCE</p><h2>LOADING<span className="blink">_</span></h2><progress value={progress.percent} max={100}/><p role="status">{progress.label}</p><button className="text-button" onClick={reset}>CANCEL</button></div>}
      {phase==='complete'&&<div className="finished"><p className="eyebrow">EXIT REACHED</p><h2>EXECUTED.</h2><button className="primary" onClick={launch}>↻ RUN AGAIN</button></div>}
@@ -46,7 +46,7 @@ export default function App(){
     {!manifestAddress&&<p className="notice">Testnet cartridge not deployed yet. Local play is ready.</p>}
     <dl><div><dt>LEVEL</dt><dd>EXECUTION</dd></div><div><dt>ASSETS</dt><dd>FREEDOOM 0.13.0</dd></div><div><dt>ENGINE</dt><dd>WASMDOOM</dd></div><div><dt>ROM SIZE</dt><dd>{meta?(meta.compressedSize/1048576).toFixed(2)+' MiB':'—'}</dd></div><div><dt>CHUNKS</dt><dd>{meta?Math.ceil(meta.compressedSize/24575):'—'}</dd></div></dl>
     <div className="panel-heading"><span>02</span> MISSION BRIEF</div><p className="brief">24 hostiles. Shotgun + chaingun.<br/>Ammo and medikits around the room.<br/>The north wall is your way out.</p>
-    <div className="controls"><div><kbd>W A S D</kbd><span>MOVE / STRAFE</span></div><div><kbd>← →</kbd><span>TURN</span></div><div><kbd>CTRL</kbd><span>FIRE</span></div><div><kbd>SPACE</kbd><span>USE / EXIT</span></div><div><kbd>SHIFT</kbd><span>RUN</span></div><div><kbd>TAB</kbd><span>MAP</span></div></div>
+    <div className="controls"><div><kbd>W A S D</kbd><span>MOVE / STRAFE</span></div><div><kbd>← →</kbd><span>TURN</span></div><div><kbd>SPACE</kbd><span>FIRE</span></div><div><kbd>CTRL</kbd><span>USE / EXIT</span></div><div><kbd>SHIFT</kbd><span>RUN</span></div><div><kbd>TAB</kbd><span>MAP</span></div></div>
     <div className="actions"><button onClick={toggleSound}>{muted?'SOUND OFF':'SOUND ON'}</button><button onClick={reset} disabled={phase==='ready'}>RESET</button></div>
    </aside>
   </section>

@@ -4,17 +4,15 @@ Real WASM checks exercise natural death, frozen final timing, pause on focus los
 
 # Level music update
 
-Freedoom E1M1 MIDI converted to MUS; licensed OPL instruments retained. Real AudioWorklet synthesizer exercised against both original and optimized WADs: nonzero finite stereo samples, pause/resume and disposal pass. Survival smoke and strict typecheck pass. Browser launches music-enabled optimized cartridge without captured console errors. Optimized ROM: 1,802,348 bytes, 74 chunks; 72.90% smaller than deployed ROM. Music synth is a separate 15,040-byte website asset. No new chain deployment.
+Freedoom E1M1 MIDI converted to MUS; licensed OPL instruments retained. Real AudioWorklet synthesizer exercised against both original and optimized WADs: nonzero finite stereo samples, pause/resume and disposal pass. Survival smoke and strict typecheck pass. Browser launches music-enabled optimized cartridge without captured console errors. Optimized ROM: 1,802,348 bytes, 74 chunks; 72.90% smaller than the original build. Music synth is a separate 15,040-byte website asset. No new chain deployment.
 
-# Arbitrum Sepolia deployment — 2026-09-22
+# Robinhood mainnet transition — 2026-09-22
 
-- 271 data contracts plus manifest 0x9263dcd41931a92055188d9a5f8689eac0c4f03b.
-- All chunks read back through the production loader and verified at block 311233168. Compressed and raw hashes match the local build; decompression yields 311,507 WASM bytes and 18,045,237 WAD bytes.
-- Total receipt fees: 0.1737814442988288 testnet ETH.
-- Production browser preview defaults to ON CHAIN, reads all 271 chunks from the public Arbitrum Sepolia RPC, verifies ROM integrity, launches the arena and resets successfully. No captured browser errors or warnings.
+- Frontend network configuration is Robinhood Chain mainnet (4663) using the official public RPC and Blockscout explorer.
+- Public gameplay is chain-only. Bundled ROM binaries are removed from the published site, and the play button remains disabled with a “deploying soon” label until a valid mainnet manifest address and hash are configured.
+- The deployment script defaults to the tested optimized 74-chunk cartridge and refuses any chain other than 4663.
 - Website build checked for accidental deployer-key inclusion: none found.
-- Remaining deployer balance: 0.0762185557011712 testnet ETH.
-- Explorer source verification and public website hosting have not been performed. Earlier records below describe pre-deployment status.
+- No Robinhood mainnet cartridge transactions have been broadcast yet.
 
 # Survival update — 2026-09-21
 
@@ -30,15 +28,15 @@ Environment: Windows, Node.js 24.19.0.
 - Vite 8.3.0 production build.
 - 15 automated tests: ROM round-trip, corruption and decompression bounds; Solidity chunk limits, immutable reads, malformed manifest rejection, a 271-entry manifest gas check, production viem reconstruction and wrong-chain rejection.
 - Real wasmdoom v0.0.2 engine smoke test: custom arena boots, renders, moves, fires and completes through the north-wall exit.
-- Production browser preview: local cartridge hash verification, game rendering, keyboard automap toggle, reset, no captured browser warnings/errors.
+- Engine preview: cartridge hash verification, game rendering, keyboard automap toggle, reset, no captured browser warnings/errors.
 - Desktop and 390px narrow layout checks; no horizontal overflow. Desktop keyboard is still required to play.
 - Dependency audit of production packages: no known vulnerabilities reported.
-- Deployment script planning mode: validates actual ROM, compiles contracts, prints 271 chunks without submitting transactions.
-- Read-only official Robinhood testnet RPC check: eth_chainId returned 0xb626 (46630).
+- Deployment script planning mode: validates the optimized ROM, compiles contracts, prints 74 chunks without submitting transactions.
+- Read-only official Robinhood mainnet RPC check: eth_chainId returned 0x1237 (4663).
 
 ## Not performed
 
-- No public testnet transactions, funded-account deployment, explorer source verification or public website hosting.
+- No funded-account mainnet deployment or explorer source verification.
 - The engine binary was verified against upstream's published SHA-256, not rebuilt locally from Zig.
 - No independent smart-contract security audit.
 - No music synthesis, persistent save support, touch controls, multiplayer or on-chain gameplay verification.

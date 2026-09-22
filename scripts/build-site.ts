@@ -5,6 +5,8 @@ const output=resolve('dist');
 if(output!==resolve(process.cwd(),'dist'))throw new Error('Invalid build output path');
 await rm(output,{recursive:true,force:true});
 await build({build:{outDir:'../dist/client',emptyOutDir:true}});
+await rm('dist/client/rom/rom.bin',{force:true});
+await rm('dist/client/rom-trimmed/rom.bin',{force:true});
 await build({publicDir:false,build:{ssr:resolve('server/index.ts'),outDir:'../dist/server',emptyOutDir:true,rollupOptions:{output:{entryFileNames:'index.js'}}}});
 await mkdir('dist/.openai',{recursive:true});
 await cp('.openai/hosting.json','dist/.openai/hosting.json');

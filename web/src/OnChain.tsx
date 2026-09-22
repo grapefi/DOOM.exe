@@ -2,29 +2,27 @@ import {chain} from '../../shared/chain';
 import {manifestAddress} from './romLoader';
 import {MSFT_TOKEN,PRIZE_EXPLORER,PRIZE_WALLET} from '../../shared/prizePool';
 
-const MANIFEST=manifestAddress||'0x9263dcd41931a92055188d9a5f8689eac0c4f03b';
-
 export function OnChain(){return <section className="onchain" aria-labelledby="onchain-title">
  <div className="onchain-intro">
-  <div><p className="eyebrow">SYSTEM ARCHITECTURE // TWO CHAINS</p><h2 id="onchain-title">BUILT TO RUN.<br/><em>STORED ON-CHAIN.</em></h2></div>
-  <p>DOOM.EXE is a browser game whose engine and level data can be rebuilt from immutable contract bytecode. The current game cartridge lives on Arbitrum Sepolia; its MSFT prize pool is tracked separately on Robinhood Chain.</p>
+  <div><p className="eyebrow">SYSTEM ARCHITECTURE // ROBINHOOD MAINNET</p><h2 id="onchain-title">BUILT TO RUN.<br/><em>STORED ON-CHAIN.</em></h2></div>
+  <p>DOOM.EXE is preparing its game cartridge for Robinhood Chain mainnet. Once published, the engine and level data will be rebuilt from immutable contract bytecode and verified in the browser before every round.</p>
  </div>
  <div className="chain-flow" aria-label="How the game loads from the blockchain">
   <div><span>01</span><b>271 DATA CONTRACTS</b><small>Compressed WASM engine + Freedoom arena</small></div><i aria-hidden="true">→</i>
   <div><span>02</span><b>ROM MANIFEST</b><small>Orders chunks and commits size + hashes</small></div><i aria-hidden="true">→</i>
   <div><span>03</span><b>BROWSER VERIFY</b><small>Rebuilds, decompresses and checks every byte</small></div><i aria-hidden="true">→</i>
-  <div><span>04</span><b>PLAY LOCALLY</b><small>35 Hz WASM game loop; no wallet required</small></div>
+  <div><span>04</span><b>PLAY IN BROWSER</b><small>Verified 35 Hz WASM game loop; no wallet required</small></div>
  </div>
  <div className="chain-grid">
   <article>
-   <div className="chain-card-head"><span className="chain-status live">LIVE</span><span>GAME CARTRIDGE</span></div>
-   <h3>ARBITRUM SEPOLIA</h3>
-   <p>The published cartridge is 6.34 MiB compressed across 271 immutable data contracts plus one manifest. The site reads their runtime bytecode and verifies the committed hashes before the engine starts.</p>
-   <a href={`${chain.blockExplorers.default.url}/address/${MANIFEST}`} target="_blank" rel="noreferrer">VIEW ROM MANIFEST ↗</a>
+   <div className="chain-card-head"><span className="chain-status pending">DEPLOYING SOON</span><span>GAME CARTRIDGE</span></div>
+   <h3>ROBINHOOD MAINNET</h3>
+   <p>The optimized 1.72 MiB cartridge is prepared for 74 immutable data contracts plus one manifest. After deployment, the site will read their runtime bytecode and verify the committed hashes before the engine starts.</p>
+   {manifestAddress?<a href={`${chain.blockExplorers.default.url}/address/${manifestAddress}`} target="_blank" rel="noreferrer">VIEW ROM MANIFEST ↗</a>:<span className="manifest-pending">MANIFEST ADDRESS PUBLISHES AFTER DEPLOYMENT</span>}
   </article>
   <article>
    <div className="chain-card-head"><span className="chain-status live">LIVE</span><span>PRIZE RESERVE</span></div>
-   <h3>ROBINHOOD CHAIN</h3>
+   <h3>ROBINHOOD MAINNET</h3>
    <p>The public prize wallet holds canonical MSFT stock tokens. The site reads its balance directly from Robinhood Chain and values it with Chainlink’s multiplier-adjusted MSFT token feed.</p>
    <div className="chain-links"><a href={`${PRIZE_EXPLORER}/address/${PRIZE_WALLET}`} target="_blank" rel="noreferrer">PRIZE WALLET ↗</a><a href={`${PRIZE_EXPLORER}/token/${MSFT_TOKEN}`} target="_blank" rel="noreferrer">MSFT TOKEN ↗</a></div>
   </article>
@@ -32,10 +30,10 @@ export function OnChain(){return <section className="onchain" aria-labelledby="o
  <div className="optimization">
   <div><p className="eyebrow">CARTRIDGE OPTIMIZATION</p><h3>72.9% SMALLER.<br/>SAME EXECUTION ARENA.</h3><p>The optimized candidate removes assets this arena never calls while keeping the engine, map, enemies, weapons, menus, sound effects and E1M1 music required to play.</p></div>
   <div className="size-compare" aria-label="Original and optimized cartridge comparison">
-   <div><span>DEPLOYED V1</span><strong>271</strong><small>CHUNKS · 6.34 MiB</small><i/></div>
-   <div className="optimized"><span>OPTIMIZED CANDIDATE</span><strong>74</strong><small>CHUNKS · 1.72 MiB</small><i/></div>
+   <div><span>ORIGINAL BUILD</span><strong>271</strong><small>CHUNKS · 6.34 MiB</small><i/></div>
+   <div className="optimized"><span>MAINNET BUILD</span><strong>74</strong><small>CHUNKS · 1.72 MiB</small><i/></div>
   </div>
-  <p className="optimization-note">The 74-chunk build is tested and included in the source, but it has not been deployed on-chain yet. It reduces storage transactions and makes a future Robinhood Chain cartridge substantially more practical.</p>
+  <p className="optimization-note">The tested 74-chunk build is the cartridge planned for Robinhood mainnet. It cuts storage transactions by 72.9% while keeping the arena, enemies, weapons, menus, sound effects and music required to play.</p>
  </div>
  <div className="expansion">
   <div><p className="eyebrow">EXPANSION PATHS</p><h3>ONE CARTRIDGE.<br/>A LARGER WORLD.</h3></div>

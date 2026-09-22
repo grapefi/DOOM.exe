@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {valueInUsd,decimal,getPrizePool} from '../server/prizePool';
+import {roundShareUrl} from '../web/src/share';
+assert.equal(valueInUsd(2n*10n**18n,18,'100','102','1.05'),'212.10');
+assert.equal(valueInUsd(500000n,6,'100','100','1'),'50.00');
+assert.equal(valueInUsd(0n,18,'500','502','1.0004'),'0.00');
+assert.equal(decimal(1n,18),'0.000000000000000001');
+assert.throws(()=>valueInUsd(1n,18,'0','0','1'));
+assert.throws(()=>valueInUsd(1n,18,'102','100','1'));
+const share=new URL(roundShareUrl(62340,'A & B'));
+assert.equal(share.searchParams.get('url'),'https://doomexe.online/');
+assert.ok(share.searchParams.get('text')?.includes('A & B escaped DOOM.EXE in 01:02.34'));
+assert.ok(new URL(roundShareUrl(62340)).searchParams.get('text')?.startsWith('I escaped'));
+console.log('Share encoding and multiplier-adjusted USD valuation checks passed.');
+console.log('Live prize pool:',await getPrizePool());

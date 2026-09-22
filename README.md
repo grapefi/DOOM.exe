@@ -172,3 +172,11 @@ Round time uses game steps at 35 Hz, excludes loading and stops while the viewpo
 The website now includes a Cloudflare Worker and a managed D1 binding named DB. Drizzle migrations in drizzle/ are applied by Sites on publication. The ROM and on-chain contracts are unchanged. Server endpoints provide start/finish receipts, reject dead or unfinished runs, bound timings, and preserve immutable finishes. Failed saves retain the entered name and can be retried. If storage is unavailable at round start, gameplay remains available as an unranked run.
 
 Build: pnpm build. Local full-stack preview: pnpm exec tsx scripts/preview-server.ts (http://127.0.0.1:4175), after building. Its SQLite database stays in ignored work/ and is never published. Checks: pnpm exec tsx scripts/check-round.ts and pnpm exec tsx scripts/check-leaderboard.ts. Production uses the same handler with D1.
+
+## Round sharing and MSFT prize pool
+
+Completed rounds and leaderboard rows open an X/Twitter compose link with the time and https://doomexe.online/. Players review and post themselves. The leaderboard header also offers a general challenge link.
+
+The prize pool reads the canonical Robinhood MSFT balance of 0xc0702Ae0374F83fc3bA71CE2B30A323b09EC19da on Robinhood Chain mainnet (4663). Token: 0xe93237C50D904957Cf27E7B1133b510C669c2e74, verified against https://api.robinhood.com/rhj/assets. RPC balance and decimals are read directly. USD estimates use the Robinhood MSFT bid/ask midpoint multiplied by currentMultiplier, with integer arithmetic and cent rounding. Documentation: https://docs.robinhood.com/chain/stock-token-apis/.
+
+The display refreshes every minute; the server caches successful lookups for 30 seconds. Stale, halted, malformed or unavailable quotes do not become a zero-valued nonzero balance. RPC failures show an unavailable/last-confirmed state. The card links to the wallet and token for verification. This feature displays wallet funds; it does not route trading fees, move funds or pay out prizes automatically.

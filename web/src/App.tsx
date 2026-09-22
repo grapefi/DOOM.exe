@@ -4,6 +4,8 @@ import {loadRom,manifestAddress,trimmedPreview,type Progress} from './romLoader'
 import {startPlayer} from './doomPlayer';
 import {formatTime,type Outcome} from '../../shared/round';
 import {Leaderboard,scoreApi} from './leaderboard';
+import {ShareRound} from './share';
+import {PrizePool} from './PrizePool';
 import type {RomMeta} from '../../shared/rom';
 export default function App(){
  const [source,setSource]=useState<'local'|'chain'>(manifestAddress&&!trimmedPreview?'chain':'local');
@@ -60,7 +62,7 @@ export default function App(){
      {phase==='dead'&&<div className="finished death-screen" role="region" aria-label="You died"><p className="eyebrow">ROUND OVER</p><h2>YOU DIED.</h2><p>The arena claimed another.</p><p className="result-time">{formatTime(elapsed)}</p><button className="primary play-again" onClick={launch}>↻ PLAY AGAIN</button></div>}
      {phase==='complete'&&<div className="finished" role="region" aria-label="Round completed"><p className="eyebrow">EXIT REACHED</p><h2>EXECUTED.</h2><p className="result-time">{formatTime(elapsed)}</p>
       {ranked?(saved?<p className="score-success" role="status">TIME SAVED TO THE LEADERBOARD</p>:<form className="score-form" onSubmit={saveScore}><label htmlFor="player-name">YOUR NAME</label><div><input id="player-name" value={name} onChange={e=>setName(e.target.value)} minLength={2} maxLength={20} required autoComplete="nickname" placeholder="Enter your name" disabled={saving}/><button type="submit" disabled={saving}>{saving?'SAVING…':'POST TIME'}</button></div><small>2–20 characters · your name will be public</small>{scoreError&&<p role="alert">{scoreError}</p>}</form>):<p className="ranking-note">Leaderboard was unavailable for this round. Play again to record a time.</p>}
-      <button className="primary play-again" onClick={launch} disabled={saving}>↻ PLAY AGAIN</button></div>}
+      <div className="round-actions"><button className="primary play-again" onClick={launch} disabled={saving}>↻ PLAY AGAIN</button><ShareRound elapsedMs={elapsed}/></div></div>}
     </div>
     <div className="screen-bottom"><span className={meta?'verified':''}>{meta?'✓ ROM INTEGRITY VERIFIED':'> AWAITING EXECUTION'}</span><button onClick={()=>{void viewport.current?.requestFullscreen().catch(()=>{});}}>FULLSCREEN ↗</button></div>
    </div>
@@ -78,6 +80,7 @@ export default function App(){
   {phase==='playing'&&!ranked&&<p className="notice">Leaderboard unavailable. You can still play, but this round cannot be ranked.</p>}
   {error&&<div className="error" role="alert"><b>BOOT FAILED</b> {error}</div>}
   <div className="under-console"><span>LOAD FROM CHAIN. PLAY IN YOUR BROWSER.</span><span>Click the viewport to focus · leaving it pauses play and the timer</span></div>
+  <PrizePool/>
   <Leaderboard revision={revision}/>
   <details><summary>ROM details & source</summary><p>Independent project using original arena geometry and Freedoom resources. Level music and sound effects supported; persistent saves are outside V1. No scores or gameplay are recorded on chain.</p><p>Manifest: {manifestAddress?<a href={chain.blockExplorers.default.url+'/address/'+manifestAddress} target="_blank" rel="noreferrer">{manifestAddress}</a>:'not configured'}</p><p className="hash">Compressed hash: {meta?.compressedHash||'load a cartridge to verify'}</p><p><a href="/source/doom-exe-source.zip">Project source</a> · <a href="/source/wasmdoom-v0.0.2-source.zip">Engine source</a> · <a href="/licenses/wasmdoom-GPL-2.0.txt">Engine license</a> · <a href="/licenses/COPYING.txt">Freedoom license</a> · <a href="/rom/provenance.json">Asset provenance</a></p></details>
   <footer><span>DOOM.EXE <b>© 2026</b></span><span>BUILT TO RUN. STORED TO LAST.</span><span>INDEPENDENT / NOT AFFILIATED WITH ID SOFTWARE OR ROBINHOOD</span></footer>

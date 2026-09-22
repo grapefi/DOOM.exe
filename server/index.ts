@@ -1,4 +1,5 @@
 import {database,type Env} from './database';
+import {getPrizePool} from './prizePool';
 const MAX_ROUND=2*60*60*1000;
 type Run={id:string;started_at:number;outcome:string;elapsed_ms:number|null;player_name:string|null};
 const json=(body:unknown,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
@@ -7,6 +8,9 @@ export default {
  async fetch(request:Request,env:Env):Promise<Response>{
   const url=new URL(request.url),path=url.pathname;
   if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
+  if(path==='/api/prize-pool'&&request.method==='GET'){
+   try{return json(await getPrizePool());}catch(error){console.error('Prize pool lookup failed',error);return json({error:'Prize pool balance temporarily unavailable. Please try again.'},503);}
+  }
   try{
    const db=database(env);
    if(path==='/api/leaderboard'&&request.method==='GET'){

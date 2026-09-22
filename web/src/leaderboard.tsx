@@ -1,5 +1,6 @@
 import {useEffect,useState} from 'react';
 import {formatTime} from '../../shared/round';
+import {ShareRound} from './share';
 export async function scoreApi<T>(path:string,body?:unknown,signal?:AbortSignal):Promise<T>{
  const response=await fetch(path,{method:body===undefined?'GET':'POST',headers:body===undefined?undefined:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body),signal:signal?AbortSignal.any([signal,AbortSignal.timeout(10000)]):AbortSignal.timeout(10000)});
  const data=await response.json().catch(()=>({error:'Leaderboard unavailable. Please try again.'}));
@@ -15,9 +16,9 @@ export function Leaderboard({revision}:{revision:number}){
   void load();const timer=setInterval(()=>{if(!document.hidden)void load();},30000);
   return()=>{controller.abort();clearInterval(timer);};
  },[revision,retry]);
- return <section className="leaderboard" aria-labelledby="leaderboard-title">
-  <div className="leaderboard-heading"><div><p className="eyebrow">EXECUTION // COMPLETED RUNS</p><h2 id="leaderboard-title">FASTEST FINISHES</h2></div><button onClick={()=>setRetry(x=>x+1)}>REFRESH</button></div>
+ return <section className="leaderboard" id="leaderboard" aria-labelledby="leaderboard-title">
+  <div className="leaderboard-heading"><div><p className="eyebrow">EXECUTION // COMPLETED RUNS</p><h2 id="leaderboard-title">FASTEST FINISHES</h2></div><div className="leaderboard-actions"><ShareRound/><button onClick={()=>setRetry(x=>x+1)}>REFRESH</button></div></div>
   <p className="ranking-note">Reach the exit, enter your name, and post your time. Fastest first · top 50 finishes.</p>
-  {loading?<p role="status">Loading rankings…</p>:error?<div className="ranking-error" role="alert">{error} <button onClick={()=>setRetry(x=>x+1)}>TRY AGAIN</button></div>:entries.length===0?<div className="ranking-empty">NO FINISHERS YET.<span>Be the first to make it out.</span></div>:<div className="ranking-scroll"><table><thead><tr><th scope="col">RANK</th><th scope="col">PLAYER</th><th scope="col">ROUND TIME</th></tr></thead><tbody>{entries.map((entry,i)=><tr key={`${entry.finishedAt}-${i}`}><td>{String(i+1).padStart(2,'0')}</td><td>{entry.name}</td><td><time>{formatTime(entry.elapsedMs)}</time></td></tr>)}</tbody></table></div>}
+  {loading?<p role="status">Loading rankings…</p>:error?<div className="ranking-error" role="alert">{error} <button onClick={()=>setRetry(x=>x+1)}>TRY AGAIN</button></div>:entries.length===0?<div className="ranking-empty">NO FINISHERS YET.<span>Be the first to make it out.</span></div>:<div className="ranking-scroll"><table><thead><tr><th scope="col">RANK</th><th scope="col">PLAYER</th><th scope="col">ROUND TIME</th><th scope="col"><span className="sr-only">Share round</span></th></tr></thead><tbody>{entries.map((entry,i)=><tr key={`${entry.finishedAt}-${i}`}><td>{String(i+1).padStart(2,'0')}</td><td>{entry.name}</td><td className="round-time"><time>{formatTime(entry.elapsedMs)}</time></td><td><ShareRound elapsedMs={entry.elapsedMs} name={entry.name} compact/></td></tr>)}</tbody></table></div>}
  </section>;
 }

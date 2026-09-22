@@ -146,3 +146,33 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .chain-grid.cartridge-only{grid-template-columns:minmax(0,1fr)}
 @media(max-width:780px){.brand-bar{padding-top:64px;padding-bottom:18px}.brand-bar .brand{padding-top:5px}.competition .prize-pool,.competition .leaderboard{padding:18px}.prize-amounts>div{padding:12px}}
 @media(max-width:500px){.brand-bar{padding-top:57px}}
+
+/* Hell-forged podium and crimson spotlight */
+.competition .leaderboard{position:relative;isolation:isolate;margin-top:28px;border:3px solid #ff7447;border-top:6px solid #ffac65;background:radial-gradient(ellipse at 50% 0,#b7352066,transparent 65%),repeating-linear-gradient(0deg,#ffffff03 0 1px,transparent 1px 4px),#170d0d;box-shadow:0 0 0 3px #310e0a,0 0 0 4px #823022,0 0 48px #e5442538,inset 0 2px #ffe0a0}
+.competition .leaderboard:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:conic-gradient(from 153deg at 50% -15%,transparent 0deg,#ff713212 15deg,#ffab5225 27deg,#ff713212 39deg,transparent 54deg)}
+.leaderboard-heading{align-items:center;padding:8px 0 23px;border-bottom:2px solid #9c3d2a}
+.competition .leaderboard-heading h2{font-size:clamp(18px,2.4vw,30px);color:#ffdfac;text-shadow:2px 2px #8a2518,4px 4px #060303}
+.leaderboard-heading .eyebrow{color:#ff8f62;font-size:10px}
+.leaderboard .daily-pot{grid-template-columns:1fr;padding:18px;margin:24px 0;background:#0e0808;border:2px solid #6d2b20}
+.daily-pot>div{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 18px}
+.daily-pot ol{gap:14px}
+.daily-pot li{--metal:#d3a64f;position:relative;padding:16px 12px;border:2px solid var(--metal);border-top-width:4px;background:radial-gradient(ellipse at top,#9b291f44,transparent 75%),#21110e;box-shadow:inset 0 0 0 3px #090505,0 4px #070404;column-gap:14px}
+.daily-pot li.silver{--metal:#b9c6c9;background:radial-gradient(ellipse at top,#738a9433,transparent 75%),#161619}
+.daily-pot li.bronze{--metal:#d18455}
+.daily-pot li>b{font-size:10px;color:var(--metal)}.daily-pot li>strong{font-size:28px;color:#ffdfb5}
+.doom-medal{position:relative;display:inline-grid;width:52px;height:62px;flex-shrink:0;overflow:hidden;border:0;border-radius:0;padding:5px 5px 12px;clip-path:polygon(0 0,25% 8%,50% 0,75% 8%,100% 0,100% 72%,75% 87%,50% 100%,25% 87%,0 72%);box-shadow:none!important}
+.doom-medal.gold{background:linear-gradient(135deg,#fff0ad,#a85520 48%,#efbd51 52%,#743117)}
+.doom-medal.silver{background:linear-gradient(135deg,#edf3ef,#657680 48%,#c0d0d1 52%,#37434c)}
+.doom-medal.bronze{background:linear-gradient(135deg,#ffd0a1,#8a381e 48%,#dc9256 52%,#542110)}
+.doom-medal img{display:block;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;border:1px solid #200805}
+.doom-medal:after{content:'';position:absolute;bottom:9px;width:6px;height:6px;left:calc(50% - 3px);background:#ff542b;box-shadow:0 0 6px #ff522b}
+.leaderboard td:first-child{display:table-cell;width:104px;white-space:nowrap}
+.leaderboard .rank-number{display:inline-block;vertical-align:middle;margin-right:9px}
+.leaderboard td .doom-medal{width:38px;height:46px;vertical-align:middle;padding:4px 4px 9px}
+.leaderboard .podium-row.gold{background:linear-gradient(90deg,#80511c50,#2a180f88);box-shadow:inset 4px 0 #f0bf59}
+.leaderboard .podium-row.silver{background:linear-gradient(90deg,#65768040,#17151b88);box-shadow:inset 4px 0 #b9c6c9}
+.leaderboard .podium-row.bronze{background:linear-gradient(90deg,#8b452b45,#21110e88);box-shadow:inset 4px 0 #d18455}
+.leaderboard .podium-row td{color:#ffe0b3}.leaderboard .podium-row.silver td{color:#dee7e8}
+.competition .ranking-empty{padding:34px 16px;border:2px dashed #a35035;background:#150b09;color:#ffcf92}
+@media(max-width:780px){.daily-pot ol{gap:8px}.daily-pot li{column-gap:8px;padding:12px 8px}.daily-pot .doom-medal{width:42px;height:52px}.daily-pot li>strong{font-size:24px}.leaderboard-heading{gap:16px}.leaderboard td:first-child{width:88px}}
+@media(max-width:520px){.daily-pot li{grid-template-columns:auto 1fr auto;padding:10px 14px}.daily-pot .doom-medal{width:42px;height:50px}.leaderboard .rank-number{display:inline-block;font-size:11px;margin-right:5px}.leaderboard td .doom-medal{width:30px;height:38px}.leaderboard td:first-child{width:74px}}

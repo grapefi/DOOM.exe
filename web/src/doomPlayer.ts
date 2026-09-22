@@ -1,5 +1,6 @@
 import {playerIsDead,isPlayingLevel,updateExitLock,type Outcome} from '../../shared/round';
 import {createMusic} from './music';
+import {playRoundMusic} from './roundMusic';
 import {bootEngine,type Doom} from '../../shared/engine';
 const keys:Record<string,number>={ArrowUp:0xad,KeyW:0xad,ArrowDown:0xaf,KeyS:0xaf,ArrowLeft:0xac,ArrowRight:0xae,KeyA:44,KeyD:46,ControlLeft:32,ControlRight:32,Space:0x9d,KeyE:32,ShiftLeft:0xb6,ShiftRight:0xb6,Escape:27,Enter:13,Tab:9,Backspace:127};
 export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:Uint8Array,audio:AudioContext|null,onEnd:(outcome:Outcome,elapsedMs:number)=>void,onError:(message:string)=>void,onTime:(elapsedMs:number,paused:boolean,remaining?:number)=>void){
@@ -7,6 +8,7 @@ export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:U
  if(!ctx)throw new Error('Canvas is unavailable');
  const music=audio?await createMusic(audio,wad):null;
  canvas.width=320;canvas.height=200;const image=ctx.createImageData(320,200);
+ let stopRoundMusic:(()=>void)|undefined;
  let disposed=false,finished=false,exitReached=false,timer=0,ticks=0;
  const elapsed=()=>Math.round(ticks*1000/35);
  const down=new Map<string,number>();
@@ -53,13 +55,13 @@ export async function startPlayer(canvas:HTMLCanvasElement,wasm:Uint8Array,wad:U
  canvas.addEventListener('keydown',keyboard);canvas.addEventListener('keyup',keyboard);canvas.addEventListener('blur',blur);canvas.addEventListener('focus',focus);
  const visibility=()=>{if(document.hidden)blur();else if(document.activeElement===canvas)focus();};document.addEventListener('visibilitychange',visibility);
  function draw(){const pixels=new Uint8Array(doom.memory.buffer,doom.wasmdoom_get_framebuffer(),64000),palette=new Uint8Array(doom.memory.buffer,doom.wasmdoom_get_palette(),768);for(let i=0;i<64000;i++){const c=pixels[i]*3;image.data[i*4]=palette[c];image.data[i*4+1]=palette[c+1];image.data[i*4+2]=palette[c+2];image.data[i*4+3]=255;}ctx!.putImageData(image,0,0);}
- const stop=()=>{if(disposed)return;disposed=true;clearInterval(timer);release();music?.stop();canvas.removeEventListener('keydown',keyboard);canvas.removeEventListener('keyup',keyboard);canvas.removeEventListener('blur',blur);canvas.removeEventListener('focus',focus);document.removeEventListener('visibilitychange',visibility);};
+ const stop=()=>{if(disposed)return;disposed=true;clearInterval(timer);release();music?.stop();stopRoundMusic?.();canvas.removeEventListener('keydown',keyboard);canvas.removeEventListener('keyup',keyboard);canvas.removeEventListener('blur',blur);canvas.removeEventListener('focus',focus);document.removeEventListener('visibilitychange',visibility);};
  function step(){
   if(isPlayingLevel(doom))ticks++;
   const remaining=updateExitLock(doom,[...down.values()].includes(32));
   doom.wasmdoom_tick();drain();draw();
   const outcome=playerIsDead(doom)?'dead':exitReached&&remaining===0?'complete':null;
-  if(outcome){finished=true;clearInterval(timer);release();onTime(elapsed(),false);onEnd(outcome,elapsed());}
+  if(outcome){finished=true;clearInterval(timer);release();if(audio)stopRoundMusic=playRoundMusic(audio,outcome);onTime(elapsed(),false);onEnd(outcome,elapsed());}
   else onTime(elapsed(),!isPlayingLevel(doom),remaining);
  }
  try{drain();}catch(e){stop();throw e;}

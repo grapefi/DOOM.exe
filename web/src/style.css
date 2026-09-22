@@ -56,3 +56,11 @@ dl{margin:14px 0 20px;font-size:10px;border:2px solid;border-color:#100e0d #5346
 .expansion{display:grid;grid-template-columns:.55fr 1.45fr;gap:36px;margin-top:18px;padding:28px;border:2px solid #4c4036;background:#171310}.expansion ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}.expansion li{display:flex;gap:14px;border-top:1px solid #49382d;padding:17px 0}.expansion li>span{font-family:var(--pixel);font-size:9px;color:#e66540;padding-top:3px}.expansion b{font-family:var(--pixel);font-size:9px;color:#e1c89f}.expansion p{font-size:14px;line-height:1.55;color:#ae9e8d;margin:7px 0 0}.architecture-note{font-size:13px;color:#a69685;border-left:3px solid #b45a38;padding:10px 14px;margin:20px 0 0;background:#130f0d}
 @media(max-width:900px){.chain-flow{grid-template-columns:1fr 1fr}.chain-flow>i{display:none}.onchain-intro,.optimization,.expansion{grid-template-columns:1fr}.optimization-note{grid-column:auto}.expansion ol{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.onchain{padding:18px}.onchain-intro{gap:18px}.chain-flow,.chain-grid,.size-compare,.expansion ol{grid-template-columns:1fr}.chain-flow>div{min-height:0}.optimization,.expansion{padding:20px}.chain-card-head{font-size:11px}}
+
+/* DOOM.EXE branded masthead */
+header{height:90px;gap:18px;padding:0 14px;border:2px solid #523024;border-top-color:#7b432e;background:repeating-linear-gradient(90deg,#ffffff05 0 1px,transparent 1px 7px),linear-gradient(180deg,#2c1713,#130c0b);box-shadow:0 1px #0a0808,0 10px 28px #0008;position:relative}
+header:after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,#7d201a,#ed5a36 35%,#83d56b 50%,#ed5a36 65%,#7d201a)}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:max-content}
+.brand img{width:56px;height:56px;object-fit:cover;border:2px solid #874029;background:#090706;box-shadow:0 0 0 2px #100706,0 0 18px #e943293d}
+@media(max-width:780px){header{height:76px;padding:0 8px;gap:9px}.brand{gap:7px}.brand img{width:40px;height:40px}}
+@media(max-width:500px){header{gap:6px}.network b{display:none}.github-link{padding:6px 5px}.brand img{width:34px;height:34px}.wordmark{font-size:14px}}

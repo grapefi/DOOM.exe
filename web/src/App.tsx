@@ -49,7 +49,7 @@ export default function App(){
  useEffect(()=>{if(phase==='dead'||phase==='complete')viewport.current?.querySelector<HTMLButtonElement>('.play-again')?.focus();},[phase]);
  function toggleSound(){const next=!muted;setMuted(next);if(audio.current){void (next?audio.current.suspend():audio.current.resume()).catch(()=>{});}canvas.current?.focus();}
  return <main>
-  <header><a className="wordmark" href="/" aria-label="DOOM.EXE home">DOOM<span>.EXE</span></a><div className="network"><i/> ROBINHOOD CHAIN <b>MAINNET / {chain.id}</b></div><a className="github-link" href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GITHUB ↗</a></header>
+  <header><a className="brand" href="/" aria-label="DOOM.EXE home"><img src="/doom-exe-icon.png" alt=""/><span className="wordmark">DOOM<span>.EXE</span></span></a><div className="network"><i/> ROBINHOOD CHAIN <b>MAINNET / {chain.id}</b></div><a className="github-link" href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GITHUB ↗</a></header>
   <section className="titlebar"><div><p className="eyebrow">EPISODE 01 // SURVIVAL</p><h1>EXECUTION<span>_</span></h1></div><p className="edition"><b>24 HOSTILES.</b><br/>ONE WAY OUT.</p></section>
   <section className="console">
    <div className="screen-column" ref={viewport}>
@@ -72,7 +72,7 @@ export default function App(){
     <p className="source-note">On-chain only. The browser reconstructs the Robinhood mainnet cartridge from contract bytecode and verifies every byte before play.</p>
     {!manifestAddress&&<p className="notice">Mainnet cartridge deployment is coming soon.</p>}
     <dl><div><dt>LEVEL</dt><dd>EXECUTION</dd></div><div><dt>ASSETS</dt><dd>FREEDOOM 0.13.0</dd></div><div><dt>ENGINE</dt><dd>WASMDOOM</dd></div><div><dt>ROM SIZE</dt><dd>{meta?(meta.compressedSize/1048576).toFixed(2)+' MiB':'—'}</dd></div><div><dt>CHUNKS</dt><dd>{meta?Math.ceil(meta.compressedSize/24575):'—'}</dd></div></dl>
-    <div className="panel-heading"><span>02</span> MISSION BRIEF</div><p className="brief">24 hostiles. Shotgun + chaingun.<br/>Ammo and medikits around the room.<br/>The north wall is your way out.</p>
+    <div className="panel-heading"><span>02</span> MISSION BRIEF</div><p className="brief">24 hostiles. Shotgun at spawn.<br/>Chaingun deep in the arena. Only 2 medikits.<br/>The north wall is your way out.</p>
     <div className="controls"><div><kbd>W A S D</kbd><span>MOVE / STRAFE</span></div><div><kbd>← →</kbd><span>TURN</span></div><div><kbd>SPACE</kbd><span>FIRE</span></div><div><kbd>CTRL</kbd><span>USE / EXIT</span></div><div><kbd>SHIFT</kbd><span>RUN</span></div><div><kbd>TAB</kbd><span>MAP</span></div></div>
     <div className="actions"><button onClick={toggleSound}>{muted?'SOUND OFF':'SOUND ON'}</button><button onClick={reset} disabled={phase==='ready'}>RESET</button></div>
    </aside>

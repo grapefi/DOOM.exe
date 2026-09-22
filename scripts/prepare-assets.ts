@@ -37,5 +37,5 @@ sources['DOOM-EXE-BUILD.txt'] = strToU8(`Unmodified engine build sources from wa
 await writeFile('web/public/source/wasmdoom-v0.0.2-source.zip',zipSync(sources));
 await writeFile('web/public/licenses/wasmdoom-GPL-2.0.txt',sources.LICENSE);
 await writeFile('LICENSE',sources.LICENSE);
-await writeFile('game/provenance.json',JSON.stringify({engine:{version:'v0.0.2',revision:ENGINE_REV,sha256:ENGINE_SHA},freedoom:{version:'0.13.0',archiveSha256:digest},wad:{sha256:sha(wad),description:'Original EXECUTION survival arena: 24 enemies, shotgun/chaingun, ammo, medikits and armor; Freedoom 0.13.0 resources only'}},null,2));
+await writeFile('game/provenance.json',JSON.stringify({engine:{version:'v0.0.2',revision:ENGINE_REV,sha256:ENGINE_SHA},freedoom:{version:'0.13.0',archiveSha256:digest},wad:{sha256:sha(wad),description:'Original EXECUTION survival arena: 24 enemies, shotgun at spawn, chaingun in the northern arena, ammo, two medikits and armor; Freedoom 0.13.0 resources only'}},null,2));
 console.log(`Prepared engine ${wasm.length} bytes and custom Freedoom IWAD ${wad.length} bytes.`);

@@ -32,10 +32,13 @@ const shells=player(solo).getInt32(76,true);
 solo.wasmdoom_keydown(44);for(let i=0;i<30;i++)tick(solo);solo.wasmdoom_keyup(44);
 for(let i=0;i<12;i++)tick(solo);
 assert.ok(player(solo).getInt32(76,true)>shells,'Shell box must replenish ammunition');
-// Return to the central lane for a deterministic medikit and exit traversal.
-p=player(solo);p.setInt32(128,0,true);p.setInt32(132,-400*65536,true);p.setInt32(144,0,true);p.setInt32(148,0,true);p.setUint32(156,1<<21,true);solo.wasmdoom_apply_player();
-solo.wasmdoom_keydown(0xad);for(let i=0;i<185;i++)tick(solo);solo.wasmdoom_keyup(0xad);
+// Verify one of the two exposed side-lane medikits, then return to the central
+// lane for a deterministic exit traversal.
+p=player(solo);p.setInt32(128,-432*65536,true);p.setInt32(132,120*65536,true);p.setUint32(140,0x40000000,true);p.setInt32(144,0,true);p.setInt32(148,0,true);p.setUint32(156,1<<21,true);solo.wasmdoom_apply_player();
+solo.wasmdoom_keydown(0xad);for(let i=0;i<28;i++)tick(solo);solo.wasmdoom_keyup(0xad);
 assert.ok(player(solo).getInt32(0,true)>50,'Medikits must restore damaged health');
+p=player(solo);p.setInt32(128,0,true);p.setInt32(132,-400*65536,true);p.setUint32(140,0x40000000,true);p.setInt32(144,0,true);p.setInt32(148,0,true);p.setUint32(156,1<<21,true);solo.wasmdoom_apply_player();
+solo.wasmdoom_keydown(0xad);for(let i=0;i<185;i++)tick(solo);solo.wasmdoom_keyup(0xad);
 solo.wasmdoom_keydown(32);for(let i=0;i<20;i++)tick(solo);
 assert.ok(exited,'North-wall use action must finish the arena');
 console.log('Survival smoke passed: 24 live enemies, shotgun pickup, movement, firing, rendering; isolated ammo/health pickups and exit.');

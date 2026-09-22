@@ -9,7 +9,7 @@
     "archiveSha256": "3f9b264f3e3ce503b4fb7f6bdcb1f419d93c7b546f4df3e874dd878db9688f59"
   },
   "wad": {
-    "sha256": "da218bdc890bdc87f111fb3adb5a1b2408dc3bf9f72de8a98c602ab7b93f9749",
-    "description": "Original EXECUTION survival arena: 24 enemies, shotgun/chaingun, ammo, medikits and armor; Freedoom 0.13.0 resources only"
+    "sha256": "ecb3f8974127d31d773f8421d706f5c60923f165ff2b1b11420723ad6c5c5c7c",
+    "description": "Original EXECUTION survival arena: 24 enemies, shotgun at spawn, chaingun in the northern arena, ammo, two medikits and armor; Freedoom 0.13.0 resources only"
   }
 }

@@ -19,7 +19,7 @@ pnpm run dev
 
 Open the printed localhost address to inspect the site. Public gameplay is chain-only, so the play button activates after a valid Robinhood mainnet manifest address and ROM hash are added to `.env`. The delivered source includes prepared assets and ROM files for build, validation and deployment. Asset downloads require internet access. The browser uses modern WebAssembly and DecompressionStream support (current Chrome, Edge, Firefox or Safari). Serve over localhost or HTTPS; opening index.html directly does not work.
 
-Controls: W/S forward/back, A/D strafe, arrow keys turn, Space fire, Ctrl/E use the north-wall exit, Shift run, Tab map. Click the game to focus; it pauses when it loses focus. Move to collect the shotgun at spawn; a chaingun is immediately to the right and armor ahead. The crowded survival arena has 24 enemies (eight former humans, twelve imps and four melee demons), six shell boxes, six bullet boxes and eight medikits. Sweep the perimeter to replenish supplies. The exit is usable even before all enemies are defeated. Reaching the exit shows the completion overlay. Reset/replay starts a fresh instance.
+Controls: W/S forward/back, A/D strafe, arrow keys turn, Space fire, Ctrl/E use the north-wall exit, Shift run, Tab map. Click the game to focus; it pauses when it loses focus. Collect the shotgun at spawn and push through the arena to reach the chaingun near the north side. The crowded survival arena has 24 enemies (eight former humans, twelve imps and four melee demons), six shell boxes, six bullet boxes and only two medikits on exposed side lanes. The exit is usable even before all enemies are defeated. Reaching the exit shows the completion overlay. Reset/replay starts a fresh instance.
 
 This is a desktop keyboard V1. The layout adapts to small screens, but touch/gamepad controls, persistent saves, multiplayer, tournaments and rewards are not implemented. Sound effects and looping Freedoom E1M1 level music are supported.
 
@@ -89,11 +89,11 @@ The browser only exposes chain loading. Reading and playing require no wallet or
 
 ## Actual V1 size
 
-The prepared ROM is **6,651,025 compressed bytes (6.34 MiB)** and **18,356,760 raw bytes**, requiring **271 data contracts plus one manifest**. Engine: 311,507 bytes. IWAD: 18,045,237 bytes.
+The prepared ROM is **6,650,980 compressed bytes (6.34 MiB)** and **18,354,600 raw bytes**, requiring **271 data contracts plus one manifest**. Engine: 311,507 bytes. IWAD: 18,043,077 bytes.
 
 This first working build retains the complete Freedoom Phase 1 shared resources and replaces campaign geometry with the original arena. It does **not** meet the earlier speculative 0.8–1.8 MB target. Pruning unused textures, sprites, sounds and music is a separate optimization; deleting lumps blindly can break engine initialization or animations.
 
-The original build’s code-deposit cost alone is at least **1,330,259,200 gas** across the chunk transactions. This is not a deployment quote: constructor execution, transaction overhead, the manifest, and L1 data fees are extra. The optimized build cuts the cartridge to 74 chunks. Run the planning command and review current Robinhood Chain fees before broadcasting.
+The original build’s code-deposit cost alone is at least **1,330,250,200 gas** across the chunk transactions. This is not a deployment quote: constructor execution, transaction overhead, the manifest, and L1 data fees are extra. The optimized build cuts the cartridge to 74 chunks. Run the planning command and review current Robinhood Chain fees before broadcasting.
 
 ## Storage and verification
 
@@ -151,7 +151,7 @@ The public build automatically excludes bundled playable ROM binaries and expose
 
 Run `pnpm run trim` then `pnpm run check:trim`. The mainnet WAD is `game/trimmed/doomexe.wad`; its ROM, manifest and provenance are in `web/public/rom-trimmed/`. The deployment script uses this optimized cartridge by default.
 
-The optimized cartridge is 1,802,348 compressed bytes (74 chunks), down from 6,651,025 bytes (271 chunks): a 72.90% reduction. WAD size falls from 18,045,237 to 3,518,666 bytes. No new deployment has been performed.
+The optimized cartridge is 1,802,299 compressed bytes (74 chunks), down from 6,650,980 bytes (271 chunks): a 72.90% reduction. WAD size falls from 18,043,077 to 3,516,506 bytes. No new deployment has been performed.
 
 The trim policy is specific to the current arena: complete required sprite families, shared/UI sounds, texture patch dependencies, global switch/sky dependencies, menus and 36 map aliases remain. Unused monster/weapon/scenery sprites, unused texture patches/flats and absent actor sounds are removed. Freedoom E1M1 music is converted from MIDI to MUS and retained with GENMIDI instruments. Other tracks become 17-byte silent compatibility entries. Keep upstream licenses. Re-audit the trim policy when adding enemies, weapons or changing geometry.
 

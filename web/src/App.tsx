@@ -7,6 +7,7 @@ import {Leaderboard,scoreApi} from './leaderboard';
 import {ShareRound} from './share';
 import {PrizePool} from './PrizePool';
 import {OnChain} from './OnChain';
+import {Token} from './Token';
 import type {RomMeta} from '../../shared/rom';
 export default function App(){
  const source:CartridgeSource=manifestAddress?'robinhood':'arbitrum';
@@ -92,6 +93,7 @@ export default function App(){
    <PrizePool/>
    <Leaderboard revision={revision}/>
   </section>
+  <Token/>
   <OnChain/>
   <details><summary>ROM details & source</summary><p>Independent project using original arena geometry and Freedoom resources. Level music and sound effects supported; persistent saves are outside V1. No scores or gameplay are recorded on chain. The verified cartridge is loaded from chain; current supply balancing is applied in the browser before play.</p><p>Robinhood mainnet manifest: {manifestAddress?<a href={chain.blockExplorers.default.url+'/address/'+manifestAddress} target="_blank" rel="noreferrer">{manifestAddress}</a>:'deploying soon'} · <a href={`https://sepolia.arbiscan.io/address/${arbitrumManifestAddress}`} target="_blank" rel="noreferrer">Preview cartridge source: Arbitrum Sepolia</a></p><p className="hash">Compressed hash: {meta?.compressedHash||'load a cartridge to verify'}</p><p><a href="https://github.com/grapefi/DOOM.exe" target="_blank" rel="noreferrer">GitHub repository ↗</a> · <a href="/source/doom-exe-source.zip">Source archive</a> · <a href="/source/wasmdoom-v0.0.2-source.zip">Engine source</a> · <a href="/licenses/wasmdoom-GPL-2.0.txt">Engine license</a> · <a href="/licenses/COPYING.txt">Freedoom license</a> · <a href="/rom/provenance.json">Asset provenance</a></p></details>
   <div className="developer-credit"><p>Developed by Grape Games</p><img src="/grape-games.png" alt="Grape Games" loading="lazy" width="2172" height="724"/></div>

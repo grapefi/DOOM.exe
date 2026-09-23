@@ -19,7 +19,7 @@ export function Leaderboard({revision}:{revision:number}){
  const [entries,setEntries]=useState<Entry[]>([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[retry,setRetry]=useState(0);
  useEffect(()=>{
   const controller=new AbortController();let busy=false;
-  async function load(){if(busy)return;busy=true;try{const result=await scoreApi<{entries:Entry[]}>('/api/leaderboard',undefined,controller.signal);if(!controller.signal.aborted){setEntries(result.entries);setError('');}}catch(e){if(!controller.signal.aborted)setError(e instanceof Error?e.message:'Could not load rankings.');}finally{busy=false;if(!controller.signal.aborted)setLoading(false);}}
+  async function load(){if(busy)return;busy=true;try{const result=await scoreApi<{entries:Entry[]}>('/api/leaderboard',undefined,controller.signal);if(!Array.isArray(result.entries))throw new Error('Could not load rankings.');if(!controller.signal.aborted){setEntries(result.entries);setError('');}}catch(e){if(!controller.signal.aborted)setError(e instanceof Error?e.message:'Could not load rankings.');}finally{busy=false;if(!controller.signal.aborted)setLoading(false);}}
   void load();const timer=setInterval(()=>{if(!document.hidden)void load();},30000);
   return()=>{controller.abort();clearInterval(timer);};
  },[revision,retry]);

@@ -100,10 +100,10 @@ header.site-hero:after{bottom:0;height:2px;opacity:.78;z-index:3}
 .game-brand{display:block;width:clamp(110px,18vw,172px);height:auto;aspect-ratio:1;object-fit:contain;image-rendering:pixelated;box-shadow:0 0 28px #9f1f1633;margin:0 0 8px}
 .game-brand.compact{width:76px;margin:0 0 6px}
 .boot .game-slogan{font-family:var(--pixel);font-size:clamp(8px,1vw,12px);color:#edc59e;margin:8px 0;text-shadow:2px 2px #000}
-.boot:before{background-image:url('/doom-exe-hell-header.png');filter:none;opacity:.24}
+.boot:before{background-image:url('/doom-chain-header.png');filter:none;opacity:.24}
 .boot:after{background:linear-gradient(#120403b3,#120403ed),repeating-linear-gradient(0deg,#0004 0 1px,transparent 1px 4px)}
 .boot .eyebrow{margin-bottom:12px}.boot h2{font-size:clamp(12px,1.3vw,18px);margin:5px 0}.boot .primary{margin-top:12px}.boot small{margin-top:10px}
-.finished{background:linear-gradient(#1b0505ee,#130605f5),url('/doom-exe-hell-header.png') center/cover}
+.finished{background:linear-gradient(#1b0505ee,#130605f5),url('/doom-chain-header.png') center/cover}
 @media(max-width:780px){.brand-bar .brand img{width:48px;height:48px}.brand-motto{font-size:8px}.game-brand{width:112px}.game-brand.compact{width:58px}.boot{padding:14px}.boot>p:not(.eyebrow){margin:5px 0}.boot .game-slogan{font-size:8px}}
 
 /* Bone and crimson wordmark system */
@@ -206,7 +206,7 @@ button,.share-round{background:linear-gradient(#3d2923,#241613);border-color:#88
 .daily-pot .pot-rollover{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;margin:0;padding:12px 16px;border:1px solid #b25d37;background:#32160e;color:#efc49c;font-size:14px}.pot-rollover strong{color:#ffd18e}.pot-rollover span{line-height:1.5}
 
 /* Full-width hell artwork with a sharp central banner and fading outer edges. */
-body{overflow-x:clip}header.site-hero{position:relative;overflow:visible;box-shadow:none}.hero-art{position:relative;width:100vw;left:50%;transform:translateX(-50%);isolation:isolate}.hero-art:before{content:'';position:absolute;inset:0;z-index:-1;background:url('/doom-exe-hell-header-clean.png') center/cover no-repeat;opacity:.6;mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent);filter:saturate(.8)}.hero-art:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,#0c0909)}.hero-art .hero-image{width:min(1360px,100%);height:auto;margin:0 auto;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);background:transparent}.site-hero:before,.site-hero:after{display:none}.brand-bar{background:linear-gradient(180deg,transparent,#130c0be8 70%);border-bottom:1px solid #74372666}@media(max-width:780px){.hero-art .hero-image{min-height:0;aspect-ratio:3/1}}
+body{overflow-x:clip}header.site-hero{position:relative;overflow:visible;box-shadow:none}.hero-art{position:relative;width:100vw;left:50%;transform:translateX(-50%);isolation:isolate}.hero-art:before{content:'';position:absolute;inset:0;z-index:-1;background:url('/doom-chain-header.png') center/cover no-repeat;opacity:.6;mask-image:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent);filter:saturate(.8)}.hero-art:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,#0c0909)}.hero-art .hero-image{width:min(1360px,100%);height:auto;margin:0 auto;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);background:transparent}.site-hero:before,.site-hero:after{display:none}.brand-bar{background:linear-gradient(180deg,transparent,#130c0be8 70%);border-bottom:1px solid #74372666}@media(max-width:780px){.hero-art .hero-image{min-height:0;aspect-ratio:3/1}}
 
 .developer-credit{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;padding:32px 18px;margin:24px 0 0;border-top:1px solid #74372666;background:radial-gradient(ellipse at center,#21131c80,transparent 70%)}.developer-credit p{margin:0;color:#d4b99e;font-size:16px;line-height:1.5}.developer-credit img{display:block;width:min(360px,90%);height:auto;object-fit:contain}
 .score-wallet-short{display:block;margin-top:3px;color:#cbb39d;font:13px monospace;letter-spacing:.02em}

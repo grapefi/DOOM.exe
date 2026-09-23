@@ -5,7 +5,7 @@ import {manifestAddress} from './romLoader';
 export function OnChain(){return <section className="onchain" aria-labelledby="onchain-title">
  <div className="onchain-intro">
   <div><p className="eyebrow">SYSTEM ARCHITECTURE // ROBINHOOD MAINNET</p><h2 id="onchain-title">BUILT TO RUN.<br/><em>STORED ON-CHAIN.</em></h2></div>
-  <p>DOOM.EXE stores its game cartridge on Robinhood Chain mainnet. The engine and level data are rebuilt from immutable contract bytecode and verified in the browser before every round.</p>
+  <p>DOOM CHAIN stores its game cartridge on Robinhood Chain mainnet. The engine and level data are rebuilt from immutable contract bytecode and verified in the browser before every round.</p>
  </div>
  <div className="chain-flow" aria-label="How the game loads from the blockchain">
   <div><span>01</span><b>74 DATA CONTRACTS</b><small>Compressed WASM engine + Freedoom arena</small></div><i aria-hidden="true">→</i>
